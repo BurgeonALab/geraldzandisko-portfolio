@@ -16,6 +16,10 @@ body {
     color: #424242;
 }
 
+.social-link:visited {
+    color: #424242;
+}
+
 .logo-space {
     padding: 20px;
 }
