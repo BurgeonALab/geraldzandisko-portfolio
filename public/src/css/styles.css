@@ -8,15 +8,11 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.social-link {
+.social-link.nav-link {
     color: #000000;
 }
 
-.social-link:hover {
-    color: #424242;
-}
-
-.social-link:visited {
+.social-link.nav-link:hover {
     color: #424242;
 }
 
