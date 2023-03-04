@@ -1,7 +1,4 @@
-@media (max-width: 767.98px) {
-    .quote-mobile {
-        padding: 3rem;
-    }
+@media (max-width: 1199.98px) {
     .image-owl-align {
         margin-top: 0px;
         margin-left: auto;
@@ -15,6 +12,15 @@
     .image-title-mobile {
         text-align: center;
     }
+    .image-pad-margin {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .quote-mobile {
+        padding: 3rem;
+    }
     .image-padding-mobile {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -22,5 +28,8 @@
     .about-image-responsive {
         max-width: 100%;
         height: auto;
+    }
+    .image-pad-margin {
+        margin-top: 0px;
     }
 }
