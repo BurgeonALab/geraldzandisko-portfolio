@@ -17,12 +17,31 @@ html {
     width: 300px;
 }
 
-.the-owl {
+.image-link-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-link {
+    text-decoration: none;
+    color: #7E7E7E;
+    transition: 0.3s;
+}
+
+.image-link:hover {
+    color: #464646;
+}
+
+.image-link p {
+    font-size: 14px;
+}
+
+.image-owl-align {
     margin-top: 100px;
     margin-left: 50px;
 }
 
-.the-tiger {
+.image-tiger-align {
     margin-top: -100px;
     margin-right: 50px;
 }
