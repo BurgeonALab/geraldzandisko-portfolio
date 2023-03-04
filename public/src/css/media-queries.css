@@ -1,0 +1,22 @@
+@media (max-width: 767.98px) {
+    .quote-mobile {
+        padding: 3rem;
+    }
+    .image-owl-align {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-tiger-align {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-title-mobile {
+        text-align: center;
+    }
+    .image-padding-mobile {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
