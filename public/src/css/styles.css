@@ -79,3 +79,15 @@ body {
 .footer-background {
     color: #FFFFFF;
 }
+
+.contact-footer {
+    text-decoration: none;
+}
+
+.social-media-footer {
+    display: inline-block;
+}
+
+.social-media-footer-margin {
+    margin-top: 50px;
+}
