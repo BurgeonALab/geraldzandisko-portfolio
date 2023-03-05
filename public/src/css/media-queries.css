@@ -15,11 +15,17 @@
     .image-pad-margin {
         margin-top: 100px;
     }
+    .work-card-size {
+        height: 400px;
+    }
 }
 
 @media (max-width: 767.98px) {
     .quote-mobile {
-        padding: 3rem;
+        padding-top: 100px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
     }
     .image-padding-mobile {
         padding-left: 3rem;
@@ -31,5 +37,24 @@
     }
     .image-pad-margin {
         margin-top: 0px;
+    }
+    .work-padding-mobile {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .work-card-size {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .work-card-size {
+        height: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .work-card-size {
+        height: 250px;
     }
 }

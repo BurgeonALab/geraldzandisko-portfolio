@@ -4,16 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gerald Zandisko • Graphic Designer, UI/UX & Website Designer, and Video Editor</title>
+
+    <!-- CSS Imports -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="src/css/styles.css" rel="stylesheet">
     <link href="src/css/media-queries.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   </head>
   <body>
     <!-- Header -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
+        <a class="social-link nav-link p-3" href="https://www.behance.net/gerraour" target="_blank">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+      </li>
+      <li class="nav-item">
         <a class="social-link nav-link p-3" href="https://www.linkedin.com/in/gerraour/" target="_blank">
           <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="social-link nav-link p-3" href="https://github.com/gerraour" target="_blank">
+          <i class="fa-brands fa-github"></i>
         </a>
       </li>
       <li class="nav-item">
@@ -21,12 +34,9 @@
           <i class="fa-brands fa-instagram"></i>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="social-link nav-link p-3" href="https://www.behance.net/gerraour" target="_blank">
-          <i class="fa-brands fa-behance"></i>
-        </a>
-      </li>
     </ul>
+
+    <!-- Logo -->
     <div class="logo-space">
       <a href="https://www.gerraour.com">
         <img src="assets/images/logo.png" class="logo" alt="Website Logo">
@@ -38,7 +48,7 @@
           <a class="nav-link" href="#about_section">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Work</a>
+          <a class="nav-link" href="#work_section">Work</a>
         </li>
         <li class="nav-item">
           <a class="nav-link">Contact</a>
@@ -93,8 +103,37 @@
       </div>
     </div>
 
+    <!-- Work Section -->
+    <div class="container work-margin work-padding-mobile">
+      <h1>Portfolio</h1>
+      <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis, mauris at placerat interdum, justo augue accumsan lorem, quis rutrum ante massa a orci. Fusce lacinia mollis ipsum sed vestibulum.</p>
+    </div>
+    <div class="container-fluid" id="work_section">
+      <div class="row">
+        <div class="my-slider">
+          <div>
+            <div>
+              <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="work-card-size rounded shadow-lg" alt="Graphic Design Work">
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="work-card-size rounded shadow-lg" alt="UI/UX Work">
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="work-card-size rounded shadow-lg" alt="Website Design Work">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- JS Imports -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/56b59d0bec.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="src/js/scripts.js"></script>
   </body>
 </html>

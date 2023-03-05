@@ -60,3 +60,18 @@ body {
     margin-top: -100px;
     margin-right: 50px;
 }
+
+.work-margin {
+    margin-top: 100px;
+}
+
+.tns-item {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.work-card-size {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
