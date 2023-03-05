@@ -71,7 +71,7 @@ body {
 }
 
 .work-card-size {
-    height: 450px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }

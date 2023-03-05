@@ -16,7 +16,7 @@
         margin-top: 100px;
     }
     .work-card-size {
-        height: 400px;
+        height: 350px;
     }
 }
 
@@ -43,18 +43,18 @@
         padding-right: 3rem;
     }
     .work-card-size {
-        height: 350px;
+        height: 300px;
     }
 }
 
 @media (max-width: 576px) {
     .work-card-size {
-        height: 300px;
+        height: 250px;
     }
 }
 
 @media (max-width: 360px) {
     .work-card-size {
-        height: 250px;
+        height: 200px;
     }
 }
