@@ -13,7 +13,7 @@
         text-align: center;
     }
     .image-pad-margin {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .work-card-size {
         height: 350px;
@@ -22,7 +22,7 @@
 
 @media (max-width: 767.98px) {
     .quote-mobile {
-        padding-top: 100px;
+        padding-top: 50px;
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 3rem;
@@ -44,6 +44,9 @@
     }
     .work-card-size {
         height: 300px;
+    }
+    .notable-work-container {
+        padding-left: 48px;
     }
 }
 

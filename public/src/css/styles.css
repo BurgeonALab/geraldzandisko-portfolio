@@ -52,22 +52,22 @@ body {
 }
 
 .image-owl-align {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
 }
 
 .image-tiger-align {
-    margin-top: -100px;
+    margin-top: -150px;
     margin-right: 50px;
 }
 
 .work-margin {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .tns-item {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .work-card-size {
@@ -116,12 +116,26 @@ body {
     margin-bottom: 8px;
 }
 
-.notable-margin {
+.notable-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-list-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.notable-work-container {
     margin-bottom: 100px;
 }
 
-.notable-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.notable-header-container {
+    padding-left: 12px;
+    padding-right: 60px;
+}
+
+.work-list-slider {
+    padding-left: 12px;
 }
