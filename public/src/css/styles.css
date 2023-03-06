@@ -115,3 +115,7 @@ body {
 .non-link-style {
     margin-bottom: 8px;
 }
+
+.notable-margin {
+    margin-bottom: 100px;
+}
