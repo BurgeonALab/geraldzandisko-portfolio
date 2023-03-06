@@ -119,3 +119,9 @@ body {
 .notable-margin {
     margin-bottom: 100px;
 }
+
+.notable-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
