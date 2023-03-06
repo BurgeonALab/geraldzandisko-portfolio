@@ -84,10 +84,34 @@ body {
     text-decoration: none;
 }
 
+.contact-footer-inline {
+    display: inline;
+}
+
 .social-media-footer {
     display: inline-block;
 }
 
 .social-media-footer-margin {
-    margin-top: 50px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.privacy-terms {
+    display: block;
+    text-decoration: none;
+}
+
+.contact-info-margin {
+    margin-bottom: 16px;
+}
+
+.link-style {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.non-link-style {
+    margin-bottom: 8px;
 }
