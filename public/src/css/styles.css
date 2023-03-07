@@ -90,11 +90,12 @@ body {
 
 .social-media-footer {
     display: inline-block;
+    text-decoration: none;
 }
 
 .social-media-footer-margin {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .privacy-terms {

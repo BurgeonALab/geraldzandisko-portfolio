@@ -18,6 +18,22 @@
     .work-card-size {
         height: 350px;
     }
+    .notable-header-container {
+        padding-right: 12px;
+    }
+    .notable-image-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    .notable-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .contact-info-margin-mobile {
+        margin-bottom: 48px !important;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -46,13 +62,57 @@
         height: 300px;
     }
     .notable-work-container {
-        padding-left: 48px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
 @media (max-width: 576px) {
     .work-card-size {
         height: 250px;
+    }
+    .contact-info-margin-mobile {
+        margin-bottom: 16px !important;
+    }
+    .footer-mobile {
+        padding: 60px !important;
+    }
+    .footer-mobile h2 {
+        text-align: center;
+    }
+    .footer-mobile p {
+        text-align: center;
+    }
+    .footer-mobile h6 {
+        text-align: center;
+    }
+    .contact-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-mobile a {
+        text-align: center;
+    }
+    .footer-mobile h4 {
+        text-align: center;
+    }
+    .social-media-footer h4 {
+        display: flex;
+        margin-bottom: 0px !important;
+    }
+    .social-media-footer i {
+        margin-right: 16px !important;
+        margin-left: 16px !important;
+    }
+    .social-media-footer-margin {
+        display: flex;
+        justify-content: center;
+    }
+    .policies-mobile {
+        margin-bottom: 0px !important;
+    }
+    .extra-margin-mobile {
+        margin-top: 16px;
     }
 }
 
