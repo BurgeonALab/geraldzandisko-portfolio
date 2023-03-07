@@ -107,6 +107,11 @@
     .social-media-footer-margin {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 32px;
+    }
+    .social-media-footer-margin a {
+        margin-bottom: 16px;
     }
     .policies-mobile {
         margin-bottom: 0px !important;
