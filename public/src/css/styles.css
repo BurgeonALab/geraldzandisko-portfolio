@@ -27,7 +27,11 @@ html, body {
 }
 
 .social-link.nav-link:hover {
-    color: #424242;
+    color: #fcc72e;
+}
+
+.navbar-link:hover {
+    color: #fcc72e;
 }
 
 .logo-space {
@@ -58,7 +62,7 @@ html, body {
 }
 
 .image-link:hover {
-    color: #464646;
+    color: #fcc72e;;
 }
 
 .image-link p {
@@ -76,7 +80,7 @@ html, body {
 }
 
 .work-margin {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .tns-item {
@@ -96,6 +100,12 @@ html, body {
 
 .contact-footer {
     text-decoration: none;
+    transition: 0.3s;
+    color: #000000;
+}
+
+.contact-footer:hover {
+    color: #fcc72e;
 }
 
 .contact-footer-inline {
@@ -105,6 +115,12 @@ html, body {
 .social-media-footer {
     display: inline-block;
     text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.social-media-footer:hover {
+    color: #fcc72e;
 }
 
 .social-media-footer-margin {
@@ -115,6 +131,12 @@ html, body {
 .privacy-terms {
     display: block;
     text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.privacy-terms:hover {
+    color: #fcc72e;
 }
 
 .contact-info-margin {
@@ -125,6 +147,12 @@ html, body {
     display: block;
     text-decoration: none;
     margin-bottom: 8px;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.link-style:hover {
+    color: #fcc72e;
 }
 
 .non-link-style {
@@ -140,6 +168,12 @@ html, body {
 .work-list-link {
     display: inline-block;
     text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.work-list-link:hover {
+    color: #ffda6f;
 }
 
 .notable-work-container {
@@ -153,4 +187,17 @@ html, body {
 
 .work-list-slider {
     padding-left: 12px;
+}
+
+.navigation {
+    padding: 10px;
+    z-index: 9999;
+    position: sticky;
+    top: 0px;
+    background-color: #FFFFFF;
+}
+
+.navigation.shadow-nav {
+    box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15);
+    transition: 0.3s ease;
 }

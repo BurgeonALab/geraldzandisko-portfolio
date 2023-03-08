@@ -58,19 +58,21 @@
           <img src="assets/images/logo.png" class="logo" alt="Website Logo">
         </a>
       </div>
-      <nav class="navbar navbar-expand p-0">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about_section">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work_section">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="navigation">
+        <nav class="navbar navbar-expand p-0">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-medium navbar-link" href="#about_section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium navbar-link" href="#work_section">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium navbar-link" href="#contact_section">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <!-- About Section -->
       <div class="container">
         <div class="row">
@@ -120,7 +122,7 @@
       </div>
 
       <!-- Work Section -->
-      <div class="container work-margin">
+      <div class="container work-margin" id="work_section">
         <div class="row">
           <div class="col-md">
             <div class="work-padding-mobile">
@@ -130,7 +132,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid" id="work_section">
+      <div class="container-fluid">
         <div class="row">
           <div class="my-slider">
             <div>
@@ -166,7 +168,7 @@
                   <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="card-img" alt="Pengembangan Aplikasi Seluler Pengelolaan Warung Kopi">
                   <div class="card-img-overlay d-flex align-items-center justify-content-center text-center">
                     <a href="#" class="work-list-link">
-                      <h6 class="card-title fw-bold m-0">Pengembangan Aplikasi Seluler Pengelolaan Warung Kopi</h6>
+                      <h6 class="card-title fw-medium m-0">Pengembangan Aplikasi Seluler Pengelolaan Warung Kopi</h6>
                     </a>
                   </div>
                 </div>
@@ -176,7 +178,7 @@
                   <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="card-img" alt="Tropicanatic">
                   <div class="card-img-overlay d-flex align-items-center justify-content-center text-center">
                     <a href="#" class="work-list-link">
-                      <h6 class="card-title fw-bold m-0">Tropicanatic</h6>
+                      <h6 class="card-title fw-medium m-0">Tropicanatic</h6>
                     </a>
                   </div>
                 </div>
@@ -186,7 +188,7 @@
                   <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="card-img" alt="Aquahelix Bacteria">
                   <div class="card-img-overlay d-flex align-items-center justify-content-center text-center">
                     <a href="#" class="work-list-link">
-                      <h6 class="card-title fw-bold m-0">Aquahelix Bacteria</h6>
+                      <h6 class="card-title fw-medium m-0">Aquahelix Bacteria</h6>
                     </a>
                   </div>
                 </div>
@@ -196,7 +198,7 @@
                   <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" class="card-img" alt="Semesta Sakti">
                   <div class="card-img-overlay d-flex align-items-center justify-content-center text-center">
                     <a href="#" class="work-list-link">
-                      <h6 class="card-title fw-bold m-0">Semesta Sakti</h6>
+                      <h6 class="card-title fw-medium m-0">Semesta Sakti</h6>
                     </a>
                   </div>
                 </div>
@@ -216,7 +218,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container-fluid shadow-lg p-5 footer">
+    <footer class="container-fluid shadow-lg p-5 footer footer-mobile" id="contact_section">
       <!-- Contact Section -->
       <div class="row">
         <div class="col-lg-4">
@@ -226,24 +228,24 @@
           </div>
           <div>
             <div class="contact-info-margin">
-              <h6 class="mb-3 fw-bold">Phone Number</h6>
+              <h6 class="mb-3 fw-bold">Send Me a Message</h6>
               <a class="contact-footer" href="https://wa.me/+628116300048" target="_blank">
                 <div class="d-flex align-items-center">
                   <h3 class="contact-footer-inline m-0 d-flex me-1">
                     <i class="fa-brands fa-whatsapp"></i>
                   </h3>
-                  <p class="contact-footer-inline m-0 ms-1">+62 811 630 0048</p>
+                  <p class="contact-footer-inline m-0 ms-1 fw-light">+62 811 630 0048</p>
                 </div>
               </a>
             </div>
             <div class="contact-info-margin mb-0 contact-info-margin-mobile">
-              <h6 class="mb-3 fw-bold">Email Address</h6>
+              <h6 class="mb-3 fw-bold">Email Me</h6>
               <a class="contact-footer" href="mailto:mailme@gerraour.com">
                 <div class="d-flex align-items-center">
                   <h3 class="contact-footer-inline m-0 d-flex me-1">
                     <i class="fa-solid fa-envelope"></i>
                   </h3>
-                  <p class="contact-footer-inline m-0 ms-1">mailme@gerraour.com</p>
+                  <p class="contact-footer-inline m-0 ms-1 fw-light">mailme@gerraour.com</p>
                 </div>
               </a>
             </div>
@@ -254,16 +256,16 @@
             <div class="row">
               <div class="col-sm-3 col-sm-3">
                 <h4 class="mb-3 fw-bold extra-margin-mobile">Links</h4>
-                <a href="#" class="link-style mb-3">About</a>
-                <a href="#" class="link-style mb-3">Work</a>
-                <a href="#" class="link-style mb-3">Contact</a>
+                <a href="#" class="link-style mb-3 fw-light">About</a>
+                <a href="#" class="link-style mb-3 fw-light">Work</a>
+                <a href="#" class="link-style mb-3 fw-light">Contact</a>
               </div>
               <div class="col-sm-3">
                 <h4 class="mb-3 fw-bold extra-margin-mobile">Services</h4>
-                <p class="non-link-style text-muted mb-3">Graphic Design</p>
-                <p class="non-link-style text-muted mb-3">Frontend Web Development</p>
-                <p class="non-link-style text-muted mb-3">User Interface (UI) Design</p>
-                <p class="non-link-style text-muted mb-3">User Experience (UX) Design</p>
+                <p class="non-link-style text-muted mb-3 fw-light">Graphic Design</p>
+                <p class="non-link-style text-muted mb-3 fw-light">Frontend Web Development</p>
+                <p class="non-link-style text-muted mb-3 fw-light">User Interface (UI) Design</p>
+                <p class="non-link-style text-muted mb-3 fw-light">User Experience (UX) Design</p>
               </div>
               <div class="col-sm-3">
                 <h4 class="mb-3 fw-bold extra-margin-mobile">Connect</h4>
@@ -292,10 +294,10 @@
               </div>
               <div class="col-sm-3 text-end">
                 <p class="mb-3">&#169; 2023 <span class="fw-bold">Gerald Zandisko</span>. All rights reserved</p>
-                <a href="#" class="privacy-terms">
+                <a href="#" class="privacy-terms fw-light">
                   <p class="mb-3">Privacy Policy</p>
                 </a>
-                <a href="#" class="privacy-terms">
+                <a href="#" class="privacy-terms fw-light">
                   <p class="mb-3 policies-mobile">Terms of Use</p>
                 </a>
               </div>
@@ -309,6 +311,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/56b59d0bec.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="src/js/scripts.js"></script>
   </body>
 </html>
