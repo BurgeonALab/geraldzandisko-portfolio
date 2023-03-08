@@ -19,6 +19,7 @@ const tnslider2 = tns({
     "speed": 500,
     "autoWidth": true,
     "gutter": 20,
+    "edgePadding": 40,
     "autoplayHoverPause": "false",
     "preventScrollOnTouch": "auto"
 })
