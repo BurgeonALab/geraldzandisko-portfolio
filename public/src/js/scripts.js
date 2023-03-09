@@ -19,6 +19,19 @@ $(function() {
     }
 });
 
+$(function() {
+    const linkBtn = $('.link-style');
+    linkBtn.click(() => {
+        setTimeout(() => {
+            removeHash();
+        });
+    });
+
+    function removeHash() {
+        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+    }
+});
+
 const tnslider1 = tns({
     "container": ".my-slider",
     "items": 1,
