@@ -65,6 +65,21 @@ html, body {
     color: #fcc72e;
 }
 
+.image-link-footer {
+    text-decoration: none;
+    color: #7E7E7E;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.image-link-footer:hover {
+    color: #fcc72e;
+}
+
+.image-link-footer-align {
+    text-align: right;
+}
+
 .image-link p {
     font-size: 14px;
 }
