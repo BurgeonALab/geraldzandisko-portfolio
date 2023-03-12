@@ -1,6 +1,8 @@
+import '../scss/styles.scss'
+import '../../src/css/styles.css';
+import '../../src/css/media-queries.css';
+import * as bootstrap from 'bootstrap'
 import { initializeApp } from "firebase/app"
-import { getStorage } from "firebase/storage";
-import { initializeAppCheck, ReCaptchaV3Provider } from 'firebase/app-check';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCU5SmyCTAmXUAUVeSCf0fVnA2OxlXHU-U",
@@ -13,11 +15,3 @@ const firebaseConfig = {
     measurementId: "G-XDPT9XMJXM"
   };
 const app = initializeApp(firebaseConfig);
-const appCheck = initializeAppCheck(app, {
-  provider: new ReCaptchaV3Provider('6LdXM_QkAAAAAOacKvXRl721QlDApYHOstWXKjFV'),
-  
-  // Optional argument. If true, the SDK automatically refreshes App Check
-  // tokens as needed.
-  isTokenAutoRefreshEnabled: true
-});
-const storage = getStorage(app);
