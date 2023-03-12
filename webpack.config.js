@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
     entry: './public/src/js/index.js',
@@ -7,4 +7,4 @@ module.exports = {
         filename: 'bundle.js'
     },
     devtool: 'eval-source-map',
-};
+}
