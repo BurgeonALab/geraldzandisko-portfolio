@@ -1,15 +1,21 @@
 const path = require('path')
+const webpack = require('webpack');
 
 module.exports = {
+    mode: 'development',
+    experiments: {
+        topLevelAwait: true
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
+    ],
     entry: './public/src/js/index.js',
     output: {
         path: path.resolve(__dirname, './public/dist'),
         filename: 'bundle.js'
-    },
-    devServer: {
-        static: path.resolve(__dirname, './public/dist'),
-        port: 8080,
-        hot: true
     },
     performance: {
         hints: false,
