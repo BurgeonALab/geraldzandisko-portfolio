@@ -8,8 +8,8 @@
     "build": "webpack --mode=development"
   },
   "keywords": [],
-  "author": "gerraour",
-  "license": "ISC",
+  "author": "Gerald Zandisko, Ria Agustin",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
