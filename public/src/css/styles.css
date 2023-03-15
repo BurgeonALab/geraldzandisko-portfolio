@@ -121,6 +121,9 @@ html, body {
 .work-card-overlay {
     position: absolute;
     top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    width: 100%;
 }
 
 .work-card-overlay {
@@ -277,4 +280,17 @@ html, body {
 
 .card-description-hover:hover + .notable-description-width {
     display: block;
+}
+
+.portfolio-social-button {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.portfolio-social-button:hover {
+    color: #fcc72e;
+}
+
+.work-card-padding-mobile {
+    padding: 48px !important;
 }

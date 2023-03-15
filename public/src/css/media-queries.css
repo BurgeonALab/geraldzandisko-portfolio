@@ -45,6 +45,9 @@
     .image-link-footer-container {
         margin-top: 50px;
     }
+    .work-card-padding-mobile {
+        padding: 32px !important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -56,6 +59,9 @@
     }
     .notable-image-container {
         max-width: 720px;
+    }
+    .work-card-padding-mobile p {
+        display: none;
     }
 }
 
@@ -93,6 +99,9 @@
         max-width: 540px;
         padding-left: 60px !important;
         padding-right: 60px !important;
+    }
+    .work-card-padding-mobile h5 {
+        display: none;
     }
 }
 
@@ -152,10 +161,22 @@
         padding-left: 60px;
         padding-right: 60px;
     }
+    .work-card-padding-mobile h2 {
+        font-size: 16px;
+    }
+    .work-card-padding-mobile h1 {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 360px) {
     .work-card-container {
         height: 150px;
+    }
+    .work-card-padding-mobile {
+        padding: 16px !important;
+    }
+    .work-card-padding-mobile h1 {
+        font-size: 28px;
     }
 }
