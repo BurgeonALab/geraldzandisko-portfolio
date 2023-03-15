@@ -1,5 +1,7 @@
-![Gerraour Logo](https://www.gerraour.com/assets/images/github/github-logo-light.png#gh-dark-mode-only)
-![Gerraour Logo](https://www.gerraour.com/assets/images/github/github-logo-dark.png#gh-light-mode-only)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://www.gerraour.com/assets/images/github/github-logo-light.png" width="300">
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gerraour.com/assets/images/github/github-logo-dark.png" width="300">
+</picture>
 
 # About
 
