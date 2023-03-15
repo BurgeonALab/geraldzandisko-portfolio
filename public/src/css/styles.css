@@ -250,9 +250,6 @@ html, body {
     width: 18rem;
     display: flex;
     flex-direction: row;
-}
-
-.notable-description-width {
     display: none;
 }
 
