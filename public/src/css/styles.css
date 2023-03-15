@@ -107,10 +107,32 @@ html, body {
     margin-bottom: 50px;
 }
 
+.work-card-container {
+    height: 100%;
+    position: relative;
+}
+
 .work-card-size {
-    height: 400px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.work-card-overlay {
+    position: absolute;
+    top: 0px;
+}
+
+.work-card-overlay {
+    height: 100%;
+}
+
+.work-card-overlay .container-fluid {
+    height: 100%;
+}
+
+.work-card-overlay .container-fluid .row {
+    height: 100%;
 }
 
 .footer-background {
