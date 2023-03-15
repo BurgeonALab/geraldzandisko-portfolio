@@ -15,7 +15,7 @@
     .image-pad-margin {
         margin-top: 50px;
     }
-    .work-card-size {
+    .work-card-container {
         height: 350px;
     }
     .notable-header-container {
@@ -81,7 +81,7 @@
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    .work-card-size {
+    .work-card-container {
         height: 250px;
     }
     .notable-header-container-mobile {
@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 576px) {
-    .work-card-size {
+    .work-card-container {
         height: 200px;
     }
     .contact-info-margin-mobile {
@@ -155,7 +155,7 @@
 }
 
 @media (max-width: 360px) {
-    .work-card-size {
+    .work-card-container {
         height: 150px;
     }
 }
