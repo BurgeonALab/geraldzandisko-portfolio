@@ -294,3 +294,13 @@ html, body {
 .work-card-padding-mobile {
     padding: 48px !important;
 }
+
+.box-title-container {
+    background-color: rgba(252, 199, 46, 1);
+    display: inline;
+    width: max-content;
+}
+
+.box-title-container p {
+    color: #FFFFFF;
+}
