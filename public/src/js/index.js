@@ -12,15 +12,15 @@ import '../js/scripts'
 
 const tnslider1 = tns({
     "container": ".my-slider",
-    "items": 1,
     "mouseDrag": true,
     "controls": false,
     "nav": false,
     "speed": 500,
     "gutter": 20,
     "edgePadding": 100,
-    "autoplayHoverPause": "false",
-    "preventScrollOnTouch": "auto"
+    "loop": false,
+    "rewind": true,
+    "startIndex": 1
 })
 
 const tnslider2 = tns({
@@ -31,7 +31,7 @@ const tnslider2 = tns({
     "speed": 500,
     "autoWidth": true,
     "gutter": 20,
-    "edgePadding": 40,
-    "autoplayHoverPause": "false",
-    "preventScrollOnTouch": "auto"
+    "edgePadding": 50,
+    "loop": false,
+    "startIndex": 1
 })

@@ -278,10 +278,6 @@ html, body {
     display: none;
 }
 
-.card-description-hover:hover + .notable-description-width {
-    display: block;
-}
-
 .portfolio-social-button {
     color: #FFFFFF;
     transition: 0.3s;
@@ -296,7 +292,7 @@ html, body {
 }
 
 .box-title-container {
-    background-color: rgba(252, 199, 46, 1);
+    background-color: #fcc72e;
     display: inline;
     width: max-content;
 }

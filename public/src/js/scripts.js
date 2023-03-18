@@ -31,3 +31,9 @@ $(function() {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }
 });
+
+$(function() {
+    $('.work-list-slider-button').click(function() {
+        $(this).parent().find('.notable-description-width').fadeToggle();
+    });
+});
