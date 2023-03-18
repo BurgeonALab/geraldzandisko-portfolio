@@ -18,19 +18,19 @@
     <meta property="og:title" content="Gerald Zandisko • Graphic Designer, UI/UX Designer, Front-end Web Developer, and Video Editor" />
     <meta property="og:description" content="Personal website with portfolio" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.gerraour.com/assets/images/meta-cover.png" />
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/misc%2Fmeta-cover.png?alt=media&token=1ac25400-77f4-43ca-8a41-fb12665b8b90" />
     <meta property="og:image:alt" content="Gerald Zandisko • Graphic Designer, UI/UX Designer, Front-end Web Developer, and Video Editor" />
     <meta property="og:url" content="https://www.gerraour.com" />
     <meta property="og:site_name" content="Gerald Zandisko" />
     <!-- Twitters -->
     <meta name="twitter:title" content="Gerald Zandisko • Graphic Designer, UI/UX Designer, Front-end Web Developer, and Video Editor" />
     <meta name="twitter:description" content="Personal website with portfolio" />
-    <meta property="twitter:image" content="https://www.gerraour.com/assets/images/meta-cover.png" />
+    <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/misc%2Fmeta-cover.png?alt=media&token=1ac25400-77f4-43ca-8a41-fb12665b8b90" />
     <meta property="twitter:image:alt" content="Gerald Zandisko • Graphic Designer, UI/UX Designer, Front-end Web Developer, and Video Editor" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <title>Gerald Zandisko • Graphic Designer, UI/UX Designer, Front-end Web Developer, and Video Editor</title>
-    <link rel="icon" type="image/x-icon" href="https://www.gerraour.com/assets/images/favicon/gerraour.ico">
+    <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/favicon%2Fgerraour.ico?alt=media&token=052cbadc-c105-4985-a4ce-ddd53f0a15c9">
     <!-- CSS Imports -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   </head>
@@ -62,7 +62,7 @@
       <!-- Logo -->
       <div class="logo-space">
         <a href="https://www.gerraour.com">
-          <img src="assets/images/logo.png" class="logo" alt="Website Logo">
+          <img class="logo" alt="Website Logo" id="gerraour-logo">
         </a>
       </div>
       <div class="navigation">
@@ -97,7 +97,7 @@
               <div class="row">
                 <div class="d-flex flex-column image-padding-mobile">
                   <div class="image-owl-align">
-                    <img class="about-image shadow rounded about-image-responsive" src="./assets/images/the-owl.jpg" alt="The Owl">
+                    <img class="about-image shadow rounded about-image-responsive" alt="The Owl" id="the-owl-img">
                     <div class="image-link-container image-title-mobile">
                       <a href="https://www.etsy.com/shop/ColorAndLightWallArt" class="image-link" target="_blank">
                         <p class="m-0">Intense Owl by <span class="fw-bold">Brad</span></p>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="d-flex align-items-end flex-column image-padding-mobile">
                   <div class="image-tiger-align">
-                    <img class="about-image shadow rounded about-image-responsive" src="./assets/images/the-tiger.jpg" alt="The Tiger">
+                    <img class="about-image shadow rounded about-image-responsive" alt="The Tiger" id="the-tiger-img">
                     <div class="image-link-container image-title-mobile">
                       <a href="https://www.etsy.com/shop/MagicaArtPrints" class="image-link" target="_blank">
                         <p class="m-0">Wandering Tiger by <span class="fw-bold">Vincent</span></p>
@@ -141,7 +141,7 @@
           <div class="my-slider">
             <div>
               <div class="work-card-container">
-                <img src="assets/images/portfolio-cover/graphic-design.png" class="work-card-size rounded shadow" alt="Graphic Design">
+                <img id="graphic-design" class="work-card-size rounded shadow" alt="Graphic Design">
                 <div class="work-card-overlay rounded">
                   <div class="container-fluid">
                     <div class="row">
@@ -164,30 +164,7 @@
             </div>
             <div>
               <div class="work-card-container">
-                <img src="assets/images/portfolio-cover/uiux-cover.png" class="work-card-size rounded shadow" alt="UI/UX Design">
-                <div class="work-card-overlay rounded">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6 work-card-padding-mobile">
-                        <h2 class="mb-2 fw-semibold">UI/UX Design</h2>
-                        <p class="lead mb-0 fw-light">I also focus on crafting good user experiences and designing systems for web and mobile applications. As a UI/UX designer, I understand that user interfaces should look good, solve problems, and provide solutions that are simple and elegant.</p>
-                      </div>
-                      <div class="col-md-6 work-card-padding-mobile d-flex flex-column align-items-end justify-content-end">
-                        <h5 class="mb-2 fw-light">To find out more</h5>
-                        <a href="https://behance.net/gerraour" target="_blank" class="portfolio-social-button">
-                          <h1 class="mb-0">
-                            <i class="fa-brands fa-square-behance"></i>
-                          </h1>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="work-card-container">
-                <img src="assets/images/portfolio-cover/webdev-cover.png" class="work-card-size rounded shadow" alt="Web App Development">
+                <img id="webapp-dev" class="work-card-size rounded shadow" alt="Web App Development">
                 <div class="work-card-overlay rounded">
                   <div class="container-fluid">
                     <div class="row">
@@ -200,6 +177,29 @@
                         <a href="https://github.com/gerraour/" target="_blank" class="portfolio-social-button">
                           <h1 class="mb-0">
                             <i class="fa-brands fa-square-github"></i>
+                          </h1>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="work-card-container">
+                <img id="uiux-design" class="work-card-size rounded shadow" alt="UI/UX Design">
+                <div class="work-card-overlay rounded">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-6 work-card-padding-mobile">
+                        <h2 class="mb-2 fw-semibold">UI/UX Design</h2>
+                        <p class="lead mb-0 fw-light">I also focus on crafting good user experiences and designing systems for web and mobile applications. As a UI/UX designer, I understand that user interfaces should look good, solve problems, and provide solutions that are simple and elegant.</p>
+                      </div>
+                      <div class="col-md-6 work-card-padding-mobile d-flex flex-column align-items-end justify-content-end">
+                        <h5 class="mb-2 fw-light">To find out more</h5>
+                        <a href="https://behance.net/gerraour" target="_blank" class="portfolio-social-button">
+                          <h1 class="mb-0">
+                            <i class="fa-brands fa-square-behance"></i>
                           </h1>
                         </a>
                       </div>
@@ -224,7 +224,7 @@
               <div>
                 <a class="btn work-list-slider-button p-0 border-0" role="button">
                   <div class="card border-0 card-zoom-hover shadow" style="width: 18rem;">
-                    <img src="assets/images/notable-work/warung-kopi.png" class="card-img" alt="Pengembangan Aplikasi Seluler Pengelolaan Warung Kopi">
+                    <img id="warung-kopi" class="card-img" alt="Pengembangan Aplikasi Seluler Pengelolaan Warung Kopi">
                   </div>
                 </a>
                 <div class="notable-description-width">
@@ -242,7 +242,7 @@
               <div>
                 <a class="btn work-list-slider-button p-0 border-0" role="button">
                   <div class="card border-0 card-zoom-hover shadow" style="width: 18rem;">
-                    <img src="assets/images/notable-work/tropicanatic.png" class="card-img" alt="Tropicanatic">
+                    <img id="kopi-tropicanatic" class="card-img" alt="Tropicanatic">
                   </div>
                 </a>
                 <div class="notable-description-width">
@@ -257,7 +257,7 @@
               <div>
                 <a class="btn work-list-slider-button p-0 border-0" role="button">
                   <div class="card border-0 card-zoom-hover shadow" style="width: 18rem;">
-                    <img src="assets/images/notable-work/bacteria-booster.png" class="card-img" alt="Aquahelix Bacteria">
+                    <img id="bacteria-booster" class="card-img" alt="Aquahelix Bacteria">
                   </div>
                 </a>
                 <div class="notable-description-width">
@@ -272,7 +272,7 @@
               <div>
                 <a class="btn work-list-slider-button p-0 border-0" role="button">
                   <div class="card border-0 card-zoom-hover shadow" style="width: 18rem;">
-                    <img src="assets/images/notable-work/semesta-sakti.png" class="card-img" alt="Semesta Sakti">
+                    <img id="semesta-sakti" class="card-img" alt="Semesta Sakti">
                   </div>
                 </a>
                 <div class="notable-description-width">
@@ -287,7 +287,7 @@
             </div>
           </div>
           <div class="col-xl-3 p-0 notable-image-container">
-            <img src="assets/images/placeholder.png" class="notable-image shadow rounded" alt="...">
+            <img src="https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/misc%2Fplaceholder.png?alt=media&token=2c1a7db6-17a1-4482-905a-bfccd69ec361" class="notable-image shadow rounded" alt="...">
             <div class="image-link-container image-title-mobile">
               <a href="#" class="image-link">
                 <p class="m-0">Blue Peacock by <span class="fw-bold">TBD</span></p>

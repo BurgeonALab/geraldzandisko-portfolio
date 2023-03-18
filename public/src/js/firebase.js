@@ -17,6 +17,8 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage();
 
+
+// Wisdom
 const querySnapshot = await getDocs(collection(db, "wisdom"));
 const wisdomData = document.getElementsByClassName('wisdomData')[0];
 querySnapshot.forEach((doc) => {
@@ -56,3 +58,73 @@ querySnapshot.forEach((doc) => {
     let captionText = document.createTextNode(doc.data().artist_name);
     wisdomCaption.appendChild(captionText);
 })
+
+// Logo
+getDownloadURL(ref(storage, 'logo/logo.png'))
+    .then((url) => {
+        const img = document.getElementById('gerraour-logo');
+        img.setAttribute('src', url);
+    })
+
+// The Owl
+getDownloadURL(ref(storage, 'character/the-owl.jpg'))
+    .then((url) => {
+        const img = document.getElementById('the-owl-img');
+        img.setAttribute('src', url);
+    })
+
+// The Tiger
+getDownloadURL(ref(storage, 'character/the-tiger.jpg'))
+    .then((url) => {
+        const img = document.getElementById('the-tiger-img');
+        img.setAttribute('src', url);
+    })
+
+// Web App
+getDownloadURL(ref(storage, 'portfolio-cover/webdev-cover.png'))
+    .then((url) => {
+        const img = document.getElementById('webapp-dev');
+        img.setAttribute('src', url);
+    })
+
+// UI UX
+getDownloadURL(ref(storage, 'portfolio-cover/uiux-cover.png'))
+    .then((url) => {
+        const img = document.getElementById('uiux-design');
+        img.setAttribute('src', url);
+    })
+
+// Graphic Design
+getDownloadURL(ref(storage, 'portfolio-cover/graphic-design.png'))
+    .then((url) => {
+        const img = document.getElementById('graphic-design');
+        img.setAttribute('src', url);
+    })
+
+// Bacteria Booster
+getDownloadURL(ref(storage, 'notable-work/bacteria-booster.png'))
+    .then((url) => {
+        const img = document.getElementById('bacteria-booster');
+        img.setAttribute('src', url);
+    })
+
+// Semesta Sakti
+getDownloadURL(ref(storage, 'notable-work/semesta-sakti.png'))
+    .then((url) => {
+        const img = document.getElementById('semesta-sakti');
+        img.setAttribute('src', url);
+    })
+
+// Tropicanatic
+getDownloadURL(ref(storage, 'notable-work/tropicanatic.png'))
+    .then((url) => {
+        const img = document.getElementById('kopi-tropicanatic');
+        img.setAttribute('src', url);
+    })
+
+// Warung Kopi
+getDownloadURL(ref(storage, 'notable-work/warung-kopi.png'))
+    .then((url) => {
+        const img = document.getElementById('warung-kopi');
+        img.setAttribute('src', url);
+    })

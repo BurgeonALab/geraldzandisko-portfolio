@@ -33,5 +33,5 @@ const tnslider2 = tns({
     "gutter": 20,
     "edgePadding": 50,
     "loop": false,
-    "startIndex": 1
+    "startIndex": 0
 })
