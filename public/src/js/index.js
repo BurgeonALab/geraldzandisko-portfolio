@@ -7,8 +7,8 @@ import $ from 'jquery'
 import * as bootstrap from 'bootstrap'
 import { tns } from "tiny-slider"
 
-import '../js/firebase'
-import '../js/scripts'
+import './firebase'
+import './scripts'
 
 const tnslider1 = tns({
     "container": ".my-slider",
@@ -33,5 +33,6 @@ const tnslider2 = tns({
     "gutter": 20,
     "edgePadding": 50,
     "loop": false,
+    "rewind": true,
     "startIndex": 0
 })

@@ -30,8 +30,20 @@ html, body {
     color: #000000;
 }
 
-.social-link.nav-link:hover {
-    color: #fcc72e;
+.social-link.nav-link.behance:hover {
+    color: #053EFF;
+}
+
+.social-link.nav-link.linkedin:hover {
+    color: #0072B1;
+}
+
+.social-link.nav-link.github:hover {
+    color: #6E5494;
+}
+
+.social-link.nav-link.instagram:hover {
+    color: #FD1D1D;
 }
 
 .navbar-link:hover {
@@ -163,8 +175,20 @@ html, body {
     transition: 0.3s;
 }
 
-.social-media-footer:hover {
-    color: #fcc72e;
+.social-media-footer.behance:hover {
+    color: #053EFF;
+}
+
+.social-media-footer.linkedin:hover {
+    color: #0072B1;
+}
+
+.social-media-footer.github:hover {
+    color: #6E5494;
+}
+
+.social-media-footer.instagram:hover {
+    color: #FD1D1D;
 }
 
 .social-media-footer-margin {
@@ -173,7 +197,6 @@ html, body {
 }
 
 .privacy-terms {
-    display: block;
     text-decoration: none;
     color: #000000;
     transition: 0.3s;

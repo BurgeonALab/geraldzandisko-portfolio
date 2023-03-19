@@ -20,7 +20,7 @@ const storage = getStorage();
 
 // Wisdom
 const querySnapshot = await getDocs(collection(db, "wisdom"));
-const wisdomData = document.getElementsByClassName('wisdomData')[0];
+const wisdomData = document.getElementById('wisdomData');
 querySnapshot.forEach((doc) => {
     let itemH6 = document.createElement('H6');
     itemH6.classList.add('fw-bold', 'italic-font');
