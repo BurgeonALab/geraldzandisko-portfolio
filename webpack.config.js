@@ -12,10 +12,13 @@ module.exports = {
             jQuery: 'jquery'
         }),
     ],
-    entry: './public/src/js/index.js',
+    entry: {
+        home: './public/src/js/home.js',
+        policies: './public/src/js/policies.js',
+    },
     output: {
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, './public/dist'),
-        filename: 'bundle.js'
     },
     performance: {
         hints: false,
