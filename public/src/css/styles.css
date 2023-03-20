@@ -323,3 +323,8 @@ html, body {
 .box-title-container p {
     color: #FFFFFF;
 }
+
+.work-list-slider-card {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+    border: 0 !important;
+}
