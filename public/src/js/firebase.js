@@ -67,16 +67,23 @@ getDownloadURL(ref(storage, 'logo/logo.png'))
     })
 
 // The Owl
-getDownloadURL(ref(storage, 'character/the-owl.jpg'))
+getDownloadURL(ref(storage, 'character/the-owl-compressed.jpg'))
     .then((url) => {
         const img = document.getElementById('the-owl-img');
         img.setAttribute('src', url);
     })
 
 // The Tiger
-getDownloadURL(ref(storage, 'character/the-tiger.jpg'))
+getDownloadURL(ref(storage, 'character/the-tiger-compressed.jpg'))
     .then((url) => {
         const img = document.getElementById('the-tiger-img');
+        img.setAttribute('src', url);
+    })
+
+// Blue Peacock
+getDownloadURL(ref(storage, 'character/blue-peacock-compressed.jpg'))
+    .then((url) => {
+        const img = document.getElementById('blue-peacock');
         img.setAttribute('src', url);
     })
 
