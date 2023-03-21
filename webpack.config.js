@@ -15,6 +15,7 @@ module.exports = {
     entry: {
         home: './public/src/js/home.js',
         policies: './public/src/js/policies.js',
+        notfound: './public/src/js/notfound.js',
     },
     output: {
         filename: '[name].bundle.js',

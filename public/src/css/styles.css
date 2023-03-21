@@ -328,3 +328,27 @@ html, body {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
     border: 0 !important;
 }
+
+.err404-logo {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.err404-center {
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.err404-link {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.err404-link:hover {
+    color: #fcc72e;
+    text-decoration: none;
+    transition: 0.3s;
+}
