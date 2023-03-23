@@ -43,21 +43,12 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .image-link-footer-container {
-        margin-top: 50px;
-    }
     .work-card-padding-mobile {
         padding: 32px !important;
-    }
-    .footer-gradient {
-        background-image: linear-gradient(to right, rgba(161, 155, 115, 0.5) 0%, rgba(161 , 155, 115, 1) 40%);
     }
 }
 
 @media (max-width: 991.98px) {
-    .contact-info-margin-mobile {
-        margin-bottom: 48px !important;
-    }
     .notable-header-container-mobile {
         max-width: 720px;
     }
@@ -66,13 +57,6 @@
     }
     .work-card-padding-mobile p {
         display: none;
-    }
-    .footer {
-        background-size: cover;
-        background-position-x: 0px;
-    }
-    .footer-gradient {
-        background-image: linear-gradient(rgba(161, 155, 115, 0.5) 0%, rgba(161 , 155, 115, 1) 60%);
     }
     .notable-image {
         object-position: 0px -130px;
@@ -118,7 +102,8 @@
         display: none;
     }
     .notable-image {
-        object-position: 0px -50px;
+        height: 450px;
+        object-position: 0px 0px;
     }
 }
 
@@ -129,16 +114,7 @@
     .contact-info-margin-mobile {
         margin-bottom: 16px !important;
     }
-    .footer-gradient {
-        padding: 60px;
-    }
-    .footer-mobile h1 {
-        text-align: center;
-    }
     .footer-mobile p {
-        text-align: center !important;
-    }
-    .footer-mobile h6 {
         text-align: center !important;
     }
     .contact-footer {
@@ -168,9 +144,6 @@
     .social-media-footer-margin a {
         margin-bottom: 16px;
     }
-    .policies-mobile {
-        margin-bottom: 0px !important;
-    }
     .extra-margin-mobile {
         margin-top: 16px;
     }
@@ -185,17 +158,17 @@
         font-size: 32px;
     }
     .link-footer-justify {
+        justify-content: center;
+    }
+    .copyrights-misc {
+        margin-top: 0px;
         justify-content: center !important;
     }
-    .footer {
-        background-position-y: 0px;
-        background-position-x: -170px;
+    .copyrights-misc-mobile {
+        margin-bottom: 16px;
     }
-}
-
-@media (max-width: 389.98px) {
-    .footer {
-        background-position-x: -230px;
+    .privacy-terms {
+        margin-right: 16px;
     }
 }
 

@@ -24,16 +24,8 @@ html, body {
 
 .footer {
     flex-shrink: 0;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/character%2Fmonarch-of-the-glen-stag-compressed.jpg?alt=media&token=bba66225-7704-4d6f-a608-6ab6c7de3186);
-    background-repeat: no-repeat;
-    background-position-y: -200px;
-    background-position-x: -200px;
-    position: relative;
-}
-
-.footer-gradient {
-    background-image: linear-gradient(to right, rgba(161, 155, 115, 0.5) 0%, rgba(161 , 155, 115, 1) 30%);
-    padding: 48px;
+    border-top-right-radius: var(--bs-border-radius) !important;
+    border-top-left-radius: var(--bs-border-radius) !important;
 }
 
 .social-link.nav-link {
@@ -102,10 +94,6 @@ html, body {
     color: #fcc72e;
 }
 
-.image-link-footer-align {
-    text-align: right;
-}
-
 .image-link p {
     font-size: 14px;
 }
@@ -163,21 +151,17 @@ html, body {
 .contact-footer {
     text-decoration: none;
     transition: 0.3s;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .contact-footer:hover {
     color: #fcc72e;
 }
 
-.contact-footer-inline {
-    display: inline;
-}
-
 .social-media-footer {
     display: inline-block;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000000;
     transition: 0.3s;
 }
 
@@ -204,7 +188,7 @@ html, body {
 
 .privacy-terms {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000000;
     transition: 0.3s;
 }
 
@@ -220,7 +204,7 @@ html, body {
     display: block;
     text-decoration: none;
     margin-bottom: 8px;
-    color: #FFFFFF;
+    color: #000000;
     transition: 0.3s;
 }
 
@@ -234,7 +218,7 @@ html, body {
 
 .notable-image {
     width: 100%;
-    height: 100%;
+    height: 480px;
     object-fit: cover;
 }
 
@@ -357,4 +341,8 @@ html, body {
     color: #fcc72e;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.copyrights-misc {
+    margin-top: 48px;
 }
