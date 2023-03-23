@@ -296,8 +296,12 @@ html, body {
     transition: 0.3s;
 }
 
-.portfolio-social-button:hover {
-    color: #fcc72e;
+.portfolio-social-button.github:hover {
+    color: #6E5494;
+}
+
+.portfolio-social-button.behance:hover {
+    color: #053EFF;
 }
 
 .work-card-padding-mobile {
