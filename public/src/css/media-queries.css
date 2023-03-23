@@ -46,6 +46,10 @@
     .work-card-padding-mobile {
         padding: 32px !important;
     }
+    .footer-stag-image {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -60,6 +64,16 @@
     }
     .notable-image {
         object-position: 0px -130px;
+    }
+    .footer-stag-image-box {
+        margin-bottom: 3rem;
+    }
+    .copyrights-misc {
+        text-align: center;
+        justify-content: center !important;
+    }
+    .privacy-terms {
+        margin-right: 16px;
     }
 }
 
@@ -162,13 +176,9 @@
     }
     .copyrights-misc {
         margin-top: 0px;
-        justify-content: center !important;
     }
     .copyrights-misc-mobile {
         margin-bottom: 16px;
-    }
-    .privacy-terms {
-        margin-right: 16px;
     }
 }
 

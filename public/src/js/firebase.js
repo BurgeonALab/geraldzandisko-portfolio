@@ -87,6 +87,13 @@ getDownloadURL(ref(storage, 'character/blue-peacock-compressed.jpg'))
         img.setAttribute('src', url);
     })
 
+// Monarch of the Glen Stag
+getDownloadURL(ref(storage, 'character/monarch-of-the-glen-stag-compressed.jpg'))
+    .then((url) => {
+        const img = document.getElementById('monarch-of-the-glen-stag');
+        img.setAttribute('src', url);
+    })
+
 // Web App
 getDownloadURL(ref(storage, 'portfolio-cover/webdev-cover.png'))
     .then((url) => {
