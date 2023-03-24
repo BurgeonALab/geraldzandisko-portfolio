@@ -31,12 +31,12 @@ $(function() {
                 itemH6.appendChild(itemH6Text);
                 wisdomData.appendChild(itemH6);
 
-                let itemH1 = document.createElement('H1');
-                itemH1.classList.add('fw-bold');
-                let itemH1Text = document.createTextNode(doc.data().song_name);
+                let itemH2 = document.createElement('H2');
+                itemH2.classList.add('fw-bold');
+                let itemH2Text = document.createTextNode(doc.data().song_name);
     
-                itemH1.appendChild(itemH1Text);
-                wisdomData.appendChild(itemH1);
+                itemH2.appendChild(itemH2Text);
+                wisdomData.appendChild(itemH2);
 
                 let wisdomFigure = document.createElement('FIGURE');
                 wisdomFigure.classList.add('mb-0');
@@ -153,7 +153,7 @@ $(function() {
 
 // Logo
 $(function() {
-    if($('body').is('.error-page-404')) {
+    if($('body').is('.error-page-404, .home-page')) {
         getDownloadURL(ref(storage, 'github-readme-logo/github-logo-light.png'))
             .then((url) => {
                 const img = document.getElementById('404-logo');

@@ -25,15 +25,15 @@
         max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 12px !important;
-        padding-right: 12px !important;
+        padding-left: 48px !important;
+        padding-right: 48px !important;
     }
     .notable-work-container {
         margin-bottom: 100px;
     }
     .notable-image {
-        height: 250px;
-        object-position: 0px -180px;
+        height: 300px;
+        object-position: 0px -160px;
     }
     .notable-work-container-mobile {
         max-width: 100%;
@@ -66,7 +66,8 @@
         display: none;
     }
     .notable-image {
-        object-position: 0px -130px;
+        height: 400px;
+        object-position: 0px -110px;
     }
     .footer-stag-image-box {
         margin-bottom: 3rem;
@@ -115,15 +116,20 @@
     }
     .notable-image-container {
         max-width: 540px;
-        padding-left: 60px !important;
-        padding-right: 60px !important;
     }
     .work-card-padding-mobile h5 {
         display: none;
     }
     .notable-image {
-        height: 450px;
+        height: 500px;
         object-position: 0px 0px;
+    }
+    .navbar-logo-container.show {
+        display: none;
+    }
+    .gerraour-nav.right {
+        margin-right: auto !important;
+        padding-right: 0px;
     }
 }
 
@@ -131,15 +137,14 @@
     .work-card-container {
         height: 200px;
     }
-    .contact-info-margin-mobile {
-        margin-bottom: 16px !important;
-    }
     .footer-mobile p {
         text-align: center !important;
     }
     .contact-footer {
         display: flex !important;
         justify-content: center;
+        margin-right: 0px !important;
+        margin-bottom: 16px;
     }
     .footer-mobile a {
         text-align: center;
@@ -185,6 +190,21 @@
     }
     .copyrights-misc-mobile {
         margin-bottom: 16px;
+    }
+    .social-media {
+        margin-left: 1rem !important;
+    }
+}
+
+@media (max-width: 415.98px) {
+    .notable-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 389.98px) {
+    .notable-image {
+        height: 400px;
     }
 }
 

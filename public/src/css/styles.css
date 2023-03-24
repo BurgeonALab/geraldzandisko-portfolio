@@ -154,8 +154,12 @@ html, body {
     color: #000000;
 }
 
-.contact-footer:hover {
-    color: #fcc72e;
+.contact-footer.whatsapp:hover {
+    color: #25D366;
+}
+
+.contact-footer.email:hover {
+    color: #34B7F1;
 }
 
 .social-media-footer {
@@ -194,10 +198,6 @@ html, body {
 
 .privacy-terms:hover {
     color: #fcc72e;
-}
-
-.contact-info-margin {
-    margin-bottom: 16px;
 }
 
 .link-style {
@@ -255,6 +255,29 @@ html, body {
     transition: 0.3s ease;
 }
 
+.gerraour-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gerraour-nav.right {
+    margin-right: 0px !important;
+    padding-right: 48px;
+}
+
+.navbar-logo-container {
+    display: none;
+}
+
+.navbar-logo-container.show {
+    display: block;
+    padding-left: 48px;
+}
+
+.navbar-logo {
+    height: 30px;
+}
+
 .card-zoom-hover {
     overflow: hidden;
 }
@@ -280,8 +303,12 @@ html, body {
     border-radius: var(--bs-border-radius) !important;
 }
 
-.notable-social-button:hover {
-    color: #fcc72e;
+.notable-social-button.github:hover {
+    color: #6E5494;
+}
+
+.notable-social-button.behance:hover {
+    color: #053EFF;
 }
 
 .notable-description-width {

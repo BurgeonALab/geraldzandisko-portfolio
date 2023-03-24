@@ -1,8 +1,12 @@
 jQuery(window).scroll(function() {
     if (jQuery(document).scrollTop() > 131) {
         jQuery('.navigation').addClass('shadow-nav');
+        jQuery('.navbar-logo-container').addClass('show');
+        jQuery('.gerraour-nav').addClass('right');
     } else {
         jQuery('.navigation').removeClass('shadow-nav');
+        jQuery('.navbar-logo-container').removeClass('show');
+        jQuery('.gerraour-nav').removeClass('right');
     }
 })
 
