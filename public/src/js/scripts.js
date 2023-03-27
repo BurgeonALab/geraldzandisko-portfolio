@@ -3,10 +3,12 @@ jQuery(window).scroll(function() {
         jQuery('.navigation').addClass('shadow-nav');
         jQuery('.navbar-logo-container').addClass('show');
         jQuery('.gerraour-nav').addClass('right');
+        jQuery('.gerraour-nav').removeClass('fade-in-nav');
     } else {
         jQuery('.navigation').removeClass('shadow-nav');
         jQuery('.navbar-logo-container').removeClass('show');
         jQuery('.gerraour-nav').removeClass('right');
+        jQuery('.gerraour-nav').addClass('fade-in-nav');
     }
 })
 

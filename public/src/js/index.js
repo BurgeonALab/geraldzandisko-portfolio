@@ -1,6 +1,7 @@
 // CSSs, SCSSs, JSs
-import '../scss/styles.scss'
 import '../../src/css/styles.css';
+import '../scss/styles.scss'
+import '../../src/css/animations.css';
 import '../../src/css/media-queries.css';
 
 import $ from 'jquery'

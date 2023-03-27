@@ -250,11 +250,6 @@ html, body {
     background-color: #FFFFFF;
 }
 
-.navigation.shadow-nav {
-    box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15);
-    transition: 0.3s ease;
-}
-
 .gerraour-nav {
     margin-left: auto;
     margin-right: auto;
@@ -276,18 +271,6 @@ html, body {
 
 .navbar-logo {
     height: 30px;
-}
-
-.card-zoom-hover {
-    overflow: hidden;
-}
-
-.card-zoom-hover img {
-    transition: transform .5s ease;
-}
-
-.card-zoom-hover:hover img {
-    transform: scale(1.2);
 }
 
 .notable-social-button {
@@ -349,6 +332,15 @@ html, body {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
     border: 0 !important;
     width: 18rem;
+    overflow: hidden;
+}
+
+.work-list-slider-card img {
+    transition: transform .5s ease;
+}
+
+.work-list-slider-card:hover img {
+    transform: scale(1.2);
 }
 
 .err404-logo {
