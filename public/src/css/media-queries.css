@@ -131,6 +131,13 @@
         margin-right: auto !important;
         padding-right: 0px;
     }
+    .privacy-terms-page .col-md-3 {
+        display: none;
+    }
+    .privacy-terms-page .col-md-9 {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
 }
 
 @media (max-width: 575.98px) {
