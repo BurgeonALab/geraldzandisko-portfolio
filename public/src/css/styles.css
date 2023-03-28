@@ -379,7 +379,7 @@ html, body {
 
 .policies-content {
     overflow-y: scroll !important;
-    height: 1024px;
+    height: 768px;
 }
 
 #policies-navbar .nav-link {
@@ -399,4 +399,21 @@ html, body {
     font-weight: 700;
     color: #000000;
     background-color: transparent;
+}
+
+.policies-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.policies-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.policies-content::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 5px;
+}
+
+.policies-content::-webkit-scrollbar-thumb:hover {
+    background: #555555;
 }
