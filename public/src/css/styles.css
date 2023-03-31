@@ -49,6 +49,7 @@ html, body {
 }
 
 .navbar-link:hover {
+    cursor: pointer;
     color: #fcc72e !important;
 }
 
@@ -274,6 +275,10 @@ html, body {
 .navbar-logo {
     height: 30px;
     width: auto;
+}
+
+.navbar-logo {
+    cursor: pointer;
 }
 
 .notable-social-button {

@@ -1,6 +1,6 @@
 @media (max-width: 1199.98px) {
     .image-owl-align {
-        margin-top: 0px;
+        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -137,6 +137,9 @@
     .privacy-terms-page .col-md-9 {
         padding-left: 60px !important;
         padding-right: 60px !important;
+    }
+    .image-owl-align {
+        margin-top: 0px;
     }
 }
 

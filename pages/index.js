@@ -65,6 +65,7 @@ function Wisdom() {
 											className="about-image shadow rounded about-image-responsive"
 											alt="The Tiger"
 											src={TheTiger}
+											priority
 										/>
 										<div className="image-link-container image-title-mobile">
 											<a href="https://www.etsy.com/shop/MagicaArtPrints" className="image-link" target="_blank">
