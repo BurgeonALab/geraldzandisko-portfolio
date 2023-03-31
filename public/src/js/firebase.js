@@ -17,57 +17,49 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage();
 
-
-// Logo
-getDownloadURL(ref(storage, 'logo/logo.png'))
-.then((url) => {
-    const img = document.getElementById('gerraour-logo');
-    img.setAttribute('src', url);
-})
-
 // Wisdom
 const querySnapshot = await getDocs(collection(db, "wisdom"));
 $(function() {
     if($('body').is('.home-page')) {
         const wisdomData = document.getElementById('wisdomData');
-            querySnapshot.forEach((doc) => {
-                let itemH6 = document.createElement('H6');
-                itemH6.classList.add('fw-bold', 'italic-font');
-                let itemH6Text = document.createTextNode(doc.data().album_name);
+        querySnapshot.forEach((doc) => {
+            let itemH6 = document.createElement('H6');
+            itemH6.classList.add('fw-bold', 'italic-font');
+            let itemH6Text = document.createTextNode(doc.data().album_name);
     
-                itemH6.appendChild(itemH6Text);
-                wisdomData.appendChild(itemH6);
+            itemH6.appendChild(itemH6Text);
+            wisdomData.appendChild(itemH6);
 
-                let itemH2 = document.createElement('H2');
-                itemH2.classList.add('fw-bold');
-                let itemH2Text = document.createTextNode(doc.data().song_name);
+            let itemH2 = document.createElement('H2');
+            itemH2.classList.add('fw-bold');
+            let itemH2Text = document.createTextNode(doc.data().song_name);
     
-                itemH2.appendChild(itemH2Text);
-                wisdomData.appendChild(itemH2);
+            itemH2.appendChild(itemH2Text);
+            wisdomData.appendChild(itemH2);
 
-                let wisdomFigure = document.createElement('FIGURE');
-                wisdomFigure.classList.add('mb-0');
-                wisdomData.appendChild(wisdomFigure);
+            let wisdomFigure = document.createElement('FIGURE');
+            wisdomFigure.classList.add('mb-0');
+            wisdomData.appendChild(wisdomFigure);
 
-                let wisdomQuote = document.createElement('BLOCKQUOTE');
-                wisdomQuote.classList.add('blockquote');
-                wisdomFigure.appendChild(wisdomQuote)
+            let wisdomQuote = document.createElement('BLOCKQUOTE');
+            wisdomQuote.classList.add('blockquote');
+            wisdomFigure.appendChild(wisdomQuote)
 
-                let itemP = document.createElement('P');
-                let itemPText = document.createTextNode(doc.data().quote);
-                itemP.classList.add('lead');
+            let itemP = document.createElement('P');
+            let itemPText = document.createTextNode(doc.data().quote);
+            itemP.classList.add('lead');
 
-                itemP.appendChild(itemPText);
-                wisdomQuote.appendChild(itemP);
+            itemP.appendChild(itemPText);
+            wisdomQuote.appendChild(itemP);
 
-                let wisdomCaption = document.createElement('FIGCAPTION');
-                wisdomCaption.classList.add('blockquote-footer', 'fw-bold' , 'mb-0');
-                wisdomFigure.appendChild(wisdomCaption);
+            let wisdomCaption = document.createElement('FIGCAPTION');
+            wisdomCaption.classList.add('blockquote-footer', 'fw-bold' , 'mb-0');
+            wisdomFigure.appendChild(wisdomCaption);
 
-                let captionText = document.createTextNode(doc.data().artist_name);
-                wisdomCaption.appendChild(captionText);
-            })
-        }
+            let captionText = document.createTextNode(doc.data().artist_name);
+            wisdomCaption.appendChild(captionText);
+        })
+    }
 })
 
 $(function() {
