@@ -13,11 +13,18 @@ function scrollToTop() {
 }
 
 function HeaderNav() {
-  const aboutSection = () => {
-    const element = document.getElementById('about_section')
-    if (element) {
+  const AboutClick = () => {
+    const about = document.getElementById('about_section')
+    if (about) {
       history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
-      element.scrollIntoView({ behavior: 'smooth' })
+      about.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+  const WorkClick = () => {
+    const work = document.getElementById('work_section')
+    if (work) {
+      history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+      work.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -41,10 +48,10 @@ function HeaderNav() {
           </a>
           <ul className={scroll ? "navbar-nav gerraour-nav right" : "navbar-nav gerraour-nav fade-in-nav"}>
             <li className="nav-item">
-              <a className="nav-link fw-semibold navbar-link" onClick={aboutSection}>About</a>
+              <a className="nav-link fw-semibold navbar-link" onClick={AboutClick}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-semibold navbar-link" href="#work_section">Work</a>
+              <a className="nav-link fw-semibold navbar-link" onClick={WorkClick}>Work</a>
             </li>
             <li className="nav-item">
               <a className="nav-link fw-semibold navbar-link" href="#contact_section">Contact</a>

@@ -10,6 +10,8 @@ const Social = dynamic(() => import('../components/HeaderSocial'))
 const Logo = dynamic(() => import('../components/HeaderLogo'))
 const Nav = dynamic(() => import('../components/HeaderNav'))
 
+const Portfolio = dynamic(() => import('../components/Portfolio'), {ssr: false})
+
 function Header() {
 	return (
 		<>
@@ -23,9 +25,9 @@ function Header() {
 function Wisdom() {
 	return (
 		<>
-			<div className="container">
+			<div className="container" id="about_section">
 				<div className="row">
-					<div className="col-md d-flex flex-column justify-content-center" id="about_section">
+					<div className="col-md d-flex flex-column justify-content-center">
 						<div className="quote-mobile">
 							<div>
 								<div id="wisdomData">
@@ -92,6 +94,7 @@ function HomePage() {
 				</Head>
         <Header />
 				<Wisdom />
+				<Portfolio />
 			</>
     )
 }

@@ -315,11 +315,11 @@ html, body {
 }
 
 .portfolio-social-button.github:hover {
-    color: #6E5494;
+    color: #6E5494 !important;
 }
 
 .portfolio-social-button.behance:hover {
-    color: #053EFF;
+    color: #053EFF !important;
 }
 
 .work-card-padding-mobile {
