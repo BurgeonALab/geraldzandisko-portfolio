@@ -5,7 +5,10 @@
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "link": "next link"
   },
   "keywords": [],
   "author": "Gerald Zandisko, Ria Agustin",
@@ -22,10 +25,17 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "firebase": "^9.17.2",
     "jquery": "^3.6.4",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tiny-slider": "^2.9.4"
   }
 }

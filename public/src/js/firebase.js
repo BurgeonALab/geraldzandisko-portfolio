@@ -18,6 +18,13 @@ const db = getFirestore(app);
 const storage = getStorage();
 
 
+// Logo
+getDownloadURL(ref(storage, 'logo/logo.png'))
+.then((url) => {
+    const img = document.getElementById('gerraour-logo');
+    img.setAttribute('src', url);
+})
+
 // Wisdom
 const querySnapshot = await getDocs(collection(db, "wisdom"));
 $(function() {
