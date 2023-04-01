@@ -41,7 +41,7 @@ export default function Custom404() {
 				<link rel="manifest" href="/favicon/site.webmanifest" />
 				<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
         {/* Metas */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

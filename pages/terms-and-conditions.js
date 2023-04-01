@@ -15,7 +15,7 @@ function TermsConditions() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="theme-color" content="#ffffff" />
-				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="robots" content="index, follow" />
     		<meta name="googlebot" content="follow" />
 				<link rel="canoncial" href="https://www.gerraour.com/terms-and-conditions" />

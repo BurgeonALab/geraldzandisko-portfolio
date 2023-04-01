@@ -25,29 +25,16 @@ function Header() {
 	)
 }
 
-function Wisdom() {
-	const [data, setData] = useState();
-
-	useEffect(() => {
-		async function fetchData() {
-			const res = await fetch('https://v1.nocodeapi.com/gerraour/fbsdk/kHbCNnTBgSpcboNt/firestore/allDocuments?collectionName=wisdom',
-				{
-					method: 'GET',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					redirect: 'follow',
-				},
-			);
-			const data = await res.json();
-			setData(data)
-		}
-		fetchData()
-	}, [])
-	
-	if (!data) {
-		return (<div style={{ display: "none" }}>Loading...</div>)
+const data  = [
+	{
+		"album_name": "Entropy",
+		"song_name": "Wild Heart",
+		"quote": "Callus fingers from your strings, trying to make the guitar sing and once again release the joy it brings. But even with the old notes played, the strings are rusted and slightly frayed so I can't get it sounding quite the same.",
+		"artist_name": "The Collection",
 	}
+]
+
+function Wisdom() {
 	return (
 		<>
 			<div className="container" id="about_section">
@@ -59,13 +46,13 @@ function Wisdom() {
 									{data.map((wisdom, index) => {
 										return (
 											<div key={index}>
-												<h6 className="fw-bold italic-font">{wisdom._fieldsProto.album_name.stringValue}</h6>
-												<h2 className="fw-semibold">{wisdom._fieldsProto.song_name.stringValue}</h2>
+												<h6 className="fw-bold italic-font">{wisdom.album_name}</h6>
+												<h2 className="fw-semibold">{wisdom.song_name}</h2>
 												<figure className="mb-0">
 													<blockquote className="blockquote">
-														<p className="lead">{wisdom._fieldsProto.quote.stringValue}</p>
+														<p className="lead">{wisdom.quote}</p>
 													</blockquote>
-													<figcaption className="blockquote-footer fw-bold mb-0">{wisdom._fieldsProto.artist_name.stringValue}</figcaption>
+													<figcaption className="blockquote-footer fw-bold mb-0">{wisdom.artist_name}</figcaption>
 												</figure>
 											</div>
 										)
@@ -131,7 +118,7 @@ function HomePage() {
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="msapplication-TileColor" content="#da532c" />
 					<meta name="theme-color" content="#ffffff" />
-					<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 					<meta name="robots" content="index, follow" />
     			<meta name="googlebot" content="follow" />
 					<link rel="canoncial" href="https://www.gerraour.com" />
