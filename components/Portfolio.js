@@ -49,7 +49,6 @@ const workportfolio = [
     }
   }
 ]
-console.log(workportfolio)
 
 function Portfolio() {
   return (
@@ -61,7 +60,7 @@ function Portfolio() {
               <div className="box-title-container d-flex py-2 px-3 flex-row mb-3">
                 <p className="mb-0 fw-bold">PORTFOLIO</p>
               </div>
-              <h1 className="fw-semibold mb-2">Gerald Zandisko</h1>
+              <h1 className="fw-bold mb-2">Gerald Zandisko</h1>
               <h2 className="fw-normal mb-2">Designer</h2>
               <p className="lead mb-0">I mostly design logos, social media posts, and magazines. I'm also fairly experienced in web design and front-end web development. I enjoy exploring complex problems in search of delightful inspirations.</p>
             </div>

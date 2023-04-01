@@ -27,6 +27,13 @@ function HeaderNav() {
       work.scrollIntoView({ behavior: 'smooth' })
     }
   }
+  const ContactClick = () => {
+    const contact = document.getElementById('contact_section')
+    if (contact) {
+      history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+      contact.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   const [scroll, setScroll] = useState(false)
   useEffect(() => {
@@ -44,6 +51,7 @@ function HeaderNav() {
               className="navbar-logo"
               alt="Gerald Zandisko Small Logo"
               src={HeaderlogoPic}
+              priority
             />
           </a>
           <ul className={scroll ? "navbar-nav gerraour-nav right" : "navbar-nav gerraour-nav fade-in-nav"}>
@@ -54,7 +62,7 @@ function HeaderNav() {
               <a className="nav-link fw-semibold navbar-link" onClick={WorkClick}>Work</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-semibold navbar-link" href="#contact_section">Contact</a>
+              <a className="nav-link fw-semibold navbar-link" onClick={ContactClick}>Contact</a>
             </li>
           </ul>
         </nav>

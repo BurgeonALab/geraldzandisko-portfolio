@@ -70,11 +70,6 @@ html, body {
     height: auto;
 }
 
-.image-link-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .image-link {
     text-decoration: none;
     color: #7E7E7E;
@@ -213,16 +208,11 @@ html, body {
 
 .link-style:hover {
     color: #fcc72e;
+    cursor: pointer;
 }
 
 .non-link-style {
     margin-bottom: 8px;
-}
-
-.notable-image {
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
 }
 
 .work-list-link {
@@ -234,15 +224,6 @@ html, body {
 
 .work-list-link:hover {
     color: #fcc72e;
-}
-
-.notable-work-container {
-    margin-bottom: 150px;
-}
-
-.notable-header-container {
-    padding-left: 12px;
-    padding-right: 60px;
 }
 
 .navigation {
@@ -281,34 +262,6 @@ html, body {
     cursor: pointer;
 }
 
-.notable-social-button {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background-color: #000000;
-    width: 40px;
-    height: 40px;
-    transition: 0.3s ease;
-    border-radius: var(--bs-border-radius) !important;
-}
-
-.notable-social-button.github:hover {
-    color: #6E5494;
-}
-
-.notable-social-button.behance:hover {
-    color: #053EFF;
-}
-
-.notable-description-width {
-    width: 18rem;
-    display: flex;
-    flex-direction: row;
-    display: none;
-}
-
 .portfolio-social-button {
     color: #FFFFFF;
     transition: 0.3s ease;
@@ -334,21 +287,6 @@ html, body {
 
 .box-title-container p {
     color: #FFFFFF;
-}
-
-.work-list-slider-card {
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
-    border: 0 !important;
-    width: 18rem;
-    overflow: hidden;
-}
-
-.work-list-slider-card img {
-    transition: transform 0.3s ease;
-}
-
-.work-list-slider-card:hover img {
-    transform: scale(1.2);
 }
 
 .err404-logo {
@@ -381,6 +319,7 @@ html, body {
 
 .footer-stag-image {
     width: 100%;
+    height: auto;
     margin-left: -100px;
     margin-top: -100px;
 }
@@ -424,4 +363,37 @@ html, body {
 
 .policies-content::-webkit-scrollbar-thumb:hover {
     background: #555555;
+}
+
+.image-link-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notable-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.notable-image-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: var(--bs-border-radius) !important;
+    border-top-left-radius: var(--bs-border-radius) !important;
+}
+
+.notable-social-link {
+    font-size: 32px;
+    transition: 0.5s ease;
+    color: #000000;
+}
+
+.notable-social-link.behance:hover {
+    color: #053EFF;
+}
+
+.notable-social-link.github:hover {
+    color: #6E5494;
 }

@@ -10,8 +10,10 @@ import { useState, useEffect } from "react"
 const Social = dynamic(() => import('../components/HeaderSocial'))
 const Logo = dynamic(() => import('../components/HeaderLogo'))
 const Nav = dynamic(() => import('../components/HeaderNav'))
+const Footer = dynamic(() => import('../components/Footer'))
 
 const Portfolio = dynamic(() => import('../components/Portfolio'), {ssr: false})
+const NotableWork = dynamic(() => import('../components/NotableWork'), {ssr: false})
 
 function Header() {
 	return (
@@ -58,7 +60,7 @@ function Wisdom() {
 										return (
 											<div key={index}>
 												<h6 className="fw-bold italic-font">{wisdom._fieldsProto.album_name.stringValue}</h6>
-												<h2 className="fw-bold">{wisdom._fieldsProto.song_name.stringValue}</h2>
+												<h2 className="fw-semibold">{wisdom._fieldsProto.song_name.stringValue}</h2>
 												<figure className="mb-0">
 													<blockquote className="blockquote">
 														<p className="lead">{wisdom._fieldsProto.quote.stringValue}</p>
@@ -124,6 +126,8 @@ function HomePage() {
         <Header />
 				<Wisdom />
 				<Portfolio />
+				<NotableWork />
+				<Footer />
 			</>
     )
 }
