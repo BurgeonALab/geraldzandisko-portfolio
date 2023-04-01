@@ -12,7 +12,7 @@ const notablework = [
   {
     "name": "Coffee Shop Management Mobile Application Development",
     "image": "/../public/images/notable-work/warung-kopi.png",
-    "description": "Café POS that facilitates business processes to support coffee shop operations and help owners control their business.",
+    "description": "Café POS that facilitates business processes to support coffee shop operations and help owners control their business",
     "org": "STMIK - STIE Mikroskil",
     "social": {
       "behance": "https://www.behance.net/gallery/128065503/Aplikasi-Pengelolaan-Warung-Kopi",
@@ -33,7 +33,7 @@ const notablework = [
     "name": "Aquahelix Bacteria Booster",
     "org": "PT Satria Nusa Enjinering",
     "image": "/../public/images/notable-work/bacteria-booster.png",
-    "description": "Biotechnology for wastewater solution.",
+    "description": "Biotechnology for wastewater solution",
     "social": {
       "behance": "https://www.behance.net/gallery/150921109/Aquahelix-Bacter",
       "github": "",
@@ -42,7 +42,7 @@ const notablework = [
   {
     "name": "Semesta Sakti",
     "image": "/../public/images/notable-work/semesta-sakti.png",
-    "description": "Merchandise box.",
+    "description": "Merchandise box",
     "org": "PT Nadic",
     "social": {
       "behance": "https://www.behance.net/gallery/162000763/Semesta-Sakti-Gift-Box",
@@ -54,13 +54,13 @@ const notablework = [
 function NotableWork() {
   return (
     <>
-      <div className="container" style={{ marginBottom: '150px' }}>
+      <div className="container notable-padding" style={{ marginBottom: '150px' }}>
         <div className="row">
           <div className="col-md-12 mb-4">
             <h2 className="fw-semibold">Notable Work</h2>
             <p className="lead">My collection of work I am most proud of—the greatest hits of all time. You will discover some of my most challenging work I have done.</p>
           </div>
-          <div className="col-md-3">
+          <div className="col-xl-3">
             <Image
               alt="The Blue Peacock"
               src={BluePeacock}
@@ -73,7 +73,7 @@ function NotableWork() {
 							</a>
 						</div>
           </div>
-          <div className="col-md-3 offset-md-6">
+          <div className="col-xl-3 offset-xl-6">
             {notablework.map((item, index) => {
               return (
                 <div className="rounded shadow mb-4" key={index}>

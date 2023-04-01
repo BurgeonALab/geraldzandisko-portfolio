@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import {
   MonarchGlenStag
@@ -137,12 +138,16 @@ function Footer() {
             <p className="mb-0 fw-light">&#169; 2023 <span className="fw-bold">Gerald Zandisko</span>. All rights reserved</p>
           </div>
           <div className="col-lg-6 copyrights-misc d-flex justify-content-end align-items-end">
-            <a href="/privacy-policy" className="privacy-terms fw-light d-inline-block ms-3">
-              <p className="mb-0">Privacy Policy</p>
-            </a>
-            <a href="/terms-and-conditions" className="privacy-terms fw-light d-inline-block ms-3">
-              <p className="mb-0">Terms & Conditions</p>
-            </a>
+            <Link href="/privacy-policy" legacyBehavior>
+              <a className="privacy-terms fw-light d-inline-block ms-3">
+                <p className="mb-0">Privacy Policy</p>
+              </a>
+            </Link>
+            <Link href="/terms-and-conditions" legacyBehavior>
+              <a className="privacy-terms fw-light d-inline-block ms-3">
+                <p className="mb-0">Terms & Conditions</p>
+              </a>
+            </Link>
           </div>
         </div>
       </footer>

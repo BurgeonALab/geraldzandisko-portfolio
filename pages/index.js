@@ -121,7 +121,37 @@ function HomePage() {
 			<>
 				<Head>
 					<title>Home • Gerald Zandisko</title>
-					<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+					{/* Favicon */}
+					<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+					<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+					<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-16x16.png" />
+					<link rel="manifest" href="/favicon/site.webmanifest" />
+					<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+					{/* Metas */}
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<meta name="msapplication-TileColor" content="#da532c" />
+					<meta name="theme-color" content="#ffffff" />
+					<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+					<meta name="robots" content="index, follow" />
+    			<meta name="googlebot" content="follow" />
+					<link rel="canoncial" href="https://www.gerraour.com" />
+					<meta name="description" content="My personal website to showcase my art, quotes, portfolio, and other creations. You may also get to see my website development and designing skills." />
+					<meta name="author" content="Gerald Zandisko, Ria Agustin" />
+					{/* OGs */}
+					<meta property="og:locale:alternate" content="id_ID" />
+					<meta property="og:title" content="Home • Gerald Zandisko" />
+					<meta property="og:description" content="My personal website to showcase my art, quotes, portfolio, and other creations. You may also get to see my website development and designing skills." />
+					<meta property="og:type" content="website" />
+					<meta property="og:image" content="/images/meta-cover/meta-cover.png" />
+					<meta property="og:image:alt" content="Gerald Zandisko Logo Cover" />
+					<meta property="og:url" content="https://www.gerraour.com" />
+					<meta property="og:site_name" content="Gerald Zandisko" />
+					{/* Twitters */}
+					<meta name="twitter:title" content="Home • Gerald Zandisko" />
+					<meta name="twitter:description" content="My personal website to showcase my art, quotes, portfolio, and other creations. You may also get to see my website development and designing skills." />
+					<meta property="twitter:image" content="/images/meta-cover/meta-cover.png" />
+					<meta property="twitter:image:alt" content="Gerald Zandisko Logo Cover" />
+					<meta name="twitter:card" content="summary_large_image" />
 				</Head>
         <Header />
 				<Wisdom />

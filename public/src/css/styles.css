@@ -29,23 +29,23 @@ html, body {
 }
 
 .social-link.nav-link {
-    color: #000000;
+    color: #000000 !important;
 }
 
 .social-link.nav-link.behance:hover {
-    color: #053EFF;
+    color: #053EFF !important;
 }
 
 .social-link.nav-link.linkedin:hover {
-    color: #0072B1;
+    color: #0072B1 !important;
 }
 
 .social-link.nav-link.github:hover {
-    color: #6E5494;
+    color: #6E5494 !important;
 }
 
 .social-link.nav-link.instagram:hover {
-    color: #FD1D1D;
+    color: #FD1D1D !important;
 }
 
 .navbar-link:hover {
