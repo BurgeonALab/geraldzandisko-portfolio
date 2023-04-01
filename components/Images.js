@@ -11,6 +11,7 @@ import Tropicanatic from '../public/images/notable-work/tropicanatic.png'
 import WarungKopi from '../public/images/notable-work/warung-kopi.png'
 import BluePeacock from '../public/images/characters/blue-peacock-compressed.jpg'
 import MonarchGlenStag from '../public/images/characters/monarch-of-the-glen-stag-compressed.jpg'
+import SmallLogo from '../public/images/small-logo.png'
 
 export {
   HeaderlogoPic,
@@ -25,5 +26,6 @@ export {
   Tropicanatic,
   WarungKopi,
   BluePeacock,
-  MonarchGlenStag
+  MonarchGlenStag,
+  SmallLogo
 }
