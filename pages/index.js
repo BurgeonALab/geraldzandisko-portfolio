@@ -5,6 +5,7 @@ import {
 	TheTiger,
 	TheOwl
 } from '../components/Images'
+import { useState, useEffect } from "react"
 
 const Social = dynamic(() => import('../components/HeaderSocial'))
 const Logo = dynamic(() => import('../components/HeaderLogo'))
@@ -23,6 +24,28 @@ function Header() {
 }
 
 function Wisdom() {
+	const [data, setData] = useState();
+
+	useEffect(() => {
+		async function fetchData() {
+			const res = await fetch('https://v1.nocodeapi.com/gerraour/fbsdk/kHbCNnTBgSpcboNt/firestore/allDocuments?collectionName=wisdom',
+				{
+					method: 'GET',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					redirect: 'follow',
+				},
+			);
+			const data = await res.json();
+			setData(data)
+		}
+		fetchData()
+	}, [])
+	
+	if (!data) {
+		return (<div style={{ display: "none" }}>Loading...</div>)
+	}
 	return (
 		<>
 			<div className="container" id="about_section">
@@ -31,14 +54,20 @@ function Wisdom() {
 						<div className="quote-mobile">
 							<div>
 								<div id="wisdomData">
-									<h6 className="fw-bold italic-font">Entropy</h6>
-									<h2 className="fw-bold">Wild Heart</h2>
-									<figure className="mb-0">
-										<blockquote className="blockquote">
-											<p className="lead">Callus fingers from your strings, trying to make the guitar sing and once again release the joy it brings. But even with the old notes played, the strings are rusted and slightly frayed so I can't get it sounding quite the same.</p>
-										</blockquote>
-										<figcaption className="blockquote-footer fw-bold mb-0">The Collection</figcaption>
-									</figure>
+									{data.map((wisdom, index) => {
+										return (
+											<div key={index}>
+												<h6 className="fw-bold italic-font">{wisdom._fieldsProto.album_name.stringValue}</h6>
+												<h2 className="fw-bold">{wisdom._fieldsProto.song_name.stringValue}</h2>
+												<figure className="mb-0">
+													<blockquote className="blockquote">
+														<p className="lead">{wisdom._fieldsProto.quote.stringValue}</p>
+													</blockquote>
+													<figcaption className="blockquote-footer fw-bold mb-0">{wisdom._fieldsProto.artist_name.stringValue}</figcaption>
+												</figure>
+											</div>
+										)
+									})}
 								</div>
 							</div>
 						</div>
