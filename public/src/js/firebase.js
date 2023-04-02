@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore, collection, getDocs } from "firebase/firestore"
-import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCU5SmyCTAmXUAUVeSCf0fVnA2OxlXHU-U",
@@ -15,7 +14,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const storage = getStorage();
 
 // Wisdom
 const querySnapshot = await getDocs(collection(db, "wisdom"));
@@ -60,114 +58,4 @@ $(function() {
             wisdomCaption.appendChild(captionText);
         })
     }
-})
-
-$(function() {
-    if($('body').is('.home-page')) {
-        // Logo
-        getDownloadURL(ref(storage, 'logo/logo.png'))
-            .then((url) => {
-                const img = document.getElementById('gerraour-logo');
-                img.setAttribute('src', url);
-            })
-
-        // The Owl
-        getDownloadURL(ref(storage, 'character/the-owl-compressed.jpg'))
-            .then((url) => {
-                const img = document.getElementById('the-owl-img');
-                img.setAttribute('src', url);
-            })
-
-        // The Tiger
-        getDownloadURL(ref(storage, 'character/the-tiger-compressed.jpg'))
-            .then((url) => {
-                const img = document.getElementById('the-tiger-img');
-                img.setAttribute('src', url);
-            })
-
-        // Blue Peacock
-        getDownloadURL(ref(storage, 'character/blue-peacock-compressed.jpg'))
-            .then((url) => {
-                const img = document.getElementById('blue-peacock');
-                img.setAttribute('src', url);
-            })
-
-        // Monarch of the Glen Stag
-        getDownloadURL(ref(storage, 'character/monarch-of-the-glen-stag-compressed.jpg'))
-            .then((url) => {
-                const img = document.getElementById('monarch-of-the-glen-stag');
-                img.setAttribute('src', url);
-            })
-
-        // Web App
-        getDownloadURL(ref(storage, 'portfolio-cover/webdev-cover.png'))
-            .then((url) => {
-                const img = document.getElementById('webapp-dev');
-                img.setAttribute('src', url);
-            })
-
-        // UI UX
-        getDownloadURL(ref(storage, 'portfolio-cover/uiux-cover.png'))
-            .then((url) => {
-                const img = document.getElementById('uiux-design');
-                img.setAttribute('src', url);
-            })
-
-        // Graphic Design
-        getDownloadURL(ref(storage, 'portfolio-cover/graphic-design.png'))
-            .then((url) => {
-                const img = document.getElementById('graphic-design');
-                img.setAttribute('src', url);
-            })
-
-        // Bacteria Booster
-        getDownloadURL(ref(storage, 'notable-work/bacteria-booster.png'))
-            .then((url) => {
-                const img = document.getElementById('bacteria-booster');
-                img.setAttribute('src', url);
-            })
-
-        // Semesta Sakti
-        getDownloadURL(ref(storage, 'notable-work/semesta-sakti.png'))
-            .then((url) => {
-                const img = document.getElementById('semesta-sakti');
-                img.setAttribute('src', url);
-            })
-
-        // Tropicanatic
-        getDownloadURL(ref(storage, 'notable-work/tropicanatic.png'))
-            .then((url) => {
-                const img = document.getElementById('kopi-tropicanatic');
-                img.setAttribute('src', url);
-            })
-
-        // Warung Kopi
-        getDownloadURL(ref(storage, 'notable-work/warung-kopi.png'))
-            .then((url) => {
-                const img = document.getElementById('warung-kopi');
-                img.setAttribute('src', url);
-            })
-        }
-});
-
-// Logo
-$(function() {
-    if($('body').is('.error-page-404, .home-page')) {
-        getDownloadURL(ref(storage, 'github-readme-logo/github-logo-light.png'))
-            .then((url) => {
-                const img = document.getElementById('404-logo');
-                img.setAttribute('src', url);
-            })
-        }
-})
-
-// Logo
-$(function() {
-    if($('body').is('.privacy-terms-page')) {
-        getDownloadURL(ref(storage, 'logo/logo.png'))
-            .then((url) => {
-                const img = document.getElementById('gerraour-logo');
-                img.setAttribute('src', url);
-            })
-        }
 })

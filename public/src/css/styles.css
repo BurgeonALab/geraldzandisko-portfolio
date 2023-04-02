@@ -23,6 +23,7 @@ html, body {
 }
 
 .footer {
+    margin-top: 100px;
     flex-shrink: 0;
     border-top-right-radius: var(--bs-border-radius) !important;
     border-top-left-radius: var(--bs-border-radius) !important;
@@ -395,4 +396,15 @@ html, body {
 
 .notable-social-link.github:hover {
     color: #6E5494;
+}
+
+.notable-description-width {
+    display: none;
+    width: 18rem;
+}
+
+.work-list-slider-card {
+    width: 18rem;
+    border-width: 0px !important;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }

@@ -28,6 +28,16 @@
     .image-title-footer-mobile {
         text-align: left !important;
     }
+    .notable-image-container {
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+    }
+    .notable-image {
+        object-position: 0px -150px;
+    }
+    .footer {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -50,6 +60,13 @@
     .copyrights-misc-mobile {
         margin-top: 32px;
         margin-bottom: 16px;
+    }
+    .notable-header-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .notable-image {
+        object-position: 0px -100px;
     }
 }
 
@@ -105,6 +122,13 @@
     .notable-padding .col-xl-3 {
         padding-left: 60px;
         padding-right: 60px;
+    }
+    .notable-header-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .notable-image {
+        object-position: 0px -50px;
     }
 }
 
@@ -166,6 +190,9 @@
     .contact-footer-mobile {
         display: flex;
         justify-content: center;
+    }
+    .notable-image {
+        object-position: 0px 0px;
     }
 }
 

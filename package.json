@@ -1,21 +1,19 @@
 {
   "name": "gerraour-portfolio",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Personal website with portfolio",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "link": "next link"
+    "deploy": "firebase deploy",
+    "build": "webpack --mode=production",
+    "start": "firebase emulators:start"
   },
   "keywords": [],
   "author": "Gerald Zandisko, Ria Agustin",
   "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
-    "@types/tiny-slider-react": "^0.3.4",
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
     "postcss-loader": "^7.0.2",
@@ -26,19 +24,10 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "firebase": "^9.17.2",
     "jquery": "^3.6.4",
-    "next": "^13.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sharp": "^0.32.0",
-    "tiny-slider": "^2.9.4",
-    "tiny-slider-react": "^0.5.7"
+    "tiny-slider": "^2.9.4"
   }
 }
