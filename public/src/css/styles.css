@@ -23,7 +23,7 @@ html, body {
 }
 
 .footer {
-    margin-top: 100px;
+    margin-top: 50px;
     flex-shrink: 0;
     border-top-right-radius: var(--bs-border-radius) !important;
     border-top-left-radius: var(--bs-border-radius) !important;
