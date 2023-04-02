@@ -408,3 +408,17 @@ html, body {
     border-width: 0px !important;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }
+
+.notable-social-button {
+    color: #000000 !important;
+    transition: 0.5s ease;
+    font-size: 24px;
+}
+
+.notable-social-button.github:hover {
+    color: #6E5494 !important;
+}
+
+.notable-social-button.behance:hover {
+    color: #053EFF !important;
+}
