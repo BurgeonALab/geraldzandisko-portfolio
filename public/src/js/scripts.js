@@ -13,20 +13,7 @@ jQuery(window).scroll(function() {
 })
 
 $(function() {
-    const linkBtn = $('.navbar-link');
-    linkBtn.click(() => {
-        setTimeout(() => {
-            removeHash();
-        });
-    });
-
-    function removeHash() {
-        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
-    }
-});
-
-$(function() {
-    const linkBtn = $('.link-style');
+    const linkBtn = $('.navbar-link, .link-style, .navbar-logo-container');
     linkBtn.click(() => {
         setTimeout(() => {
             removeHash();
