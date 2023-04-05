@@ -422,3 +422,8 @@ html, body {
 .notable-social-button.behance:hover {
     color: #053EFF !important;
 }
+
+.notable-header-container {
+    padding-left: 12px;
+    padding-right: 36px;
+}
