@@ -19,7 +19,7 @@
         margin-bottom: 50px;
     }
     .work-card-padding-mobile {
-        padding: 22px !important;
+        padding: 36px !important;
     }
     .footer-stag-image {
         margin-left: 0px;
@@ -131,6 +131,9 @@
     }
     .notable-image {
         object-position: 0px -50px;
+    }
+    .work-card-padding-mobile {
+        padding: 24px !important;
     }
 }
 
