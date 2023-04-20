@@ -442,6 +442,25 @@ html, body {
     background-color: #1A1A21;
 }
 
-.light-mode-color {
-    color: #fcc72e;
+#lightdark-mode {
+    padding: 1rem !important;
+    border: 0 !important;
+}
+
+.light-mode-button {
+    color: #C3AB67;
+    transition: 0.5s ease;
+}
+
+.light-mode-button:hover {
+    color: #FCC72E;
+}
+
+.dark-mode-button {
+    color: #75A4C2;
+    transition: 0.5s ease;
+}
+
+.dark-mode-button:hover {
+    color: #57AAE0;
 }

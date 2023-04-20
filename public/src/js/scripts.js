@@ -71,5 +71,51 @@ $(document).ready(function() {
 
         var contactnav = document.getElementById("contact-nav");
         contactnav.classList.toggle("text-dark-mode");
+
+        var worklist = document.getElementById("work-list-dark-mode");
+        worklist.classList.toggle("text-dark-mode");
+
+        var posbehance = document.getElementById("pos-behance");
+        posbehance.classList.toggle("text-dark-mode");
+
+        var posgithub = document.getElementById("pos-github");
+        posgithub.classList.toggle("text-dark-mode");
+
+        var tropicanaticbehance = document.getElementById("tropicanatic-behance");
+        tropicanaticbehance.classList.toggle("text-dark-mode");
+
+        var bacteriabehance = document.getElementById("bacteria-behance");
+        bacteriabehance.classList.toggle("text-dark-mode");
+
+        var semestabehance = document.getElementById("semesta-behance");
+        semestabehance.classList.toggle("text-dark-mode");
+    });
+});
+
+$(document).ready(function() {
+    $('#lightdark-mode').click(function() {
+        var elm = $('.logo')
+        var src = elm.attr('src');
+        if (src === "./images/logo.png")
+            elm.attr('src', './images/logo_white.png')
+        else
+            elm.attr('src', './images/logo.png')
+    })
+})
+
+$(document).ready(function() {
+    $('#lightdark-mode').click(function() {
+        var elm = $('.navbar-logo')
+        var src = elm.attr('src');
+        if (src === "./images/small-logo.png")
+            elm.attr('src', './images/small-logo_white.png')
+        else
+            elm.attr('src', './images/small-logo.png')
+    })
+})
+
+$(function() {
+    $('#lightdark-mode').click(function() {
+        $(this).html("<i class='fa-regular fa-moon dark-mode-button'></i>");
     });
 });
