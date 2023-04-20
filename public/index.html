@@ -42,27 +42,34 @@
   <body class="home-page" id="scroll-home-top">
     <div class="content">
       <!-- Header -->
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="social-link nav-link behance p-3" href="https://www.behance.net/gerraour" target="_blank">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="social-link nav-link linkedin p-3" href="https://www.linkedin.com/in/gerraour/" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="social-link nav-link github p-3" href="https://github.com/gerraour" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="social-link nav-link instagram p-3" href="https://www.instagram.com/gerraour/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
+      <ul class="nav justify-content-between">
+        <div class="d-flex">
+          <button type="button" class="btn p-3 border-0" id="lightdark-mode">
+            <i class="fa-regular fa-sun light-mode-color"></i>
+          </button>
+        </div>
+        <div class="d-flex">
+          <li class="nav-item">
+            <a class="social-link nav-link behance p-3" href="https://www.behance.net/gerraour" target="_blank" id="navbehance">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="social-link nav-link linkedin p-3" href="https://www.linkedin.com/in/gerraour/" target="_blank" id="navlinkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="social-link nav-link github p-3" href="https://github.com/gerraour" target="_blank" id="navgithub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="social-link nav-link instagram p-3" href="https://www.instagram.com/gerraour/" target="_blank" id="navinstagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </div>
       </ul>
       <!-- Logo -->
       <div class="logo-space">
@@ -70,20 +77,20 @@
           <img class="logo" alt="Gerald Zandisko Logo" src="./images/logo.png">
         </a>
       </div>
-      <div class="navigation">
+      <div class="navigation" id="navigation-bar">
         <nav class="navbar navbar-expand p-0">
           <a href="#scroll-home-top" class="navbar-logo-container">
             <img src="./images/small-logo.png" class="navbar-logo" alt="Gerald Zandisko Small Logo">
           </a>
           <ul class="navbar-nav gerraour-nav fade-in-nav">
             <li class="nav-item">
-              <a class="nav-link fw-semibold navbar-link" href="#about_section">About</a>
+              <a class="nav-link fw-semibold navbar-link" href="#about_section" id="about-nav">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold navbar-link" href="#work_section">Work</a>
+              <a class="nav-link fw-semibold navbar-link" href="#work_section" id="work-nav">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold navbar-link" href="#contact_section">Contact</a>
+              <a class="nav-link fw-semibold navbar-link" href="#contact_section" id="contact-nav">Contact</a>
             </li>
           </ul>
         </nav>
@@ -223,7 +230,7 @@
       <div class="container notable-work-container notable-work-container-mobile">
         <div class="row">
           <div class="col-xl-9 p-0">
-            <div class="notable-header-container notable-header-container-mobile">
+            <div class="notable-header-container notable-header-container-mobile" id="notable_section">
               <h2 class="fw-bold">Notable Work</h2>
               <p class="lead mb-0">My collection of work I am most proud of—the greatest hits of all time. You will discover some of my most challenging work I have done.</p>
             </div>

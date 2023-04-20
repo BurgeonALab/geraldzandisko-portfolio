@@ -8,6 +8,7 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    transition: 0.3s ease;
 }
 
 html, body {
@@ -30,7 +31,7 @@ html, body {
 }
 
 .social-link.nav-link {
-    color: #000000 !important;
+    color: #000000;
 }
 
 .social-link.nav-link.behance:hover {
@@ -233,6 +234,7 @@ html, body {
     position: sticky;
     top: 0px;
     background-color: #FFFFFF;
+    transition: 0.3s ease;
 }
 
 .gerraour-nav {
@@ -426,4 +428,20 @@ html, body {
 .notable-header-container {
     padding-left: 12px;
     padding-right: 36px;
+}
+
+.dark-mode {
+    background-color: #121217 !important;
+}
+
+.text-dark-mode {
+    color: #FFFFFF !important;
+}
+
+.navigation-dark-mode {
+    background-color: #1A1A21;
+}
+
+.light-mode-color {
+    color: #fcc72e;
 }
