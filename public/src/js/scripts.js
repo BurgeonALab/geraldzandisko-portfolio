@@ -89,6 +89,75 @@ $(document).ready(function() {
 
         var semestabehance = document.getElementById("semesta-behance");
         semestabehance.classList.toggle("text-dark-mode");
+
+        var footerwhatsapp = document.getElementById("footer-whatsapp");
+        footerwhatsapp.classList.toggle("text-dark-mode");
+
+        var footeremail = document.getElementById("footer-email");
+        footeremail.classList.toggle("text-dark-mode");
+
+        var aboutsection = document.getElementById("about-section");
+        aboutsection.classList.toggle("text-dark-mode");
+
+        var worksection = document.getElementById("work-section");
+        worksection.classList.toggle("text-dark-mode");
+
+        var contactsection = document.getElementById("contact-section");
+        contactsection.classList.toggle("text-dark-mode");
+
+        var footerbehance = document.getElementById("footer-behance");
+        footerbehance.classList.toggle("text-dark-mode");
+
+        var footerlinkedin = document.getElementById("footer-linkedin");
+        footerlinkedin.classList.toggle("text-dark-mode");
+
+        var footergithub = document.getElementById("footer-github");
+        footergithub.classList.toggle("text-dark-mode");
+
+        var footerinstagram = document.getElementById("footer-instagram");
+        footerinstagram.classList.toggle("text-dark-mode");
+        
+        var privacyfooter = document.getElementById("privacy-dark-mode");
+        privacyfooter.classList.toggle("text-dark-mode");
+
+        var termsfooter = document.getElementById("terms-dark-mode");
+        termsfooter.classList.toggle("text-dark-mode");
+
+        var footerbackground = document.getElementById("contact_section");
+        footerbackground.classList.toggle("footer-dark-mode");
+
+        var owlbox = document.getElementById("owl-dark-mode");
+        owlbox.classList.toggle("shadow-dark-mode");
+
+        var tigerbox = document.getElementById("tiger-dark-mode");
+        tigerbox.classList.toggle("shadow-dark-mode");
+
+        var peacockbox = document.getElementById("peacock-dark-mode");
+        peacockbox.classList.toggle("shadow-dark-mode");
+
+        var stagbox = document.getElementById("stag-dark-mode");
+        stagbox.classList.toggle("shadow-dark-mode");
+
+        var graphic = document.getElementById("graphic-dark-mode");
+        graphic.classList.toggle("work-card-dark-mode");
+
+        var web = document.getElementById("web-dark-mode");
+        web.classList.toggle("work-card-dark-mode");
+
+        var uiux = document.getElementById("uiux-dark-mode");
+        uiux.classList.toggle("work-card-dark-mode");
+
+        var warung = document.getElementById("warung-dark-mode");
+        warung.classList.toggle("work-list-dark-mode");
+
+        var tropicanatic = document.getElementById("tropicanatic-dark-mode");
+        tropicanatic.classList.toggle("work-list-dark-mode");
+
+        var semesta = document.getElementById("semesta-dark-mode");
+        semesta.classList.toggle("work-list-dark-mode");
+
+        var aquahelix = document.getElementById("aquahelix-dark-mode");
+        aquahelix.classList.toggle("work-list-dark-mode");
     });
 });
 

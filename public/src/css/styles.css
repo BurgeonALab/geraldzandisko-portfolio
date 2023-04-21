@@ -24,6 +24,7 @@ html, body {
 }
 
 .footer {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
     margin-top: 50px;
     flex-shrink: 0;
     border-top-right-radius: var(--bs-border-radius) !important;
@@ -70,6 +71,7 @@ html, body {
 .about-image {
     width: 300px;
     height: auto;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }
 
 .image-link {
@@ -126,6 +128,7 @@ html, body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }
 
 .work-card-overlay {
@@ -155,11 +158,11 @@ html, body {
 }
 
 .contact-footer.whatsapp:hover {
-    color: #25D366;
+    color: #25D366 !important;
 }
 
 .contact-footer.email:hover {
-    color: #34B7F1;
+    color: #34B7F1 !important;
 }
 
 .social-media-footer {
@@ -170,19 +173,19 @@ html, body {
 }
 
 .social-media-footer.behance:hover {
-    color: #053EFF;
+    color: #053EFF !important;
 }
 
 .social-media-footer.linkedin:hover {
-    color: #0072B1;
+    color: #0072B1 !important;
 }
 
 .social-media-footer.github:hover {
-    color: #6E5494;
+    color: #6E5494 !important;
 }
 
 .social-media-footer.instagram:hover {
-    color: #FD1D1D;
+    color: #FD1D1D !important;
 }
 
 .social-media-footer-margin {
@@ -197,7 +200,7 @@ html, body {
 }
 
 .privacy-terms:hover {
-    color: #fcc72e;
+    color: #fcc72e !important;
 }
 
 .link-style {
@@ -209,7 +212,7 @@ html, body {
 }
 
 .link-style:hover {
-    color: #fcc72e;
+    color: #fcc72e !important;
     cursor: pointer;
 }
 
@@ -324,6 +327,7 @@ html, body {
     height: auto;
     margin-left: -100px;
     margin-top: -100px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }
 
 .policies-content {
@@ -375,6 +379,7 @@ html, body {
 .notable-image {
     width: 100%;
     height: 450px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
     object-fit: cover;
 }
 
@@ -430,6 +435,8 @@ html, body {
     padding-right: 36px;
 }
 
+/* Dark Mode */
+
 .dark-mode {
     background-color: #121217 !important;
 }
@@ -441,6 +448,25 @@ html, body {
 .navigation-dark-mode {
     background-color: #1A1A21;
 }
+
+.footer-dark-mode {
+    background-color: #1A1A21;
+    box-shadow: 0 1rem 3rem rgba(255, 255, 255, .175) !important;
+}
+
+.shadow-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, .15) !important;
+}
+
+.work-card-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, .15) !important;
+}
+
+.work-list-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, .15) !important;
+}
+
+/* Dark Mode End */
 
 #lightdark-mode {
     padding: 1rem !important;
