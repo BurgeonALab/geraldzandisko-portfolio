@@ -183,8 +183,9 @@ $(document).ready(function() {
     })
 })
 
-$(function() {
+$(document).ready(function() {
     $('#lightdark-mode').click(function() {
-        $(this).html("<i class='fa-regular fa-moon dark-mode-button'></i>");
+        $('#icon-switch').toggleClass('fa-sun fa-moon');
+        $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
     });
 });

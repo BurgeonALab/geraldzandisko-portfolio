@@ -446,24 +446,24 @@ html, body {
 }
 
 .navigation-dark-mode {
-    background-color: #1A1A21;
+    background-color: #121217;
 }
 
 .footer-dark-mode {
     background-color: #1A1A21;
-    box-shadow: 0 1rem 3rem rgba(255, 255, 255, .175) !important;
+    box-shadow: 0 1rem 3rem rgb(26, 26, 33) !important;
 }
 
 .shadow-dark-mode {
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, .15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
 }
 
 .work-card-dark-mode {
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, .15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
 }
 
 .work-list-dark-mode {
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, .15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
 }
 
 /* Dark Mode End */
