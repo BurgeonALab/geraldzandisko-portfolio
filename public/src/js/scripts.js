@@ -1,11 +1,22 @@
+var themeStatus = 'default'
+console.log(themeStatus);
+
 jQuery(window).scroll(function() {
     if (jQuery(document).scrollTop() > 131) {
-        jQuery('.navigation').addClass('shadow-nav');
+        if (themeStatus === 'default') {
+            jQuery('.navigation').addClass('shadow-nav');
+        } else if (themeStatus === 'darkTheme') {
+            jQuery('.navigation').addClass('shadow-nav-dark');
+        }
         jQuery('.navbar-logo-container').addClass('show');
         jQuery('.gerraour-nav').addClass('right');
         jQuery('.gerraour-nav').removeClass('fade-in-nav');
     } else {
-        jQuery('.navigation').removeClass('shadow-nav');
+        if (themeStatus === 'default') {
+            jQuery('.navigation').removeClass('shadow-nav');
+        } else if (themeStatus === 'darkTheme') {
+            jQuery('.navigation').removeClass('shadow-nav-dark');
+        }
         jQuery('.navbar-logo-container').removeClass('show');
         jQuery('.gerraour-nav').removeClass('right');
         jQuery('.gerraour-nav').addClass('fade-in-nav');
@@ -36,8 +47,14 @@ $(document).ready(function() {
     } else {
         console.log('Light mode');
     }
-
+    
     $('#lightdark-mode').click(function() {
+        if (themeStatus === 'default') {
+            themeStatus = 'darkTheme'
+        } else if (themeStatus === 'darkTheme') {
+            themeStatus = 'default'
+        }
+        console.log(themeStatus);
         var element = document.body;
         element.classList.toggle("dark-mode");
 

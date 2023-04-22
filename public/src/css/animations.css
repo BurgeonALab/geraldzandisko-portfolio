@@ -20,3 +20,12 @@
     box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15);
     animation: fadeIn 0.5s;
 }
+
+/* Dark Mode */
+
+.navigation.shadow-nav-dark {
+    box-shadow: 0 .5rem 1rem rgba(26, 26, 33);
+    animation: fadeIn 0.5s;
+}
+
+/* Dark Mode End */
