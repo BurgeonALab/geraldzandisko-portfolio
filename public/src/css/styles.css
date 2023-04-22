@@ -501,3 +501,8 @@ html, body {
 .dark-mode-button:hover {
     color: #57AAE0;
 }
+
+#quotes-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

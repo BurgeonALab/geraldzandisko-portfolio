@@ -181,6 +181,9 @@ $(document).ready(function() {
 
             var aquahelix = document.getElementById("aquahelix-dark-mode");
             aquahelix.classList.toggle("work-list-dark-mode");
+
+            var quotes = document.getElementById("quotes-section");
+            quotes.classList.toggle("quotes-section");
         }
 
         if($('body').is('.privacy-page')) {
