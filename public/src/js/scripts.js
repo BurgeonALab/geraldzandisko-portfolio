@@ -30,6 +30,13 @@ $(function() {
 });
 
 $(document).ready(function() {
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (prefersDark === true) {
+        console.log('Dark mode');
+    } else {
+        console.log('Light mode');
+    }
+
     $('#lightdark-mode').click(function() {
         var element = document.body;
         element.classList.toggle("dark-mode");
