@@ -135,6 +135,9 @@
     .work-card-padding-mobile {
         padding: 24px !important;
     }
+    .policies-nav-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 575.98px) {

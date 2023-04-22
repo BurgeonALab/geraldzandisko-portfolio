@@ -333,6 +333,7 @@ html, body {
 .policies-content {
     overflow-y: scroll !important;
     height: 768px;
+    padding: 1rem !important;
 }
 
 #policies-navbar .nav-link {
