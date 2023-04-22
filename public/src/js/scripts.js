@@ -23,9 +23,7 @@ $(function() {
     function removeHash() {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }
-});
 
-$(function() {
     $('.work-list-slider-button').click(function() {
         $(this).parent().find('.notable-description-width').fadeToggle();
     });
@@ -36,20 +34,15 @@ $(document).ready(function() {
         var element = document.body;
         element.classList.toggle("dark-mode");
 
-        var wisdom = document.getElementById("wisdomData");
-        wisdom.classList.toggle("text-dark-mode");
+        $('#icon-switch').toggleClass('fa-sun fa-moon');
+        $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
 
-        var work = document.getElementById("work_section");
-        work.classList.toggle("text-dark-mode");
-
-        var notable = document.getElementById("notable_section");
-        notable.classList.toggle("text-dark-mode");
-
-        var contact = document.getElementById("contact_section");
-        contact.classList.toggle("text-dark-mode");
-
-        var navigation = document.getElementById("navigation-bar");
-        navigation.classList.toggle("navigation-dark-mode");
+        var elm = $('.logo');
+        var src = elm.attr('src');
+        if (src === "./images/logo.png")
+            elm.attr('src', './images/logo_white.png')
+        else
+            elm.attr('src', './images/logo.png')
 
         var navbehance = document.getElementById("navbehance");
         navbehance.classList.toggle("text-dark-mode");
@@ -63,129 +56,141 @@ $(document).ready(function() {
         var navinstagram = document.getElementById("navinstagram");
         navinstagram.classList.toggle("text-dark-mode");
 
-        var aboutnav = document.getElementById("about-nav");
-        aboutnav.classList.toggle("text-dark-mode");
+        if($('body').is('.home-page')) {
+            var elm = $('.navbar-logo')
+            var src = elm.attr('src');
+            if (src === "./images/small-logo.png")
+                elm.attr('src', './images/small-logo_white.png')
+            else
+                elm.attr('src', './images/small-logo.png')
 
-        var worknav = document.getElementById("work-nav");
-        worknav.classList.toggle("text-dark-mode");
+            var wisdom = document.getElementById("wisdomData");
+            wisdom.classList.toggle("text-dark-mode");
 
-        var contactnav = document.getElementById("contact-nav");
-        contactnav.classList.toggle("text-dark-mode");
+            var work = document.getElementById("work_section");
+            work.classList.toggle("text-dark-mode");
 
-        var worklist = document.getElementById("work-list-dark-mode");
-        worklist.classList.toggle("text-dark-mode");
+            var notable = document.getElementById("notable_section");
+            notable.classList.toggle("text-dark-mode");
 
-        var posbehance = document.getElementById("pos-behance");
-        posbehance.classList.toggle("text-dark-mode");
+            var contact = document.getElementById("contact_section");
+            contact.classList.toggle("text-dark-mode");
 
-        var posgithub = document.getElementById("pos-github");
-        posgithub.classList.toggle("text-dark-mode");
+            var navigation = document.getElementById("navigation-bar");
+            navigation.classList.toggle("navigation-dark-mode");
 
-        var tropicanaticbehance = document.getElementById("tropicanatic-behance");
-        tropicanaticbehance.classList.toggle("text-dark-mode");
+            var aboutnav = document.getElementById("about-nav");
+            aboutnav.classList.toggle("text-dark-mode");
 
-        var bacteriabehance = document.getElementById("bacteria-behance");
-        bacteriabehance.classList.toggle("text-dark-mode");
+            var worknav = document.getElementById("work-nav");
+            worknav.classList.toggle("text-dark-mode");
 
-        var semestabehance = document.getElementById("semesta-behance");
-        semestabehance.classList.toggle("text-dark-mode");
+            var contactnav = document.getElementById("contact-nav");
+            contactnav.classList.toggle("text-dark-mode");
 
-        var footerwhatsapp = document.getElementById("footer-whatsapp");
-        footerwhatsapp.classList.toggle("text-dark-mode");
+            var worklist = document.getElementById("work-list-dark-mode");
+            worklist.classList.toggle("text-dark-mode");
 
-        var footeremail = document.getElementById("footer-email");
-        footeremail.classList.toggle("text-dark-mode");
+            var posbehance = document.getElementById("pos-behance");
+            posbehance.classList.toggle("text-dark-mode");
 
-        var aboutsection = document.getElementById("about-section");
-        aboutsection.classList.toggle("text-dark-mode");
+            var posgithub = document.getElementById("pos-github");
+            posgithub.classList.toggle("text-dark-mode");
 
-        var worksection = document.getElementById("work-section");
-        worksection.classList.toggle("text-dark-mode");
+            var tropicanaticbehance = document.getElementById("tropicanatic-behance");
+            tropicanaticbehance.classList.toggle("text-dark-mode");
 
-        var contactsection = document.getElementById("contact-section");
-        contactsection.classList.toggle("text-dark-mode");
+            var bacteriabehance = document.getElementById("bacteria-behance");
+            bacteriabehance.classList.toggle("text-dark-mode");
 
-        var footerbehance = document.getElementById("footer-behance");
-        footerbehance.classList.toggle("text-dark-mode");
+            var semestabehance = document.getElementById("semesta-behance");
+            semestabehance.classList.toggle("text-dark-mode");
 
-        var footerlinkedin = document.getElementById("footer-linkedin");
-        footerlinkedin.classList.toggle("text-dark-mode");
+            var footerwhatsapp = document.getElementById("footer-whatsapp");
+            footerwhatsapp.classList.toggle("text-dark-mode");
 
-        var footergithub = document.getElementById("footer-github");
-        footergithub.classList.toggle("text-dark-mode");
+            var footeremail = document.getElementById("footer-email");
+            footeremail.classList.toggle("text-dark-mode");
 
-        var footerinstagram = document.getElementById("footer-instagram");
-        footerinstagram.classList.toggle("text-dark-mode");
-        
-        var privacyfooter = document.getElementById("privacy-dark-mode");
-        privacyfooter.classList.toggle("text-dark-mode");
+            var aboutsection = document.getElementById("about-section");
+            aboutsection.classList.toggle("text-dark-mode");
 
-        var termsfooter = document.getElementById("terms-dark-mode");
-        termsfooter.classList.toggle("text-dark-mode");
+            var worksection = document.getElementById("work-section");
+            worksection.classList.toggle("text-dark-mode");
 
-        var footerbackground = document.getElementById("contact_section");
-        footerbackground.classList.toggle("footer-dark-mode");
+            var contactsection = document.getElementById("contact-section");
+            contactsection.classList.toggle("text-dark-mode");
 
-        var owlbox = document.getElementById("owl-dark-mode");
-        owlbox.classList.toggle("shadow-dark-mode");
+            var footerbehance = document.getElementById("footer-behance");
+            footerbehance.classList.toggle("text-dark-mode");
 
-        var tigerbox = document.getElementById("tiger-dark-mode");
-        tigerbox.classList.toggle("shadow-dark-mode");
+            var footerlinkedin = document.getElementById("footer-linkedin");
+            footerlinkedin.classList.toggle("text-dark-mode");
 
-        var peacockbox = document.getElementById("peacock-dark-mode");
-        peacockbox.classList.toggle("shadow-dark-mode");
+            var footergithub = document.getElementById("footer-github");
+            footergithub.classList.toggle("text-dark-mode");
 
-        var stagbox = document.getElementById("stag-dark-mode");
-        stagbox.classList.toggle("shadow-dark-mode");
+            var footerinstagram = document.getElementById("footer-instagram");
+            footerinstagram.classList.toggle("text-dark-mode");
+            
+            var privacyfooter = document.getElementById("privacy-dark-mode");
+            privacyfooter.classList.toggle("text-dark-mode");
 
-        var graphic = document.getElementById("graphic-dark-mode");
-        graphic.classList.toggle("work-card-dark-mode");
+            var termsfooter = document.getElementById("terms-dark-mode");
+            termsfooter.classList.toggle("text-dark-mode");
 
-        var web = document.getElementById("web-dark-mode");
-        web.classList.toggle("work-card-dark-mode");
+            var footerbackground = document.getElementById("contact_section");
+            footerbackground.classList.toggle("footer-dark-mode");
 
-        var uiux = document.getElementById("uiux-dark-mode");
-        uiux.classList.toggle("work-card-dark-mode");
+            var owlbox = document.getElementById("owl-dark-mode");
+            owlbox.classList.toggle("shadow-dark-mode");
 
-        var warung = document.getElementById("warung-dark-mode");
-        warung.classList.toggle("work-list-dark-mode");
+            var tigerbox = document.getElementById("tiger-dark-mode");
+            tigerbox.classList.toggle("shadow-dark-mode");
 
-        var tropicanatic = document.getElementById("tropicanatic-dark-mode");
-        tropicanatic.classList.toggle("work-list-dark-mode");
+            var peacockbox = document.getElementById("peacock-dark-mode");
+            peacockbox.classList.toggle("shadow-dark-mode");
 
-        var semesta = document.getElementById("semesta-dark-mode");
-        semesta.classList.toggle("work-list-dark-mode");
+            var stagbox = document.getElementById("stag-dark-mode");
+            stagbox.classList.toggle("shadow-dark-mode");
 
-        var aquahelix = document.getElementById("aquahelix-dark-mode");
-        aquahelix.classList.toggle("work-list-dark-mode");
+            var graphic = document.getElementById("graphic-dark-mode");
+            graphic.classList.toggle("work-card-dark-mode");
+
+            var web = document.getElementById("web-dark-mode");
+            web.classList.toggle("work-card-dark-mode");
+
+            var uiux = document.getElementById("uiux-dark-mode");
+            uiux.classList.toggle("work-card-dark-mode");
+
+            var warung = document.getElementById("warung-dark-mode");
+            warung.classList.toggle("work-list-dark-mode");
+
+            var tropicanatic = document.getElementById("tropicanatic-dark-mode");
+            tropicanatic.classList.toggle("work-list-dark-mode");
+
+            var semesta = document.getElementById("semesta-dark-mode");
+            semesta.classList.toggle("work-list-dark-mode");
+
+            var aquahelix = document.getElementById("aquahelix-dark-mode");
+            aquahelix.classList.toggle("work-list-dark-mode");
+        }
+
+        if($('body').is('.privacy-page')) {
+            var privacytext = document.getElementById("privacy-text-dark-mode");
+            privacytext.classList.toggle("text-dark-mode");
+            
+            $('#policies-navbar .nav-link').toggleClass('active active-dark')
+
+            $('.nav-link').hover(function() {
+                $(this).toggleClass('nav-link-hover-dark')
+            });
+        }
     });
-});
 
-$(document).ready(function() {
-    $('#lightdark-mode').click(function() {
-        var elm = $('.logo')
-        var src = elm.attr('src');
-        if (src === "./images/logo.png")
-            elm.attr('src', './images/logo_white.png')
-        else
-            elm.attr('src', './images/logo.png')
-    })
-})
-
-$(document).ready(function() {
-    $('#lightdark-mode').click(function() {
-        var elm = $('.navbar-logo')
-        var src = elm.attr('src');
-        if (src === "./images/small-logo.png")
-            elm.attr('src', './images/small-logo_white.png')
-        else
-            elm.attr('src', './images/small-logo.png')
-    })
-})
-
-$(document).ready(function() {
-    $('#lightdark-mode').click(function() {
-        $('#icon-switch').toggleClass('fa-sun fa-moon');
-        $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
-    });
+    if($('body').is('.privacy-page')) {
+        $('.nav-link').hover(function() {
+            $(this).toggleClass('nav-link-hover')
+        });
+    }
 });
