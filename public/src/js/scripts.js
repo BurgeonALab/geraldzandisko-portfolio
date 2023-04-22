@@ -183,7 +183,7 @@ $(document).ready(function() {
             aquahelix.classList.toggle("work-list-dark-mode");
 
             var quotes = document.getElementById("quotes-section");
-            quotes.classList.toggle("quotes-section");
+            quotes.classList.toggle("text-dark-mode");
         }
 
         if($('body').is('.privacy-page')) {
