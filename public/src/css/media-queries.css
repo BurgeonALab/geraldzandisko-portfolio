@@ -135,9 +135,6 @@
     .work-card-padding-mobile {
         padding: 24px !important;
     }
-    #quotes-section .lead {
-        font-size: 16px !important;
-    }
 }
 
 @media (max-width: 575.98px) {
@@ -201,12 +198,6 @@
     }
     .notable-image {
         object-position: 0px 0px;
-    }
-    #quotes-section .lead {
-        font-size: 14px !important;
-    }
-    #quotes-section .blockquote-footer {
-        font-size: 10px !important;
     }
 }
 
