@@ -208,12 +208,6 @@ $(document).ready(function() {
         if($('body').is('.privacy-page')) {
             var privacytext = document.getElementById("privacy-text-dark-mode");
             privacytext.classList.toggle("text-dark-mode");
-            
-            $('#policies-navbar .nav-link').toggleClass('active active-dark')
-
-            $('.nav-link').hover(function() {
-                $(this).toggleClass('nav-link-hover-dark')
-            });
         }
 
         if($('body').is('.404-page')) {
