@@ -8,7 +8,7 @@
 
 # About
 
-gerraour.com is Gerald Zandisko's personal website to showcase his art, favorite quotes, portfolio, and other creations. You may also get to see his website development and designing skills.
+Gerald Zandisko's personal website showcases his art, favorite quotes, portfolio, and other creations. You may also get to see his website development and design skills.
 
 ## Authors
 
