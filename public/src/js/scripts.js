@@ -1,5 +1,4 @@
 var themeStatus = 'default'
-console.log(themeStatus);
 
 jQuery(window).scroll(function() {
     if (jQuery(document).scrollTop() > 131) {
@@ -43,9 +42,9 @@ $(function() {
 $(document).ready(function() {
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     if (prefersDark === true) {
-        console.log('Dark mode');
+        // console.log('Dark mode');
     } else {
-        console.log('Light mode');
+        // console.log('Light mode');
     }
     
     $('#lightdark-mode').click(function() {
@@ -54,7 +53,6 @@ $(document).ready(function() {
         } else if (themeStatus === 'darkTheme') {
             themeStatus = 'default'
         }
-        console.log(themeStatus);
         var element = document.body;
         element.classList.toggle("dark-mode");
 
