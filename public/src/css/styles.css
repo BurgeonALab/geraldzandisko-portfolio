@@ -391,6 +391,80 @@ html, body {
     color: #6E5494;
 }
 
+#refined-notable-work {
+    margin-bottom: 50px;
+}
+
+.refined-column {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+.refined-center-slider {
+    display: flex;
+    align-items: center;
+}
+
+.refined-notable-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--bs-border-radius) !important;
+    border-top-right-radius: var(--bs-border-radius) !important;
+}
+
+.refined-character-image-box {
+    border-radius: var(--bs-border-radius) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+    height: 350px;
+}
+
+.refined-character-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -150px;
+}
+
+.refined-company-link {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.5s ease;
+}
+
+.refined-company-link:hover {
+    color: #FCC72E !important;
+}
+
+.refined-social {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.5s ease;
+}
+
+.refined-social.behance:hover {
+    color: #053EFF !important;
+}
+
+.refined-social.github:hover {
+    color: #6E5494 !important;
+}
+
+#quotes-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#wisdomData .tns-item {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.refined-notable-box {
+    border-radius: var(--bs-border-radius) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+}
+
 /* Dark Mode */
 
 .dark-mode {
@@ -418,6 +492,15 @@ html, body {
     box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
 }
 
+.refined-character-image-box-dark {
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.refined-notable-box-dark {
+    background-color: #1A1A21;
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
 /* Dark Mode End */
 
 #lightdark-mode {
@@ -441,23 +524,4 @@ html, body {
 
 .dark-mode-button:hover {
     color: #57AAE0;
-}
-
-#quotes-section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#wisdomData .tns-item {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-
-#refined-notable-work {
-    margin-bottom: 50px;
-}
-
-.refined-notable-image {
-    width: 100%;
-    object-fit: cover;
 }

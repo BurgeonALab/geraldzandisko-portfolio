@@ -147,6 +147,9 @@ $(document).ready(function() {
             var tigerbox = document.getElementById("tiger-dark-mode");
             tigerbox.classList.toggle("shadow-dark-mode");
 
+            var peacockbox = document.getElementById("blue-peacock-dark-mode");
+            peacockbox.classList.toggle("refined-character-image-box-dark");
+
             var stagbox = document.getElementById("stag-dark-mode");
             stagbox.classList.toggle("shadow-dark-mode");
 
@@ -161,6 +164,17 @@ $(document).ready(function() {
 
             var quotes = document.getElementById("quotes-section");
             quotes.classList.toggle("text-dark-mode");
+
+            var refinednotable = document.getElementById("refined-notable-work");
+            refinednotable.classList.toggle("text-dark-mode");
+
+            var bacteriadarkmode = document.getElementById("bacteria-booster-dark-mode");
+            bacteriadarkmode.classList.toggle("text-dark-mode");
+            bacteriadarkmode.classList.toggle("refined-notable-box-dark");
+            var bacteriadarklink = document.getElementById("bacteria-booster-link-dark-mode");
+            bacteriadarklink.classList.toggle("text-dark-mode");
+            var bacteriadarkbehance = document.getElementById("bacteria-booster-behance-dark-mode");
+            bacteriadarkbehance.classList.toggle("text-dark-mode");
         }
 
         if($('body').is('.privacy-page')) {

@@ -43,5 +43,16 @@ $(function() {
             "autoplayTimeout": 10000,
             "autoplayButtonOutput": false
         })
+
+        const tnslider3 = tns({
+            "container": ".notable-work-slider",
+            "mouseDrag": true,
+            "controls": false,
+            "nav": false,
+            "gutter": 25,
+            "edgePadding": 50,
+            "startIndex": 0,
+            "loop": false
+        })
     }
 })
