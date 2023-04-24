@@ -20,42 +20,49 @@ const querySnapshot = await getDocs(collection(db, "wisdom"));
 $(function() {
     if($('body').is('.home-page')) {
         const wisdomData = document.getElementById('wisdomData');
+        wisdomData.classList.add('wisdom-slider');
         querySnapshot.forEach((doc) => {
-            let itemH6 = document.createElement('H6');
-            itemH6.classList.add('fw-bold', 'italic-font');
-            let itemH6Text = document.createTextNode(doc.data().album_name);
-    
-            itemH6.appendChild(itemH6Text);
-            wisdomData.appendChild(itemH6);
+            for (var i = 1; i < querySnapshot.docs.length; i++) {
+                let eachWisdom = document.createElement('DIV');
+                wisdomData.appendChild(eachWisdom);
+                // Title
+                let itemH6 = document.createElement('H6');
+                itemH6.classList.add('fw-bold', 'italic-font');
+                let itemH6Text = document.createTextNode(doc.data().album_name);
+        
+                itemH6.appendChild(itemH6Text);
+                eachWisdom.appendChild(itemH6);
+                // Song Name
+                let itemH2 = document.createElement('H2');
+                itemH2.classList.add('fw-bold');
+                let itemH2Text = document.createTextNode(doc.data().song_name);
+        
+                itemH2.appendChild(itemH2Text);
+                eachWisdom.appendChild(itemH2);
+                // Quote
+                let wisdomFigure = document.createElement('FIGURE');
+                wisdomFigure.classList.add('mb-0');
+                eachWisdom.appendChild(wisdomFigure);
 
-            let itemH2 = document.createElement('H2');
-            itemH2.classList.add('fw-bold');
-            let itemH2Text = document.createTextNode(doc.data().song_name);
-    
-            itemH2.appendChild(itemH2Text);
-            wisdomData.appendChild(itemH2);
+                let wisdomQuote = document.createElement('BLOCKQUOTE');
+                wisdomQuote.classList.add('blockquote');
+                wisdomFigure.appendChild(wisdomQuote);
 
-            let wisdomFigure = document.createElement('FIGURE');
-            wisdomFigure.classList.add('mb-0');
-            wisdomData.appendChild(wisdomFigure);
+                let itemP = document.createElement('P');
+                let itemPText = document.createTextNode(doc.data().quote);
+                itemP.classList.add('lead');
 
-            let wisdomQuote = document.createElement('BLOCKQUOTE');
-            wisdomQuote.classList.add('blockquote');
-            wisdomFigure.appendChild(wisdomQuote)
+                itemP.appendChild(itemPText);
+                wisdomQuote.appendChild(itemP);
 
-            let itemP = document.createElement('P');
-            let itemPText = document.createTextNode(doc.data().quote);
-            itemP.classList.add('lead');
+                let wisdomCaption = document.createElement('FIGCAPTION');
+                wisdomCaption.classList.add('blockquote-footer', 'fw-bold' , 'mb-0');
+                wisdomFigure.appendChild(wisdomCaption);
 
-            itemP.appendChild(itemPText);
-            wisdomQuote.appendChild(itemP);
-
-            let wisdomCaption = document.createElement('FIGCAPTION');
-            wisdomCaption.classList.add('blockquote-footer', 'fw-bold' , 'mb-0');
-            wisdomFigure.appendChild(wisdomCaption);
-
-            let captionText = document.createTextNode(doc.data().artist_name);
-            wisdomCaption.appendChild(captionText);
+                // Artist Name
+                let captionText = document.createTextNode(doc.data().artist_name);
+                wisdomCaption.appendChild(captionText);
+            }
         })
     }
 })

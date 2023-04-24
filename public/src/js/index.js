@@ -44,5 +44,18 @@ $(function() {
             "rewind": true,
             "startIndex": 0
         })
+
+        const tnslider3 = tns({
+            "container": ".wisdom-slider",
+            "mouseDrag": false,
+            "controls": false,
+            "nav": false,
+            "speed": 500,
+            "mode": "gallery",
+            "items": 1,
+            "autoplay": true,
+            "autoplayTimeout": 10000,
+            "autoplayButtonOutput": false
+        })
     }
 })
