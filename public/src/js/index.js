@@ -30,22 +30,8 @@ $(function() {
             "rewind": true,
             "startIndex": 1
         })
-        
-        const tnslider2 = tns({
-            "container": ".work-list-slider",
-            "mouseDrag": true,
-            "controls": false,
-            "nav": false,
-            "speed": 500,
-            "autoWidth": true,
-            "gutter": 20,
-            "edgePadding": 50,
-            "loop": false,
-            "rewind": true,
-            "startIndex": 0
-        })
 
-        const tnslider3 = tns({
+        const tnslider2 = tns({
             "container": ".wisdom-slider",
             "mouseDrag": false,
             "controls": false,

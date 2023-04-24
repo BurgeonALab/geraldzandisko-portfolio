@@ -15,9 +15,6 @@
     .work-card-container {
         height: 350px;
     }
-    .notable-work-container {
-        margin-bottom: 50px;
-    }
     .work-card-padding-mobile {
         padding: 36px !important;
     }
@@ -40,9 +37,6 @@
     }
     .image-link-container {
         text-align: center;
-    }
-    .notable-header-container {
-        padding-right: 12px;
     }
 }
 
@@ -122,10 +116,6 @@
         padding-right: 60px;
     }
     .notable-padding .col-xl-3 {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    .notable-header-container {
         padding-left: 60px;
         padding-right: 60px;
     }

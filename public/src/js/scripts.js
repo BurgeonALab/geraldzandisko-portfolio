@@ -33,10 +33,6 @@ $(function() {
     function removeHash() {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }
-
-    $('.work-list-slider-button').click(function() {
-        $(this).parent().find('.notable-description-width').fadeToggle();
-    });
 });
 
 $(document).ready(function() {
@@ -94,9 +90,6 @@ $(document).ready(function() {
             var work = document.getElementById("work_section");
             work.classList.toggle("text-dark-mode");
 
-            var notable = document.getElementById("notable_section");
-            notable.classList.toggle("text-dark-mode");
-
             var contact = document.getElementById("contact_section");
             contact.classList.toggle("text-dark-mode");
 
@@ -111,24 +104,6 @@ $(document).ready(function() {
 
             var contactnav = document.getElementById("contact-nav");
             contactnav.classList.toggle("text-dark-mode");
-
-            var worklist = document.getElementById("work-list-dark-mode");
-            worklist.classList.toggle("text-dark-mode");
-
-            var posbehance = document.getElementById("pos-behance");
-            posbehance.classList.toggle("text-dark-mode");
-
-            var posgithub = document.getElementById("pos-github");
-            posgithub.classList.toggle("text-dark-mode");
-
-            var tropicanaticbehance = document.getElementById("tropicanatic-behance");
-            tropicanaticbehance.classList.toggle("text-dark-mode");
-
-            var bacteriabehance = document.getElementById("bacteria-behance");
-            bacteriabehance.classList.toggle("text-dark-mode");
-
-            var semestabehance = document.getElementById("semesta-behance");
-            semestabehance.classList.toggle("text-dark-mode");
 
             var footerwhatsapp = document.getElementById("footer-whatsapp");
             footerwhatsapp.classList.toggle("text-dark-mode");
@@ -172,9 +147,6 @@ $(document).ready(function() {
             var tigerbox = document.getElementById("tiger-dark-mode");
             tigerbox.classList.toggle("shadow-dark-mode");
 
-            var peacockbox = document.getElementById("peacock-dark-mode");
-            peacockbox.classList.toggle("shadow-dark-mode");
-
             var stagbox = document.getElementById("stag-dark-mode");
             stagbox.classList.toggle("shadow-dark-mode");
 
@@ -186,18 +158,6 @@ $(document).ready(function() {
 
             var uiux = document.getElementById("uiux-dark-mode");
             uiux.classList.toggle("work-card-dark-mode");
-
-            var warung = document.getElementById("warung-dark-mode");
-            warung.classList.toggle("work-list-dark-mode");
-
-            var tropicanatic = document.getElementById("tropicanatic-dark-mode");
-            tropicanatic.classList.toggle("work-list-dark-mode");
-
-            var semesta = document.getElementById("semesta-dark-mode");
-            semesta.classList.toggle("work-list-dark-mode");
-
-            var aquahelix = document.getElementById("aquahelix-dark-mode");
-            aquahelix.classList.toggle("work-list-dark-mode");
 
             var quotes = document.getElementById("quotes-section");
             quotes.classList.toggle("text-dark-mode");
