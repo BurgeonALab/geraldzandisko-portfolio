@@ -481,3 +481,8 @@ html, body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+#wisdomData .tns-item {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
