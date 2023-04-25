@@ -1,3 +1,9 @@
+@media (max-width: 1399.98px) {
+    .refined-notable-content-box {
+        height: 350px;
+    }
+}
+
 @media (max-width: 1199.98px) {
     .image-owl-align {
         margin-top: 50px;
@@ -38,6 +44,9 @@
     .image-link-container {
         text-align: center;
     }
+    .refined-notable-content-box {
+        height: 300px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -63,6 +72,12 @@
     }
     .notable-image {
         object-position: 0px -100px;
+    }
+    .refined-character-image {
+        object-position: 0px -100px;
+    }
+    .spotify-embedded {
+        width: 70%;
     }
 }
 
@@ -124,6 +139,16 @@
     }
     .work-card-padding-mobile {
         padding: 24px !important;
+    }
+    .refined-notable-work-mobile {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .refined-character-image {
+        object-position: 0px -50px;
+    }
+    .spotify-embedded {
+        width: 100%;
     }
 }
 
@@ -189,6 +214,18 @@
     .notable-image {
         object-position: 0px 0px;
     }
+    .refined-notable-slider-mobile {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 468.98px) {
+    .refined-notable-content-box {
+        height: 350px;
+    }
+    .refined-character-image {
+        object-position: 0px 0px;
+    }
 }
 
 @media (max-width: 359.98px) {
@@ -200,5 +237,11 @@
     }
     .work-card-padding-mobile h1 {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 346.98px) {
+    .refined-notable-content-box {
+        height: 400px;
     }
 }

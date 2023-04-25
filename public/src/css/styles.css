@@ -147,11 +147,6 @@ html, body {
     height: 100%;
 }
 
-.quote-mobile {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 .work-card-overlay .container-fluid .row {
     height: 100%;
 }
@@ -531,4 +526,9 @@ html, body {
 
 .dark-mode-button:hover {
     color: #57AAE0;
+}
+
+.spotify-embedded {
+    border-radius: var(--bs-border-radius) !important;
+    width: 50%;
 }
