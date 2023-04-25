@@ -51,7 +51,7 @@ $(function() {
             "nav": false,
             "gutter": 25,
             "edgePadding": 50,
-            "startIndex": 4,
+            "startIndex": 0,
             "loop": false
         })
     }
