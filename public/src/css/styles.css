@@ -147,6 +147,11 @@ html, body {
     height: 100%;
 }
 
+.quote-mobile {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .work-card-overlay .container-fluid .row {
     height: 100%;
 }
@@ -395,13 +400,7 @@ html, body {
     margin-bottom: 50px;
 }
 
-.refined-column {
-    display: flex !important;
-    justify-content: center !important;
-    flex-direction: column !important;
-}
-
-.refined-center-slider {
+.refined-align-slider {
     display: flex;
     align-items: center;
 }
@@ -424,6 +423,14 @@ html, body {
     height: 100%;
     object-fit: cover;
     object-position: 0px -150px;
+}
+
+.refined-notable-content-box {
+    padding: 1.5rem !important;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .refined-company-link {
