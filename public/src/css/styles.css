@@ -29,6 +29,7 @@ html, body {
     flex-shrink: 0;
     border-top-right-radius: var(--bs-border-radius) !important;
     border-top-left-radius: var(--bs-border-radius) !important;
+    padding: 3rem !important;
 }
 
 .social-link.nav-link {
@@ -465,6 +466,11 @@ html, body {
 .refined-notable-box {
     border-radius: var(--bs-border-radius) !important;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.quotes-carousel {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
 }
 
 /* Dark Mode */

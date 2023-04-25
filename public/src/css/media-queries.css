@@ -245,3 +245,48 @@
         height: 400px;
     }
 }
+
+@media (max-width: 280.98px) {
+    .logo-space .logo {
+        height: 25px !important;
+    }
+    .quote-mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .image-padding-mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .work-padding-mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .refined-notable-work-mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .quotes-carousel {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .footer-mobile {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .work-card-padding-mobile {
+        padding: 8px !important;
+    }
+    .work-card-padding-mobile h2 {
+        font-size: 10px;
+    }
+    .work-card-padding-mobile h1 {
+        font-size: 20px;
+    }
+    .refined-notable-content-box {
+        height: 320px;
+    }
+    .refined-notable-content-box h6:last-child {
+        display: none;
+    }
+}
