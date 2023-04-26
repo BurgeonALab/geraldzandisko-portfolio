@@ -34,6 +34,15 @@
     #refined-notable-work {
         margin-bottom: 0px;
     }
+    .refined-character-image-box {
+        width: 100%;
+    }
+    .image-link-container.green-scenery {
+        text-align: left;
+    }
+    .refined-character-image {
+        object-position: 0px -170px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -59,6 +68,9 @@
     }
     .spotify-embedded {
         width: 70%;
+    }
+    .refined-character-image {
+        object-position: 0px -110px;
     }
 }
 
@@ -128,14 +140,23 @@
     .refined-notable-work-mobile .col-auto:first-child {
         flex-grow: 1 !important;
     }
-    .refined-character-image-box {
-        margin-left: auto;
-        margin-right: auto;
-    }
     .image-placeholder {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+        width: auto;
+    }
+    .image-placeholder-overlay {
+        display: none;
+    }
+    .image-link-container.green-scenery {
+        text-align: center;
+    }
+    #quotes-section {
+        margin-top: 50px;
+    }
+    .refined-character-image {
+        object-position: 0px -40px;
+    }
+    .notable-description-hide {
+        display: none;
     }
 }
 
@@ -198,20 +219,14 @@
         display: flex;
         justify-content: center;
     }
-    .refined-notable-content-box h6:last-child {
-        display: none;
-    }
-    .refined-notable-content-box {
-        height: 220px;
-    }
 }
 
 @media (max-width: 468.98px) {
     .refined-character-image-box {
         width: auto;
     }
-    .image-placeholder {
-        width: auto;
+    .refined-character-image {
+        object-position: 0px 0px;
     }
 }
 
@@ -243,19 +258,15 @@
     }
 }
 
-@media (max-width: 381.98px) {
-    .refined-notable-content-box {
-        height: 300px;
-    }
-}
-
 @media (max-width: 280.98px) {
+    .galaxy-fold-work-slider {
+        display: none;
+    }
     .logo-space .logo {
         height: 25px !important;
     }
     .quote-mobile {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 1rem;
     }
     .image-padding-mobile {
         padding-left: 1rem;
@@ -264,6 +275,12 @@
     .work-padding-mobile {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .work-margin {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .refined-notable-work-mobile {
         padding-left: 1rem;
@@ -274,25 +291,12 @@
         padding-right: 1rem !important;
     }
     .footer-mobile {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
-    .work-card-padding-mobile {
-        padding: 8px !important;
-    }
-    .work-card-padding-mobile h2 {
-        font-size: 10px;
-    }
-    .work-card-padding-mobile h1 {
-        font-size: 20px;
+        padding: 1rem !important;
     }
     .refined-character-image-box {
         height: 350px;
     }
     .image-placeholder {
-        height: 350px;
-    }
-    .refined-notable-content-box {
         height: 350px;
     }
 }
