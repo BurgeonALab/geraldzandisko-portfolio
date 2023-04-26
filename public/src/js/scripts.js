@@ -57,10 +57,10 @@ $(document).ready(function() {
 
         var elm = $('.logo');
         var src = elm.attr('src');
-        if (src === "./images/logo.png")
-            elm.attr('src', './images/logo_white.png')
+        if (src === "./images/Logo.webp")
+            elm.attr('src', './images/LogoWhite.webp')
         else
-            elm.attr('src', './images/logo.png')
+            elm.attr('src', './images/Logo.webp')
 
         if($('body').is('.home-page, .privacy-page')) {
             var navbehance = document.getElementById("navbehance");
@@ -79,10 +79,10 @@ $(document).ready(function() {
         if($('body').is('.home-page')) {
             var elm = $('.navbar-logo')
             var src = elm.attr('src');
-            if (src === "./images/small-logo.png")
-                elm.attr('src', './images/small-logo_white.png')
+            if (src === "./images/Smalllogo.webp")
+                elm.attr('src', './images/SmalllogoWhite.webp')
             else
-                elm.attr('src', './images/small-logo.png')
+                elm.attr('src', './images/Smalllogo.webp')
 
             var wisdom = document.getElementById("wisdomData");
             wisdom.classList.toggle("text-dark-mode");
@@ -233,10 +233,10 @@ $(document).ready(function() {
 
             var elm = $('.err404-logo')
             var src = elm.attr('src');
-            if (src === "./images/404.png")
-                elm.attr('src', './images/404_white.png')
+            if (src === "./images/404.webp")
+                elm.attr('src', './images/404White.webp')
             else
-                elm.attr('src', './images/404.png')
+                elm.attr('src', './images/404.webp')
         }
     });
 
