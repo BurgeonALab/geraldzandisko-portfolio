@@ -34,9 +34,6 @@
     #refined-notable-work {
         margin-bottom: 0px;
     }
-    #quotes-section {
-        margin-top: 0px;
-    }
 }
 
 @media (max-width: 991.98px) {
@@ -200,9 +197,6 @@
     .contact-footer-mobile {
         display: flex;
         justify-content: center;
-    }
-    .refined-notable-slider-mobile {
-        padding: 0px;
     }
     .refined-notable-content-box h6:last-child {
         display: none;
