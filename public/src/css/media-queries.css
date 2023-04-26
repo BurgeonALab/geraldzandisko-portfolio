@@ -266,7 +266,10 @@
         height: 25px !important;
     }
     .quote-mobile {
-        padding: 1rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .image-padding-mobile {
         padding-left: 1rem;
