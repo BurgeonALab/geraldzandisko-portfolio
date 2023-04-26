@@ -418,10 +418,6 @@ html, body {
 
 .refined-notable-content-box {
     padding: 1.5rem !important;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .refined-company-link {
@@ -449,7 +445,7 @@ html, body {
 }
 
 #quotes-section {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 

@@ -52,7 +52,9 @@ $(function() {
             "gutter": 25,
             "edgePadding": 50,
             "startIndex": 0,
-            "loop": false
+            "loop": false,
+            "items": 2,
+            "fixedWidth": 250,
         })
     }
 })
