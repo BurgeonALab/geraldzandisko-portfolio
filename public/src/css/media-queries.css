@@ -276,14 +276,12 @@
         padding-right: 1rem;
     }
     .work-padding-mobile {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .work-margin {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        padding-left: 0px;
-        padding-right: 0px;
     }
     .refined-notable-work-mobile {
         padding-left: 1rem;
