@@ -266,18 +266,19 @@
         height: 25px !important;
     }
     .quote-mobile {
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
     }
     .image-padding-mobile {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .work-padding-mobile {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .work-padding-mobile {
-        padding-left: 0px;
-        padding-right: 0px;
+    .galaxy-fold-pictures {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     .work-margin {
         padding-top: 1rem;
@@ -288,11 +289,11 @@
         padding-right: 1rem;
     }
     .quotes-carousel {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
+        padding-left: 28px !important;
+        padding-right: 28px !important;
     }
     .footer-mobile {
-        padding: 1rem !important;
+        padding: 2rem !important;
     }
     .refined-character-image-box {
         height: 350px;
