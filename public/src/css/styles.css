@@ -546,3 +546,19 @@ html, body {
     top: 150px;
     left: 0;
 }
+
+.image-description-overlay {
+    top: 0;
+}
+
+.image-link-container.green-scenery {
+    margin: 20px;
+}
+
+.image-link-container.green-scenery .image-link {
+    color: #464646;
+}
+
+.image-link-container.green-scenery .image-link:hover {
+    color: #fcc72e;
+}

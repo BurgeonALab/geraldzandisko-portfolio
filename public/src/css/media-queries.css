@@ -37,11 +37,11 @@
     .refined-character-image-box {
         width: 100%;
     }
-    .image-link-container.green-scenery {
-        text-align: left;
-    }
     .refined-character-image {
         object-position: 0px -170px;
+    }
+    .image-link-container.green-scenery {
+        text-align: left;
     }
 }
 
@@ -146,9 +146,6 @@
     .image-placeholder-overlay {
         display: none;
     }
-    .image-link-container.green-scenery {
-        text-align: center;
-    }
     #quotes-section {
         margin-top: 50px;
     }
@@ -157,6 +154,12 @@
     }
     .notable-description-hide {
         display: none;
+    }
+    .image-placeholder-overlay.image-description-overlay {
+        display: block;
+    }
+    .image-link-container.green-scenery {
+        text-align: center;
     }
 }
 
