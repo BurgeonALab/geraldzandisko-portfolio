@@ -83,45 +83,72 @@ $(document).ready(function() {
                 elm.attr('src', './images/SmalllogoWhite.webp')
             else
                 elm.attr('src', './images/Smalllogo.webp')
-
+            
+            // Text
             var tiger = document.getElementById("tiger-text-dark");
             if (tiger.innerHTML === 'Wandering Tiger by <span class="fw-bold">Vincent</span>') {
                 tiger.innerHTML = 'White Tiger by <span class="fw-bold">TBD</span>'
             } else {
                 tiger.innerHTML = 'Wandering Tiger by <span class="fw-bold">Vincent</span>'
             }
-            var tiger_elm = $('.white-tiger-link')
+            // Link
+            var tiger_elm = $('.white-tiger-link');
             var tiger_href = tiger_elm.attr('href');
             if (tiger_href === "https://www.etsy.com/shop/MagicaArtPrints")
                 tiger_elm.attr('href', '#')
             else
                 tiger_elm.attr('href', 'https://www.etsy.com/shop/MagicaArtPrints')
+            // Image
+            var tigerdark_elm = $('#tiger-dark-mode');
+            var tigerdark_src = tigerdark_elm.attr('src');
+            if (tigerdark_src === "./images/characters/TheTiger.webp")
+                tigerdark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+            else
+                tigerdark_elm.attr('src', './images/characters/TheTiger.webp')
 
+            // Text
             var owl = document.getElementById("owl-text-dark");
             if (owl.innerHTML === 'Intense Owl by <span class="fw-bold">Brad</span>') {
                 owl.innerHTML = 'White Owl by <span class="fw-bold">TBD</span>'
             } else {
                 owl.innerHTML = 'Intense Owl by <span class="fw-bold">Brad</span>'
             }
-            var owl_elm = $('.white-owl-link')
+            // Link
+            var owl_elm = $('.white-owl-link');
             var owl_href = owl_elm.attr('href');
             if (owl_href === "https://www.etsy.com/shop/ColorAndLightWallArt")
                 owl_elm.attr('href', '#')
             else
                 owl_elm.attr('href', 'https://www.etsy.com/shop/ColorAndLightWallArt')
+            // Image
+            var owldark_elm = $('#owl-dark-mode');
+            var owldark_src = owldark_elm.attr('src');
+            if (owldark_src === "./images/characters/TheOwl.webp")
+                owldark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+            else
+                owldark_elm.attr('src', './images/characters/TheOwl.webp')
 
+            // Text
             var peacock = document.getElementById("peacock-text-dark");
             if (peacock.innerHTML === 'Blue Peacock by <span class="fw-bold">Myla</span>') {
                 peacock.innerHTML = 'White Peacock by <span class="fw-bold">TBD</span>'
             } else {
                 peacock.innerHTML = 'Blue Peacock by <span class="fw-bold">Myla</span>'
             }
-            var peacock_elm = $('.white-peacock-link')
+            // Link
+            var peacock_elm = $('.white-peacock-link');
             var peacock_href = peacock_elm.attr('href');
             if (peacock_href === "https://www.etsy.com/shop/MapleAndOakVintage")
                 peacock_elm.attr('href', '#')
             else
                 peacock_elm.attr('href', 'https://www.etsy.com/shop/MapleAndOakVintage')
+            // Image
+            var peacockdark_elm = $('#blue-peacock-dark-mode img');
+            var peacockdark_src = peacockdark_elm.attr('src');
+            if (peacockdark_src === "./images/characters/BluePeacock.webp")
+                peacockdark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+            else
+                peacockdark_elm.attr('src', './images/characters/BluePeacock.webp')
 
             var scenery = document.getElementById("scenery-text-dark");
             if (scenery.innerHTML === 'Green Scenery by <span class="fw-bold">TBD</span>') {
@@ -130,19 +157,28 @@ $(document).ready(function() {
                 scenery.innerHTML = 'Green Scenery by <span class="fw-bold">TBD</span>'
             }
 
+            // Text
             var stag = document.getElementById("monarch-text-dark");
             if (stag.innerHTML === 'Monarch of the Glen Stag by <span class="fw-bold">Steve</span>') {
                 stag.innerHTML = 'White Stag by <span class="fw-bold">TBD</span>'
             } else {
                 stag.innerHTML = 'Monarch of the Glen Stag by <span class="fw-bold">Steve</span>'
             }
-            var stag_elm = $('.white-stag-link')
+            // Link
+            var stag_elm = $('.white-stag-link');
             var stag_href = stag_elm.attr('href');
             if (stag_href === "https://www.etsy.com/shop/InstantGraphics")
                 stag_elm.attr('href', '#')
             else
                 stag_elm.attr('href', 'https://www.etsy.com/shop/InstantGraphics')
-
+            // Image
+            var stagdark_elm = $('#stag-dark-mode');
+            var stagdark_src = stagdark_elm.attr('src');
+            if (stagdark_src === "./images/characters/MonarchGlenStag.webp")
+                stagdark_elm.attr('src', './images/characters/WhiteStagPlaceholder.webp')
+            else
+                stagdark_elm.attr('src', './images/characters/MonarchGlenStag.webp')
+            
             var wisdom = document.getElementById("wisdomData");
             wisdom.classList.toggle("text-dark-mode");
 
