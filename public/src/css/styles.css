@@ -138,6 +138,11 @@ html, body {
     position: relative;
 }
 
+.work-card-social {
+    font-size: calc(1.375rem + 1.5vw);
+    margin-bottom: 0 !important;
+}
+
 .work-card-size {
     height: 100%;
     width: 100%;
