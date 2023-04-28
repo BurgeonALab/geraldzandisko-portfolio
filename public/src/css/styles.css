@@ -198,6 +198,8 @@ html, body {
     text-decoration: none;
     color: #000000;
     transition: 0.3s ease;
+    font-weight: 300 !important;
+    display: inline-block !important;
 }
 
 .privacy-terms:hover {
@@ -324,6 +326,12 @@ html, body {
 
 .copyrights-misc {
     margin-top: 16px;
+}
+
+.copyrights-misc-align {
+    justify-content: flex-end !important;
+    display: flex;
+    align-items: flex-end !important;
 }
 
 .footer-stag-image {

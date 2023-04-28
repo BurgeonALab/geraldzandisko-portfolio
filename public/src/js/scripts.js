@@ -230,6 +230,9 @@ $(document).ready(function() {
             var privacyfooter = document.getElementById("privacy-dark-mode");
             privacyfooter.classList.toggle("text-dark-mode");
 
+            var cookiefooter = document.getElementById("cookie-dark-mode");
+            cookiefooter.classList.toggle("text-dark-mode");
+
             var termsfooter = document.getElementById("terms-dark-mode");
             termsfooter.classList.toggle("text-dark-mode");
 

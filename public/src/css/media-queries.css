@@ -231,6 +231,16 @@
     .refined-character-image {
         object-position: 0px 0px;
     }
+    .copyrights-misc-align {
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+    .privacy-terms:first-child {
+        margin-bottom: 16px;
+    }
+    .privacy-terms:nth-child(2) {
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 420.98px) {
