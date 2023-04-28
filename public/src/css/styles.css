@@ -34,6 +34,7 @@ html, body {
 
 .social-link.nav-link {
     color: #000000;
+    padding: 1rem !important;
 }
 
 .social-link.nav-link.behance:hover {
@@ -73,6 +74,7 @@ html, body {
     width: 300px;
     height: auto;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+    border-radius: var(--bs-border-radius) !important;
 }
 
 .image-link {
@@ -80,6 +82,17 @@ html, body {
     color: #7E7E7E;
     transition: 0.3s ease;
     display: inline-block;
+}
+
+.image-tiger-box {
+    display: flex !important;
+    align-items: flex-end !important;
+    flex-direction: column !important;
+}
+
+.image-owl-box {
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .image-link:hover {
@@ -166,6 +179,10 @@ html, body {
     color: #34B7F1 !important;
 }
 
+.social-media {
+    margin-right: 1rem !important;
+}
+
 .social-media-footer {
     display: inline-block;
     text-decoration: none;
@@ -212,6 +229,9 @@ html, body {
     margin-bottom: 8px;
     color: #000000;
     transition: 0.3s ease;
+    margin-bottom: 1rem !important;
+    display: inline-block !important;
+    font-weight: 300 !important;
 }
 
 .link-style:hover {
@@ -292,6 +312,19 @@ html, body {
     background-color: #fcc72e;
     display: inline;
     width: max-content;
+    display: flex !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.work-card-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
 }
 
 .box-title-container p {
