@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore, collection, getDocs } from "firebase/firestore"
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCU5SmyCTAmXUAUVeSCf0fVnA2OxlXHU-U",
@@ -12,7 +13,12 @@ const firebaseConfig = {
     measurementId: "G-XDPT9XMJXM"
 };
 
+// App
 const app = initializeApp(firebaseConfig);
+// Analytics
+const analytics = getAnalytics(app);
+logEvent(analytics, 'notification_received');
+// DB
 const db = getFirestore(app);
 
 // Wisdom
