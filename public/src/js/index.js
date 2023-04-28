@@ -1,8 +1,9 @@
 // CSSs, SCSSs, JSs
-import '../../src/css/styles.css';
+import '../css/styles.css';
 import '../scss/styles.scss'
-import '../../src/css/animations.css';
-import '../../src/css/media-queries.css';
+import '../css/animations.css';
+import '../css/media-queries.css';
+import '../css/tiny-slider.css'
 
 import $ from 'jquery'
 import * as bootstrap from 'bootstrap'
