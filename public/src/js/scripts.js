@@ -1,5 +1,4 @@
-var themeStatus = 'default'
-
+// Scroll Effect
 jQuery(window).scroll(function() {
     if (jQuery(document).scrollTop() > 131) {
         if (themeStatus === 'default') {
@@ -22,6 +21,7 @@ jQuery(window).scroll(function() {
     }
 })
 
+// Hide Link
 $(function() {
     const linkBtn = $('.navbar-link, .link-style, .navbar-logo-container');
     linkBtn.click(() => {
@@ -35,14 +35,33 @@ $(function() {
     }
 });
 
-$(document).ready(function() {
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    if (prefersDark === true) {
-        // console.log('Dark mode');
+// Dark Mode
+function darkMode() {
+    console.log("Theme change: Dark");
+}
+
+function lightMode() {
+    console.log("Theme Change: Light");
+}
+
+const currentTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (currentTheme === true) {
+        console.log("Current theme: Dark");
     } else {
-        // console.log('Light mode');
+        console.log("Current theme: Light");
     }
-    
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    const switchTheme = event.matches ? "Dark mode" : "Light Mode";
+    if (switchTheme === "Dark mode") {
+        darkMode();
+    } else if (switchTheme === 'Light Mode') {
+        lightMode();
+    }
+})
+
+var themeStatus = 'default'
+$(document).ready(function() {
     $('#lightdark-mode').click(function() {
         if (themeStatus === 'default') {
             themeStatus = 'darkTheme'
