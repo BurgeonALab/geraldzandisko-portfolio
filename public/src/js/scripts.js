@@ -36,19 +36,36 @@ $(function() {
 });
 
 // Dark Mode
+var themeStatus = 'default'
+var bodyElement = document.body;
+// Dark Mode - Header Logo
+var logoElement = $('.logo');
+var logoSrc = logoElement.attr('src');
 function darkMode() {
-    console.log("Theme change: Dark");
+    themeStatus = 'darkTheme'
+    bodyElement.classList.add("dark-mode");
+
+    $('#icon-switch').toggleClass('fa-moon fa-sun');
+    $('#icon-switch').toggleClass('dark-mode-button light-mode-button');
+    
+    logoElement.attr('src', './images/LogoWhite.webp');
 }
 
 function lightMode() {
-    console.log("Theme Change: Light");
+    themeStatus = 'default'
+    bodyElement.classList.remove("dark-mode");
+    
+    $('#icon-switch').toggleClass('fa-sun fa-moon');
+    $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
+
+    logoElement.attr('src', './images/Logo.webp');
 }
 
 const currentTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     if (currentTheme === true) {
-        console.log("Current theme: Dark");
+        darkMode();
     } else {
-        console.log("Current theme: Light");
+        lightMode();
     }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
@@ -60,27 +77,13 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     }
 })
 
-var themeStatus = 'default'
 $(document).ready(function() {
     $('#lightdark-mode').click(function() {
         if (themeStatus === 'default') {
-            themeStatus = 'darkTheme'
+            darkMode();
         } else if (themeStatus === 'darkTheme') {
-            themeStatus = 'default'
+            lightMode();
         }
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-
-        $('#icon-switch').toggleClass('fa-sun fa-moon');
-        $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
-
-        var elm = $('.logo');
-        var src = elm.attr('src');
-        if (src === "./images/Logo.webp")
-            elm.attr('src', './images/LogoWhite.webp')
-        else
-            elm.attr('src', './images/Logo.webp')
-
         if($('body').is('.home-page, .privacy-page')) {
             var navbehance = document.getElementById("navbehance");
             navbehance.classList.toggle("text-dark-mode");
