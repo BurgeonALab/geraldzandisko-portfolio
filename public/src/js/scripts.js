@@ -164,10 +164,14 @@ $(document).ready(function() {
             // Image
             var peacockdark_elm = $('#blue-peacock-dark-mode img');
             var peacockdark_src = peacockdark_elm.attr('src');
-            if (peacockdark_src === "./images/characters/BluePeacock.webp")
-                peacockdark_elm.attr('src', './images/characters/WhitePeacock.webp')
-            else
-                peacockdark_elm.attr('src', './images/characters/BluePeacock.webp')
+            if (peacockdark_src === "./images/characters/BluePeacock.webp") {
+                peacockdark_elm.attr('src', './images/characters/WhitePeacock.webp');
+                peacockdark_elm.addClass('white-peacock-image');
+            }
+            else {
+                peacockdark_elm.attr('src', './images/characters/BluePeacock.webp');
+                peacockdark_elm.removeClass('white-peacock-image');
+            }
             var peacockdark_alt = peacockdark_elm.attr('alt');
             if (peacockdark_alt === "Blue Peacock")
                 peacockdark_elm.attr('alt', 'White Peacock on Branch')

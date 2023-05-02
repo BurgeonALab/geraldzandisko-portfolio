@@ -43,6 +43,9 @@
     .image-link-container.green-scenery {
         text-align: left;
     }
+    .white-peacock-image {
+        object-position: 0px 0px !important;
+    }
 }
 
 @media (max-width: 991.98px) {
