@@ -150,7 +150,7 @@ $(document).ready(function() {
             // Text
             var peacock = document.getElementById("peacock-text-dark");
             if (peacock.innerHTML === 'Blue Peacock by <span class="fw-bold">Myla</span>') {
-                peacock.innerHTML = 'White Peacock by <span class="fw-bold">TBD</span>'
+                peacock.innerHTML = 'White Peacock on Branch by <span class="fw-bold">Mona</span>'
             } else {
                 peacock.innerHTML = 'Blue Peacock by <span class="fw-bold">Myla</span>'
             }
@@ -158,16 +158,21 @@ $(document).ready(function() {
             var peacock_elm = $('.white-peacock-link');
             var peacock_href = peacock_elm.attr('href');
             if (peacock_href === "https://www.etsy.com/shop/MapleAndOakVintage")
-                peacock_elm.attr('href', '#')
+                peacock_elm.attr('href', 'https://www.etsy.com/shop/MonaArtStudioDesigns')
             else
                 peacock_elm.attr('href', 'https://www.etsy.com/shop/MapleAndOakVintage')
             // Image
             var peacockdark_elm = $('#blue-peacock-dark-mode img');
             var peacockdark_src = peacockdark_elm.attr('src');
             if (peacockdark_src === "./images/characters/BluePeacock.webp")
-                peacockdark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+                peacockdark_elm.attr('src', './images/characters/WhitePeacock.webp')
             else
                 peacockdark_elm.attr('src', './images/characters/BluePeacock.webp')
+            var peacockdark_alt = peacockdark_elm.attr('alt');
+            if (peacockdark_alt === "Blue Peacock")
+                peacockdark_elm.attr('alt', 'White Peacock on Branch')
+            else
+                peacockdark_elm.attr('alt', 'Blue Peacock')
 
             var scenery = document.getElementById("scenery-text-dark");
             if (scenery.innerHTML === 'Green Scenery by <span class="fw-bold">TBD</span>') {
