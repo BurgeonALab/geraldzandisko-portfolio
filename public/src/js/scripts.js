@@ -41,51 +41,30 @@ var bodyElement = document.body;
 // Dark Mode - Header Logo
 var logoElement = $('.logo');
 var logoSrc = logoElement.attr('src');
-
-function themeSwitch() {
-    if (themeStatus === 'darkTheme') {
-        $('#icon-switch').toggleClass('fa-sun fa-moon');
-        $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
-    } else if (themeStatus === 'default') {
-        $('#icon-switch').toggleClass('fa-moon fa-sun');
-        $('#icon-switch').toggleClass('dark-mode-button light-mode-button');
-    }
-}
-
 function darkMode() {
-    themeStatus = 'darkTheme'
+    themeStatus = 'darkTheme';
     bodyElement.classList.add("dark-mode");
-
-    themeSwitch();
-
     logoElement.attr('src', './images/LogoWhite.webp');
 }
 
 function lightMode() {
-    themeStatus = 'default'
+    themeStatus = 'default';
     bodyElement.classList.remove("dark-mode");
-
-    themeSwitch();
-
     logoElement.attr('src', './images/Logo.webp');
 }
 
 const currentTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     if (currentTheme === true) {
-        themeSwitch();
         darkMode();
     } else {
-        themeSwitch();
         lightMode();
     }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     const switchTheme = event.matches ? "Dark mode" : "Light Mode";
     if (switchTheme === "Dark mode") {
-        themeSwitch();
         darkMode();
     } else if (switchTheme === 'Light Mode') {
-        themeSwitch();
         lightMode();
     }
 })
@@ -97,6 +76,10 @@ $(document).ready(function() {
         } else if (themeStatus === 'darkTheme') {
             lightMode();
         }
+        
+        $('#icon-switch').toggleClass('fa-sun fa-moon');
+        $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
+
         if($('body').is('.home-page, .privacy-page')) {
             var navbehance = document.getElementById("navbehance");
             navbehance.classList.toggle("text-dark-mode");
