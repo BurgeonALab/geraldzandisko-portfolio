@@ -212,6 +212,8 @@ $(document).ready(function() {
 			footeremail.classList.toggle("text-dark-mode");
 			var aboutsection = document.getElementById("about-section");
 			aboutsection.classList.toggle("text-dark-mode");
+			var readsection = document.getElementById("read-section");
+			readsection.classList.toggle("text-dark-mode");
 			var worksection = document.getElementById("work-section");
 			worksection.classList.toggle("text-dark-mode");
 			var contactsection = document.getElementById("contact-section");
