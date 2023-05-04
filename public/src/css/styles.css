@@ -519,43 +519,33 @@ html, body {
     padding-right: 3rem !important;
 }
 
-/* Dark Mode */
-
-.dark-mode {
-    background-color: #121217 !important;
+.dragon-image-box {
+    height: 400px;
+    border-radius: var(--bs-border-radius) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+    background-color: grey;
 }
 
-.text-dark-mode {
-    color: #FFFFFF !important;
+.read-more-link {
+    text-decoration: none;
+    color: #464646;
+    transition: 0.3s ease;
 }
 
-.navigation-dark-mode {
-    background-color: #121217;
+.read-more-link:hover {
+    color: #fcc72e !important;
 }
 
-.footer-dark-mode {
-    background-color: #1A1A21;
-    box-shadow: 0 1rem 3rem rgb(26, 26, 33) !important;
+#article_section {
+    margin-top: 50px;
 }
 
-.shadow-dark-mode {
-    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+.article-item {
+    border-radius: var(--bs-border-radius) !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }
-
-.work-card-dark-mode {
-    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
-}
-
-.refined-character-image-box-dark {
-    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
-}
-
-.refined-notable-box-dark {
-    background-color: #1A1A21;
-    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
-}
-
-/* Dark Mode End */
 
 #lightdark-mode {
     padding: 1rem !important;
@@ -616,3 +606,54 @@ html, body {
 .image-link-container.green-scenery .image-link:hover {
     color: #fcc72e;
 }
+
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #121217 !important;
+}
+
+.text-dark-mode {
+    color: #FFFFFF !important;
+}
+
+.navigation-dark-mode {
+    background-color: #121217;
+}
+
+.footer-dark-mode {
+    background-color: #1A1A21;
+    box-shadow: 0 1rem 3rem rgb(26, 26, 33) !important;
+}
+
+.shadow-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.work-card-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.refined-character-image-box-dark {
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.refined-notable-box-dark {
+    background-color: #1A1A21;
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.article-item-dark-mode {
+    background-color: #1A1A21;
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.dragon-image-box-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.read-more-link-dark-mode {
+    color: #7E7E7E;
+}
+
+/* Dark Mode End */

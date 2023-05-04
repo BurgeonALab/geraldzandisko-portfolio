@@ -164,6 +164,10 @@
     .image-link-container.green-scenery {
         text-align: center;
     }
+    .article-section-mobile {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -316,5 +320,12 @@
     }
     .image-placeholder {
         height: 350px;
+    }
+    .article-section-mobile {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    #article_section {
+        margin-top: 1rem !important;
     }
 }

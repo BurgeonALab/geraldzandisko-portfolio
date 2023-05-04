@@ -117,6 +117,14 @@ $(document).ready(function() {
 				owldark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp');
 			else
 				owldark_elm.attr('src', './images/characters/TheOwl.webp');
+			// Dark Mode - Dragon Image
+			// Text
+			var dragon = document.getElementById("dragon-text-dark");
+			if (dragon.innerHTML === 'Green Dragon by <span class="fw-bold">TBD</span>') {
+				dragon.innerHTML = 'Silver Dragon by <span class="fw-bold">TBD</span>'
+			} else {
+				dragon.innerHTML = 'Green Dragon by <span class="fw-bold">TBD</span>'
+			}
 			// Dark Mode - Peacock Image
 			// Text
 			var peacock = document.getElementById("peacock-text-dark");
@@ -179,6 +187,11 @@ $(document).ready(function() {
 			// Dark Mode - Links
 			var wisdom = document.getElementById("wisdomData");
 			wisdom.classList.toggle("text-dark-mode");
+			var article = document.getElementById("article_section");
+			article.classList.toggle("text-dark-mode");
+			// Article
+			$('#article-list .article-item').toggleClass("article-item-dark-mode");
+			$('#article-list .read-more-link').toggleClass("read-more-link-dark-mode");
 			var work = document.getElementById("work_section");
 			work.classList.toggle("text-dark-mode");
 			var contact = document.getElementById("contact_section");
@@ -187,6 +200,8 @@ $(document).ready(function() {
 			navigation.classList.toggle("navigation-dark-mode");
 			var aboutnav = document.getElementById("about-nav");
 			aboutnav.classList.toggle("text-dark-mode");
+			var readnav = document.getElementById("read-nav");
+			readnav.classList.toggle("text-dark-mode");
 			var worknav = document.getElementById("work-nav");
 			worknav.classList.toggle("text-dark-mode");
 			var contactnav = document.getElementById("contact-nav");
@@ -221,6 +236,8 @@ $(document).ready(function() {
 			owlbox.classList.toggle("shadow-dark-mode");
 			var tigerbox = document.getElementById("tiger-dark-mode");
 			tigerbox.classList.toggle("shadow-dark-mode");
+			var dragonbox = document.getElementById("dragon-image-dark-mode");
+			dragonbox.classList.toggle("dragon-image-box-dark-mode");
 			var peacockbox = document.getElementById("blue-peacock-dark-mode");
 			peacockbox.classList.toggle("refined-character-image-box-dark");
 			var stagbox = document.getElementById("stag-dark-mode");
