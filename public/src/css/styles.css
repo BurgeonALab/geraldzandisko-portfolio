@@ -543,7 +543,7 @@ html, body {
 .article-item {
     border-radius: var(--bs-border-radius) !important;
     padding: 1.5rem !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
 }
 
