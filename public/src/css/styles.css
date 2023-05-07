@@ -607,6 +607,13 @@ html, body {
     color: #fcc72e;
 }
 
+.dragon-image-style {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--bs-border-radius) !important;
+}
+
 /* Dark Mode */
 
 .dark-mode {

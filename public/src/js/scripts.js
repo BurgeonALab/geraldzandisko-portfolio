@@ -120,11 +120,31 @@ $(document).ready(function() {
 			// Dark Mode - Dragon Image
 			// Text
 			var dragon = document.getElementById("dragon-text-dark");
-			if (dragon.innerHTML === 'Green Dragon by <span class="fw-bold">TBD</span>') {
-				dragon.innerHTML = 'Silver Dragon by <span class="fw-bold">TBD</span>'
+			if (dragon.innerHTML === 'Dragon Journal by <span class="fw-bold">Anna</span>') {
+				dragon.innerHTML = `Dragon's Hunt by <span class="fw-bold">Eddie</span>`
 			} else {
-				dragon.innerHTML = 'Green Dragon by <span class="fw-bold">TBD</span>'
+				dragon.innerHTML = 'Dragon Journal by <span class="fw-bold">Anna</span>'
 			}
+			// Link
+			var dragon_elm = $('.dark-mode-dragon-link');
+			var dragon_href = dragon_elm.attr('href');
+			if (dragon_href === "#")
+				dragon_elm.attr('href', 'https://www.etsy.com/shop/MorningDewStudioArt');
+			else
+				dragon_elm.attr('href', '#');
+			// Image
+			var dragondark_elm = $('#dragon-image-dark');
+			var dragondark_src = dragondark_elm.attr('src');
+			if (dragondark_src === "./images/characters/WhiteCharacterPlaceholder.webp")
+				dragondark_elm.attr('src', './images/characters/DragonHunt.webp')
+			else
+				dragondark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+			// Alt
+			var dragondark_alt = dragondark_elm.attr('alt');
+			if (dragondark_alt === "Dragon Journal")
+				dragondark_elm.attr('alt', `Dragon's Hunt`);
+			else
+				dragondark_elm.attr('alt', 'Dragon Journal');
 			// Dark Mode - Peacock Image
 			// Text
 			var peacock = document.getElementById("peacock-text-dark");
@@ -150,6 +170,7 @@ $(document).ready(function() {
 				peacockdark_elm.attr('src', './images/characters/BluePeacock.webp');
 				peacockdark_elm.removeClass('white-peacock-image');
 			}
+			// Alt
 			var peacockdark_alt = peacockdark_elm.attr('alt');
 			if (peacockdark_alt === "Blue Peacock")
 				peacockdark_elm.attr('alt', 'White Peacock on Branch');
