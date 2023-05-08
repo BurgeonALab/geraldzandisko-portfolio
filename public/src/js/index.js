@@ -55,4 +55,3 @@ $(function() {
 import '../css/styles.css';
 import '../css/animations.css';
 import '../css/media-queries.css';
-import '../css/loading-end.css';

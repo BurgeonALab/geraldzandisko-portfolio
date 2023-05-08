@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack');
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
 	mode: 'production',
   experiments: {
@@ -10,6 +11,9 @@ module.exports = {
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery'
+		}),
+		new MiniCssExtractPlugin({
+			filename: "gerraour.css",
 		}),
 	],
 	entry: {
@@ -28,7 +32,7 @@ module.exports = {
 				test: /\.(css|scss)$/,
 				use: [
 					{
-						loader: 'style-loader'
+						loader: MiniCssExtractPlugin.loader,
 					},
 					{
 						loader: 'css-loader'
@@ -49,6 +53,11 @@ module.exports = {
 				]
 			}
 		]
+	},
+	optimization: {
+		minimizer: [
+			new CssMinimizerPlugin(),
+		],
 	},
 	devtool: 'eval-source-map',
 }
