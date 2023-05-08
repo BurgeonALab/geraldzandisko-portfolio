@@ -1,18 +1,16 @@
-// CSSs, SCSSs, JSs
-import '../css/styles.css';
-import '../scss/styles.scss'
-import '../css/animations.css';
-import '../css/media-queries.css';
-import '../css/tiny-slider.css';
+// JS
 import $ from 'jquery';
-import * as bootstrap from 'bootstrap';
-import { tns } from "tiny-slider";
 import './firebase';
 import './scripts';
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
+// Bootstrap
+import * as bootstrap from 'bootstrap';
+import '../scss/styles.scss'
+// Tiny Slider
+import { tns } from "tiny-slider";
+import '../css/tiny-slider.css';
 $(function() {
 	if ($('body').is('.home-page')) {
 		const tnslider1 = tns({
@@ -53,4 +51,8 @@ $(function() {
 		})
 	}
 })
+// CSS
+import '../css/styles.css';
+import '../css/animations.css';
+import '../css/media-queries.css';
 import '../css/loading-end.css';

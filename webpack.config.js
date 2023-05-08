@@ -16,7 +16,7 @@ module.exports = {
 		index: './public/src/js/index.js',
 	},
 	output: {
-		filename: '[name].bundle.js',
+		filename: 'gerraour.bundle.js',
 		path: path.resolve(__dirname, './public/dist'),
 	},
 	performance: {
