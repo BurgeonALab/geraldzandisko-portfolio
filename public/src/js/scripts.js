@@ -133,10 +133,10 @@ $(function() {
 			// Image
 			var dragondark_elm = $('#dragon-image-dark');
 			var dragondark_src = dragondark_elm.attr('src');
-			if (dragondark_src === "./images/characters/WhiteCharacterPlaceholder.webp")
+			if (dragondark_src === "./images/characters/DragonJournal.webp")
 				dragondark_elm.attr('src', './images/characters/DragonHunt.webp')
 			else
-				dragondark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+				dragondark_elm.attr('src', './images/characters/DragonJournal.webp')
 			// Alt
 			var dragondark_alt = dragondark_elm.attr('alt');
 			if (dragondark_alt === "Dragon Journal")
