@@ -17,7 +17,7 @@ module.exports = {
 		}),
 	],
 	entry: {
-		index: './public/src/js/index.js',
+		index: './src/js/index.js',
 	},
 	output: {
 		filename: 'gerraour.bundle.js',
