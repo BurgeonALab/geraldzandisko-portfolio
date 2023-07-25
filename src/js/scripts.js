@@ -1,7 +1,7 @@
 var themeStatus = 'default'
 $(function() {
 	// Scroll Effect
-	$(window).scroll(function() {
+	$(window).on("scroll", function() {
 		if ($(document).scrollTop() > 131) {
 			if (themeStatus === 'default') {
 				$('.navigation').addClass('shadow-nav');
@@ -24,7 +24,7 @@ $(function() {
 	});
 	// Remove Hash
 	const linkBtn = $('.navbar-link, .link-style, .navbar-logo-container');
-	linkBtn.click(() => {
+	linkBtn.on("click", function() {
 		setTimeout(() => {
 			removeHash();
 		});
@@ -33,7 +33,7 @@ $(function() {
 		history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
 	}
 	// Dark Mode
-	$('#lightdark-mode').click(function() {
+	$('#lightdark-mode').on("click", function() {
 		if (themeStatus === 'default') {
 			themeStatus = 'darkTheme'
 		} else if (themeStatus === 'darkTheme') {
@@ -56,14 +56,14 @@ $(function() {
     if ($('body').is('.home-page, .privacy-page')) {
 			var navbehance = document.getElementById("navbehance");
 			navbehance.classList.toggle("text-dark-mode");
-      var navlinkedin = document.getElementById("navlinkedin");
+			var navlinkedin = document.getElementById("navlinkedin");
       navlinkedin.classList.toggle("text-dark-mode");
       var navgithub = document.getElementById("navgithub");
       navgithub.classList.toggle("text-dark-mode");
       var navinstagram = document.getElementById("navinstagram");
       navinstagram.classList.toggle("text-dark-mode");
-	  var navtokopedia = document.getElementById("navtokopedia");
-	  navtokopedia.classList.toggle("text-dark-mode");
+	  	var navtokopedia = document.getElementById("navtokopedia");
+	  	navtokopedia.classList.toggle("text-dark-mode");
 		}
 		// Dark Mode - Navbar Logo
 		if ($('body').is('.home-page')) {
@@ -213,6 +213,7 @@ $(function() {
 			// Article
 			$('#article-list .article-item').toggleClass("article-item-dark-mode");
 			$('#article-list .read-more-link').toggleClass("read-more-link-dark-mode");
+			$('#article-list .article-author').toggleClass("text-dark-mode-grey");
 			var work = document.getElementById("work_section");
 			work.classList.toggle("text-dark-mode");
 			var contact = document.getElementById("contact_section");
@@ -319,10 +320,25 @@ $(function() {
 			palmdarklink.classList.toggle("text-dark-mode");
 			var palmbehancedark = document.getElementById("palm-behance-dark-mode");
 			palmbehancedark.classList.toggle("text-dark-mode");
+			var aquahelixheaderdark = document.getElementById("aquahelix-header-dark");
+			aquahelixheaderdark.classList.toggle("text-dark-mode-grey");
+			var semestaheaderdark = document.getElementById("semesta-header-dark");
+			semestaheaderdark.classList.toggle("text-dark-mode-grey");
+			var tropicanaticheaderdark = document.getElementById("tropicanatic-header-dark");
+			tropicanaticheaderdark.classList.toggle("text-dark-mode-grey");
+			var blawhiheaderdark = document.getElementById("blawhi-header-dark");
+			blawhiheaderdark.classList.toggle("text-dark-mode-grey");
+			var pmheaderdark = document.getElementById("pm-header-dark");
+			pmheaderdark.classList.toggle("text-dark-mode-grey");
+			var palmheaderdark = document.getElementById("palm-header-dark");
+			palmheaderdark.classList.toggle("text-dark-mode-grey");
 		}
 		if ($('body').is('.privacy-page')) {
-    	var privacytext = document.getElementById("privacy-text-dark-mode");
-    	privacytext.classList.toggle("text-dark-mode");
+			$('.policies-content h1').toggleClass("text-dark-mode");
+			$('.policies-content p').toggleClass("text-dark-mode");
+			$('.policies-content h2').toggleClass("text-dark-mode");
+			$('.policies-content li').toggleClass("text-dark-mode");
+			$('.policies-content hr').toggleClass("hr-dark-mode");
     }
 		if ($('body').is('.404-page')) {
     	var page404 = document.getElementById("404-dark-mode");
@@ -338,7 +354,7 @@ $(function() {
       }
 		});
 		if ($('body').is('.privacy-page')) {
-			$('.nav-link').hover(function() {
+			$('.nav-link').on("mouseenter mouseleave", function(event) {
 				$(this).toggleClass('nav-link-hover')
 			});
 		}

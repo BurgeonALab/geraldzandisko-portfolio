@@ -624,6 +624,13 @@ html, body {
     text-align: right;
 }
 
+.notable-slider-header {
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color)!important;
+    font-weight: 700!important;
+    margin-bottom: .25rem!important;
+}
+
 /* Dark Mode */
 
 .dark-mode {
@@ -632,6 +639,10 @@ html, body {
 
 .text-dark-mode {
     color: #FFFFFF !important;
+}
+
+.text-dark-mode-grey {
+    color: #6C757D !important;
 }
 
 .navigation-dark-mode {
@@ -671,6 +682,10 @@ html, body {
 
 .read-more-link-dark-mode {
     color: #7E7E7E;
+}
+
+.hr-dark-mode {
+    color: #7E7E7E !important;
 }
 
 /* Dark Mode End */
