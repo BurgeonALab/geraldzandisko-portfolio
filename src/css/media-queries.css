@@ -348,6 +348,15 @@
         padding-top: 1rem !important;
     }
     .dragon-image-box {
-        height: 200px;
+        height: 250px;
+    }
+    .galaxy-fold-nav {
+        justify-content: center !important;
+    }
+    .fold-lightdark-button {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 1rem;
+        --bs-btn-font-size: 1.25rem;
+        --bs-btn-border-radius: var(--bs-border-radius-lg);
     }
 }
