@@ -53,6 +53,10 @@ html, body {
     color: #FD1D1D !important;
 }
 
+.social-link.nav-link.tokopedia:hover {
+    color: #41B549 !important;
+}
+
 .navbar-link:hover {
     cursor: pointer;
     color: #fcc72e !important;
@@ -520,10 +524,12 @@ html, body {
 }
 
 .dragon-image-box {
-    height: 400px;
+    height: 480px;
+    width: 300px;
     border-radius: var(--bs-border-radius) !important;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
     background-color: grey;
+    margin-left: auto;
 }
 
 .read-more-link {
@@ -612,6 +618,10 @@ html, body {
     width: 100%;
     object-fit: cover;
     border-radius: var(--bs-border-radius) !important;
+}
+
+.image-link-container.dragon-text {
+    text-align: right;
 }
 
 /* Dark Mode */

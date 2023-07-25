@@ -62,6 +62,8 @@ $(function() {
       navgithub.classList.toggle("text-dark-mode");
       var navinstagram = document.getElementById("navinstagram");
       navinstagram.classList.toggle("text-dark-mode");
+	  var navtokopedia = document.getElementById("navtokopedia");
+	  navtokopedia.classList.toggle("text-dark-mode");
 		}
 		// Dark Mode - Navbar Logo
 		if ($('body').is('.home-page')) {
