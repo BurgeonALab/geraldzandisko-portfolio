@@ -221,6 +221,9 @@
         padding-right: 60px;
         padding-left: 60px;
     }
+    .news-margin {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 575.98px) {
