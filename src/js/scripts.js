@@ -214,6 +214,9 @@ $(function() {
 			$('#article-list .article-item').toggleClass("article-item-dark-mode");
 			$('#article-list .read-more-link').toggleClass("read-more-link-dark-mode");
 			$('#article-list .article-author').toggleClass("text-dark-mode-grey");
+			// Portfolio Description
+			$('.portfolio-desc-box').toggleClass("description-dark-mode");
+			$('.box-title-container p').toggleClass("text-dark-mode");
 			var work = document.getElementById("work_section");
 			work.classList.toggle("text-dark-mode");
 			var contact = document.getElementById("contact_section");

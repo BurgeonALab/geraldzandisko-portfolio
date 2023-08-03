@@ -46,6 +46,9 @@
     .white-peacock-image {
         object-position: 0px 0px !important;
     }
+    .image-link-container.portfolio-photo-link {
+        text-align: left;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -82,6 +85,18 @@
     .image-link-container.dragon-text {
         text-align: center;
     }
+    .portfolio-header {
+        font-size: 12px;
+    }
+    .portfolio-header-name {
+        font-size: 28px;
+    }
+    .portfolio-sub-header {
+        font-size: 20px;
+    }
+    .portfolio-sub-description {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -105,6 +120,7 @@
     .work-padding-mobile {
         padding-left: 3rem;
         padding-right: 3rem;
+        margin-top: 50px;
     }
     .work-card-container {
         height: 250px;
@@ -178,6 +194,33 @@
     .dragon-image-box {
         height: 600px;
     }
+    .portfolio-desc-box {
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        padding: 0px !important;
+    }
+    .portfolio-divider {
+        justify-content: unset !important;
+    }
+    .work-padding-mobile {
+        margin-top: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .portfolio-margin {
+        margin-top: 50px;
+    }
+    .image-link-container.portfolio-photo-link {
+        text-align: center !important;
+    }
+    .avatar-margin-mobile {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .portfolio-margin {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -242,6 +285,9 @@
     .dragon-image-box {
         height: 500px;
     }
+    .work-margin {
+        margin-bottom: 0px !important;
+    }
 }
 
 @media (max-width: 468.98px) {
@@ -294,6 +340,12 @@
     }
     .dragon-image-box {
         height: 300px;
+    }
+}
+
+@media (max-width: 288.98px) {
+    .portfolio-margin {
+        margin-top: 100px;
     }
 }
 
@@ -358,5 +410,21 @@
         --bs-btn-padding-x: 1rem;
         --bs-btn-font-size: 1.25rem;
         --bs-btn-border-radius: var(--bs-border-radius-lg);
+    }
+    .avatar-margin-mobile {
+        padding-right: 32px !important;
+        padding-left: 32px !important;
+    }
+    .portfolio-margin {
+        padding-right: 32px !important;
+        padding-left: 32px !important;
+    }
+    .portfolio-margin {
+        margin-top: 50px;
+    }
+    .work-margin {
+        margin-top: 0px !important;
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
     }
 }
