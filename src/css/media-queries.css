@@ -9,9 +9,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .image-pad-margin {
-        margin-top: 50px;
-    }
     .work-card-container {
         height: 350px;
     }
@@ -113,9 +110,6 @@
     .about-image-responsive {
         max-width: 100%;
         height: auto;
-    }
-    .image-pad-margin {
-        margin-top: 0px;
     }
     .work-padding-mobile {
         padding-left: 3rem;
