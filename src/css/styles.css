@@ -654,6 +654,10 @@ html, body {
     margin-bottom: .25rem!important;
 }
 
+.trade-calender {
+    height: 300px !important;
+}
+
 /* Dark Mode */
 
 .dark-mode {
