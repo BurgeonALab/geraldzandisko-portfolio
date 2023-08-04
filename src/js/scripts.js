@@ -217,6 +217,7 @@ $(function() {
 			// Portfolio Description
 			$('.portfolio-desc-box').toggleClass("description-dark-mode");
 			$('.box-title-container p').toggleClass("text-dark-mode");
+			$('.gerraour-avatar').toggleClass("dark-mode-avatar-shadow");
 			var work = document.getElementById("work_section");
 			work.classList.toggle("text-dark-mode");
 			var contact = document.getElementById("contact_section");
