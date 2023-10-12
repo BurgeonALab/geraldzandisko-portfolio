@@ -34,7 +34,10 @@ html, body {
 
 .social-link.nav-link {
     color: #000000;
-    padding: 1rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
 }
 
 .social-link.nav-link.behance:hover {
