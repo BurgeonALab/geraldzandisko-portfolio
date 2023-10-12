@@ -64,6 +64,8 @@ $(function() {
       navinstagram.classList.toggle("text-dark-mode");
 	  	var navtokopedia = document.getElementById("navtokopedia");
 	  	navtokopedia.classList.toggle("text-dark-mode");
+			var navxsocial = document.getElementById("navx-social");
+			navxsocial.classList.toggle("text-dark-mode");
 		}
 		// Dark Mode - Navbar Logo
 		if ($('body').is('.home-page')) {

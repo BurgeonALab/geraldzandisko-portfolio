@@ -60,6 +60,10 @@ html, body {
     color: #41B549 !important;
 }
 
+.social-link.nav-link.x-social:hover {
+    color: #BA8570 !important;
+}
+
 .navbar-link:hover {
     cursor: pointer;
     color: #fcc72e !important;
