@@ -272,6 +272,10 @@ html, body {
     color: #FD1D1D !important;
 }
 
+.social-media-footer.x-social:hover {
+    color: #BA8570 !important;
+}
+
 .social-media-footer-margin {
     margin-top: 16px;
     margin-bottom: 16px;

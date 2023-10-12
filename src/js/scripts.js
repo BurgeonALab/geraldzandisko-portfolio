@@ -246,6 +246,7 @@ $(function() {
 			worksection.classList.toggle("text-dark-mode");
 			var contactsection = document.getElementById("contact-section");
 			contactsection.classList.toggle("text-dark-mode");
+			// Footer
 			var footerbehance = document.getElementById("footer-behance");
 			footerbehance.classList.toggle("text-dark-mode");
 			var footerlinkedin = document.getElementById("footer-linkedin");
@@ -254,6 +255,9 @@ $(function() {
 			footergithub.classList.toggle("text-dark-mode");
 			var footerinstagram = document.getElementById("footer-instagram");
 			footerinstagram.classList.toggle("text-dark-mode");
+			var footerxsocial = document.getElementById("footer-x-social");
+			footerxsocial.classList.toggle("text-dark-mode");
+			// End Footer
 			var privacyfooter = document.getElementById("privacy-dark-mode");
 			privacyfooter.classList.toggle("text-dark-mode");
 			var cookiefooter = document.getElementById("cookie-dark-mode");
