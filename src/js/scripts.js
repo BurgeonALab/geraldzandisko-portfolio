@@ -119,6 +119,29 @@ $(function() {
 				owldark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp');
 			else
 				owldark_elm.attr('src', './images/characters/TheOwl.webp');
+			// Dark Mode - Horse Image
+			// Text
+			var horse = document.getElementById("horse-text-dark");
+			if (horse.innerHTML === 'Brown Horse by <span class="fw-bold">TBD</span>') {
+				horse.innerHTML = `White Horse by <span class="fw-bold">TBD</span>`
+			} else {
+				horse.innerHTML = 'Brown Horse by <span class="fw-bold">TBD</span>'
+			}
+			// Link
+			var horse_elm = $('.dark-mode-horse-link');
+			var horse_href = horse_elm.attr('href');
+			if (horse_href === "#")
+				horse_elm.attr('href', '#');
+			else
+				horse_elm.attr('href', '#');
+
+			// // Alt
+			// var horsedark_alt = horsedark_elm.attr('alt');
+			// if (horsedark_alt === "Brown Horse")
+			// 	horsedark_elm.attr('alt', `White Horse`);
+			// else
+			// 	horsedark_elm.attr('alt', 'Brown Horse');
+			
 			// Dark Mode - Dragon Image
 			// Text
 			var dragon = document.getElementById("dragon-text-dark");
@@ -272,6 +295,8 @@ $(function() {
 			tigerbox.classList.toggle("shadow-dark-mode");
 			var dragonbox = document.getElementById("dragon-image-dark-mode");
 			dragonbox.classList.toggle("dragon-image-box-dark-mode");
+			var horsebox = document.getElementById("horse-image-dark-mode");
+			horsebox.classList.toggle("horse-image-box-dark-mode");
 			var peacockbox = document.getElementById("blue-peacock-dark-mode");
 			peacockbox.classList.toggle("refined-character-image-box-dark");
 			var stagbox = document.getElementById("stag-dark-mode");

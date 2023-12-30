@@ -94,6 +94,12 @@
     .portfolio-sub-description {
         font-size: 16px;
     }
+    .quotes-carousel {
+        margin-bottom: 3rem;
+    }
+    .image-link-container.horse-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -217,6 +223,10 @@
     }
     .news-margin {
         margin-top: 50px;
+    }
+    .horse-image-container {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
     }
 }
 
@@ -423,5 +433,9 @@
         margin-top: 0px !important;
         padding-top: 32px !important;
         padding-bottom: 32px !important;
+    }
+    .horse-image-container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
     }
 }

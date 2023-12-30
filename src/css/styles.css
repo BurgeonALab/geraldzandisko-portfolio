@@ -553,6 +553,8 @@ html, body {
 }
 
 .quotes-carousel {
+    display: flex;
+    align-items: center;
     padding-left: 3rem !important;
     padding-right: 3rem !important;
 }
@@ -560,6 +562,15 @@ html, body {
 .dragon-image-box {
     height: 480px;
     width: 300px;
+    border-radius: var(--bs-border-radius) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+    background-color: grey;
+    margin-left: auto;
+}
+
+.horse-image-box {
+    height: 200px;
+    width: 100%;
     border-radius: var(--bs-border-radius) !important;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
     background-color: grey;
@@ -658,6 +669,10 @@ html, body {
     text-align: right;
 }
 
+.image-link-container.horse-text {
+    text-align: right;
+}
+
 .notable-slider-header {
     --bs-text-opacity: 1;
     color: var(--bs-secondary-color)!important;
@@ -719,6 +734,10 @@ html, body {
 }
 
 .dragon-image-box-dark-mode {
+    box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
+}
+
+.horse-image-box-dark-mode {
     box-shadow: 0 0.5rem 1rem rgba(26, 26, 33) !important;
 }
 
