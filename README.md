@@ -14,5 +14,6 @@ Gerald Zandisko's personal website showcases his art, favorite quotes, portfolio
 
 - Gerald Zandisko
 - Ria Agustin
+- Delvin Khartale
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
