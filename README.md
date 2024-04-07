@@ -10,10 +10,8 @@
 
 Gerald Zandisko's personal website showcases his art, favorite quotes, portfolio, and other creations. You may also get to see his website development and design skills.
 
-## Authors
+## Author
 
 - Gerald Zandisko
-- Ria Agustin
-- Delvin Khartale
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
