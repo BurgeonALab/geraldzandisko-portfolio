@@ -1,3 +1,5 @@
+// React
+import ReactDOM from 'react-dom/client';
 // JS
 import $ from 'jquery';
 import './firebase';
@@ -12,10 +14,10 @@ import '../scss/styles.scss'
 // Tiny Slider
 import { tns } from "tiny-slider";
 import '../css/tiny-slider.css';
-$(function() {
-	if ($('body').is('.home-page')) {
-		const tnslider1 = tns({
-			"container": ".my-slider",
+$(function () {
+  if ($('body').is('.home-page')) {
+    const tnslider1 = tns({
+      "container": ".my-slider",
       "mouseDrag": true,
       "controls": false,
       "nav": false,
@@ -25,10 +27,10 @@ $(function() {
       "loop": false,
       "rewind": true,
       "startIndex": 1
-		})
-		const tnslider2 = tns({
-			"container": ".wisdom-slider",
-			"mouseDrag": false,
+    })
+    const tnslider2 = tns({
+      "container": ".wisdom-slider",
+      "mouseDrag": false,
       "controls": false,
       "nav": false,
       "speed": 500,
@@ -37,9 +39,9 @@ $(function() {
       "autoplay": true,
       "autoplayTimeout": 10000,
       "autoplayButtonOutput": false
-		})
-		const tnslider3 = tns({
-			"container": ".notable-work-slider",
+    })
+    const tnslider3 = tns({
+      "container": ".notable-work-slider",
       "mouseDrag": true,
       "controls": false,
       "nav": false,
@@ -49,10 +51,22 @@ $(function() {
       "loop": false,
       "items": 2,
       "fixedWidth": 250,
-		})
-	}
+    })
+  }
 })
 // CSS
 import '../css/styles.css';
 import '../css/animations.css';
 import '../css/media-queries.css';
+
+function App() {
+  return (
+    <div>
+      <p>1</p>
+    </div>
+  );
+}
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<App />);
