@@ -1,5 +1,3 @@
-// React
-import ReactDOM from 'react-dom/client';
 // JS
 import $ from 'jquery';
 import './firebase';
@@ -58,15 +56,3 @@ $(function () {
 import '../css/styles.css';
 import '../css/animations.css';
 import '../css/media-queries.css';
-
-function App() {
-  return (
-    <div>
-      <p>1</p>
-    </div>
-  );
-}
-
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
-root.render(<App />);

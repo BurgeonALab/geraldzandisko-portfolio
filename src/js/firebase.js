@@ -2,8 +2,8 @@ import { initializeApp } from "firebase/app"
 import { getFirestore, collection, getDocs } from "firebase/firestore/lite"
 import { getAnalytics, logEvent } from "firebase/analytics";
 const firebaseConfig = {
-	apiKey: "AIzaSyCU5SmyCTAmXUAUVeSCf0fVnA2OxlXHU-U",
-	authDomain: "gerraour-bee69.firebaseapp.com",
+  apiKey: "AIzaSyCU5SmyCTAmXUAUVeSCf0fVnA2OxlXHU-U",
+  authDomain: "gerraour-bee69.firebaseapp.com",
   databaseURL: "https://gerraour-bee69-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "gerraour-bee69",
   storageBucket: "gerraour-bee69.appspot.com",
@@ -20,13 +20,13 @@ logEvent(analytics, 'notification_received');
 const db = getFirestore(app);
 // Wisdom
 const querySnapshot = await getDocs(collection(db, "wisdom"));
-$(function() {
-	if ($('body').is('.home-page')) {
-  	const wisdomData = document.getElementById('wisdomData');
+$(function () {
+  if ($('body').is('.home-page')) {
+    const wisdomData = document.getElementById('wisdomData');
     wisdomData.classList.add('wisdom-slider');
     querySnapshot.forEach((doc) => {
-			for (var i = 1; i < querySnapshot.docs.length; i++) {
-				let eachWisdom = document.createElement('DIV');
+      for (var i = 1; i < querySnapshot.docs.length; i++) {
+        let eachWisdom = document.createElement('DIV');
         wisdomData.appendChild(eachWisdom);
         // Title
         let itemH6 = document.createElement('H6');
@@ -39,7 +39,7 @@ $(function() {
         itemH2.classList.add('fw-bold');
         let itemH2Text = document.createTextNode(doc.data().song_name);
         itemH2.appendChild(itemH2Text);
-				eachWisdom.appendChild(itemH2);
+        eachWisdom.appendChild(itemH2);
         // Quote
         let wisdomFigure = document.createElement('FIGURE');
         wisdomFigure.classList.add('mb-0');
@@ -52,13 +52,13 @@ $(function() {
         itemP.classList.add('lead');
         itemP.appendChild(itemPText);
         wisdomQuote.appendChild(itemP);
-      	let wisdomCaption = document.createElement('FIGCAPTION');
-        wisdomCaption.classList.add('blockquote-footer', 'fw-bold' , 'mb-0');
+        let wisdomCaption = document.createElement('FIGCAPTION');
+        wisdomCaption.classList.add('blockquote-footer', 'fw-bold', 'mb-0');
         wisdomFigure.appendChild(wisdomCaption);
         // Artist Name
-				let captionText = document.createTextNode(doc.data().artist_name);
+        let captionText = document.createTextNode(doc.data().artist_name);
         wisdomCaption.appendChild(captionText);
-			}
-		})
-	}
+      }
+    })
+  }
 })

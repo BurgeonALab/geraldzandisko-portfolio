@@ -1,7 +1,7 @@
 var themeStatus = 'default'
-$(function() {
+$(function () {
 	// Scroll Effect
-	$(window).on("scroll", function() {
+	$(window).on("scroll", function () {
 		if ($(document).scrollTop() > 131) {
 			if (themeStatus === 'default') {
 				$('.navigation').addClass('shadow-nav');
@@ -24,7 +24,7 @@ $(function() {
 	});
 	// Remove Hash
 	const linkBtn = $('.navbar-link, .link-style, .navbar-logo-container');
-	linkBtn.on("click", function() {
+	linkBtn.on("click", function () {
 		setTimeout(() => {
 			removeHash();
 		});
@@ -33,37 +33,37 @@ $(function() {
 		history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
 	}
 	// Dark Mode
-	$('#lightdark-mode').on("click", function() {
+	$('#lightdark-mode').on("click", function () {
 		if (themeStatus === 'default') {
 			themeStatus = 'darkTheme'
 		} else if (themeStatus === 'darkTheme') {
-      themeStatus = 'default'
-    }
+			themeStatus = 'default'
+		}
 		// Dark Mode - Body
 		var element = document.body;
 		element.classList.toggle("dark-mode");
 		// Dark Mode - Icon Switch
-    $('#icon-switch').toggleClass('fa-sun fa-moon');
-    $('#icon-switch').toggleClass('light-mode-button dark-mode-button');
+		$('#icon-switch').toggleClass('fa-sun fa-moon');
+		$('#icon-switch').toggleClass('light-mode-button dark-mode-button');
 		// Dark Mode - Logo
-    var elm = $('.logo');
-    var src = elm.attr('src');
-    if (src === "./images/Logo.webp")
-    	elm.attr('src', './images/LogoWhite.webp')
-    else
+		var elm = $('.logo');
+		var src = elm.attr('src');
+		if (src === "./images/Logo.webp")
+			elm.attr('src', './images/LogoWhite.webp')
+		else
 			elm.attr('src', './images/Logo.webp')
 		// Dark Mode - Home Page & Privacy Page
-    if ($('body').is('.home-page, .privacy-page')) {
+		if ($('body').is('.home-page, .privacy-page')) {
 			var navbehance = document.getElementById("navbehance");
 			navbehance.classList.toggle("text-dark-mode");
 			var navlinkedin = document.getElementById("navlinkedin");
-      navlinkedin.classList.toggle("text-dark-mode");
-      var navgithub = document.getElementById("navgithub");
-      navgithub.classList.toggle("text-dark-mode");
-      var navinstagram = document.getElementById("navinstagram");
-      navinstagram.classList.toggle("text-dark-mode");
-	  	var navtokopedia = document.getElementById("navtokopedia");
-	  	navtokopedia.classList.toggle("text-dark-mode");
+			navlinkedin.classList.toggle("text-dark-mode");
+			var navgithub = document.getElementById("navgithub");
+			navgithub.classList.toggle("text-dark-mode");
+			var navinstagram = document.getElementById("navinstagram");
+			navinstagram.classList.toggle("text-dark-mode");
+			var navtokopedia = document.getElementById("navtokopedia");
+			navtokopedia.classList.toggle("text-dark-mode");
 			var navxsocial = document.getElementById("navx-social");
 			navxsocial.classList.toggle("text-dark-mode");
 		}
@@ -141,7 +141,7 @@ $(function() {
 			// 	horsedark_elm.attr('alt', `White Horse`);
 			// else
 			// 	horsedark_elm.attr('alt', 'Brown Horse');
-			
+
 			// Dark Mode - Dragon Image
 			// Text
 			var dragon = document.getElementById("dragon-text-dark");
@@ -374,23 +374,23 @@ $(function() {
 			$('.policies-content h2').toggleClass("text-dark-mode");
 			$('.policies-content li').toggleClass("text-dark-mode");
 			$('.policies-content hr').toggleClass("hr-dark-mode");
-    }
-		if ($('body').is('.404-page')) {
-    	var page404 = document.getElementById("404-dark-mode");
-      page404.classList.toggle("text-dark-mode");
-      var home404 = document.getElementById("err404-link-dark-mode");
-      home404.classList.toggle("text-dark-mode");
-      var elm = $('.err404-logo')
-      var src = elm.attr('src');
-      if (src === "./images/404.webp")
-      	elm.attr('src', './images/404White.webp');
-			else
-        elm.attr('src', './images/404.webp');
-      }
-		});
-		if ($('body').is('.privacy-page')) {
-			$('.nav-link').on("mouseenter mouseleave", function(event) {
-				$(this).toggleClass('nav-link-hover')
-			});
 		}
+		if ($('body').is('.404-page')) {
+			var page404 = document.getElementById("404-dark-mode");
+			page404.classList.toggle("text-dark-mode");
+			var home404 = document.getElementById("err404-link-dark-mode");
+			home404.classList.toggle("text-dark-mode");
+			var elm = $('.err404-logo')
+			var src = elm.attr('src');
+			if (src === "./images/404.webp")
+				elm.attr('src', './images/404White.webp');
+			else
+				elm.attr('src', './images/404.webp');
+		}
+	});
+	if ($('body').is('.privacy-page')) {
+		$('.nav-link').on("mouseenter mouseleave", function (event) {
+			$(this).toggleClass('nav-link-hover')
+		});
+	}
 });

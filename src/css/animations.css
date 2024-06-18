@@ -1,11 +1,21 @@
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .fade-in-nav {
@@ -17,7 +27,7 @@
 }
 
 .navigation.shadow-nav {
-    box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15);
+    box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15);
     animation: fadeIn 0.5s;
 }
 
