@@ -153,10 +153,10 @@ $(function () {
 			// Link
 			var dragon_elm = $('.dark-mode-dragon-link');
 			var dragon_href = dragon_elm.attr('href');
-			if (dragon_href === "#")
+			if (dragon_href === "https://www.etsy.com/shop/ArtSmartCraft")
 				dragon_elm.attr('href', 'https://www.etsy.com/shop/MorningDewStudioArt');
 			else
-				dragon_elm.attr('href', '#');
+				dragon_elm.attr('href', 'https://www.etsy.com/shop/ArtSmartCraft');
 			// Image
 			var dragondark_elm = $('#dragon-image-dark');
 			var dragondark_src = dragondark_elm.attr('src');
@@ -311,20 +311,6 @@ $(function () {
 			quotes.classList.toggle("text-dark-mode");
 			var refinednotable = document.getElementById("refined-notable-work");
 			refinednotable.classList.toggle("text-dark-mode");
-			var bacteriadarkmode = document.getElementById("bacteria-booster-dark-mode");
-			bacteriadarkmode.classList.toggle("text-dark-mode");
-			bacteriadarkmode.classList.toggle("refined-notable-box-dark");
-			var bacteriadarklink = document.getElementById("bacteria-booster-link-dark-mode");
-			bacteriadarklink.classList.toggle("text-dark-mode");
-			var bacteriadarkbehance = document.getElementById("bacteria-booster-behance-dark-mode");
-			bacteriadarkbehance.classList.toggle("text-dark-mode");
-			var semestadarkmode = document.getElementById("semesta-dark-mode");
-			semestadarkmode.classList.toggle("text-dark-mode");
-			semestadarkmode.classList.toggle("refined-notable-box-dark");
-			var semestadarklink = document.getElementById("semesta-link-dark-mode");
-			semestadarklink.classList.toggle("text-dark-mode");
-			var semestadarkbehance = document.getElementById("semesta-behance-dark-mode");
-			semestadarkbehance.classList.toggle("text-dark-mode");
 			var tropicanaticdarkmode = document.getElementById("tropicanatic-dark-mode");
 			tropicanaticdarkmode.classList.toggle("text-dark-mode");
 			tropicanaticdarkmode.classList.toggle("refined-notable-box-dark");
@@ -341,32 +327,10 @@ $(function () {
 			blawhidarkbehance.classList.toggle("text-dark-mode");
 			var blawhidarkgithub = document.getElementById("blawhi-github-dark-mode");
 			blawhidarkgithub.classList.toggle("text-dark-mode");
-			var medandarkmode = document.getElementById("medan-ai-dark-mode");
-			medandarkmode.classList.toggle("text-dark-mode");
-			medandarkmode.classList.toggle("refined-notable-box-dark");
-			var medandarklink = document.getElementById("medan-ai-link-dark-mode");
-			medandarklink.classList.toggle("text-dark-mode");
-			var medanbehancedark = document.getElementById("medan-ai-behance-dark-link");
-			medanbehancedark.classList.toggle("text-dark-mode");
-			var palmdarkmode = document.getElementById("palm-dark-mode");
-			palmdarkmode.classList.toggle("text-dark-mode");
-			palmdarkmode.classList.toggle("refined-notable-box-dark");
-			var palmdarklink = document.getElementById("palm-link-dark-mode");
-			palmdarklink.classList.toggle("text-dark-mode");
-			var palmbehancedark = document.getElementById("palm-behance-dark-mode");
-			palmbehancedark.classList.toggle("text-dark-mode");
-			var aquahelixheaderdark = document.getElementById("aquahelix-header-dark");
-			aquahelixheaderdark.classList.toggle("text-dark-mode-grey");
-			var semestaheaderdark = document.getElementById("semesta-header-dark");
-			semestaheaderdark.classList.toggle("text-dark-mode-grey");
 			var tropicanaticheaderdark = document.getElementById("tropicanatic-header-dark");
 			tropicanaticheaderdark.classList.toggle("text-dark-mode-grey");
 			var blawhiheaderdark = document.getElementById("blawhi-header-dark");
 			blawhiheaderdark.classList.toggle("text-dark-mode-grey");
-			var pmheaderdark = document.getElementById("pm-header-dark");
-			pmheaderdark.classList.toggle("text-dark-mode-grey");
-			var palmheaderdark = document.getElementById("palm-header-dark");
-			palmheaderdark.classList.toggle("text-dark-mode-grey");
 		}
 		if ($('body').is('.privacy-page')) {
 			$('.policies-content h1').toggleClass("text-dark-mode");
