@@ -510,7 +510,11 @@ body {
 }
 
 .refined-notable-content-box {
+    height: 320px;
     padding: 1.5rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .refined-company-link {
@@ -538,7 +542,7 @@ body {
 }
 
 #quotes-section {
-    margin-top: 200px;
+    margin-top: 215px;
     margin-bottom: 50px;
 }
 
