@@ -1,7 +1,7 @@
 {
-  "name": "gerraour-portfolio",
+  "name": "geraldzandisko-portfolio",
   "version": "2.2.0",
-  "description": "This is my personal website, which showcases my art, favorite quotes, portfolio, and other creations.",
+  "description": "Gerald Zandisko's personal website features his artwork, favorite quotes, portfolio, and other creative works, along with a display of his web development and design expertise.",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
