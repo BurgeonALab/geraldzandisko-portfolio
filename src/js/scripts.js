@@ -331,6 +331,15 @@ $(function () {
 			tropicanaticheaderdark.classList.toggle("text-dark-mode-grey");
 			var blawhiheaderdark = document.getElementById("blawhi-header-dark");
 			blawhiheaderdark.classList.toggle("text-dark-mode-grey");
+			var palmexdarkmode = document.getElementById("palmex-dark-mode");
+			palmexdarkmode.classList.toggle("text-dark-mode");
+			palmexdarkmode.classList.toggle("refined-notable-box-dark");
+			var palmexheaderdark = document.getElementById("palmex-header-dark");
+			palmexheaderdark.classList.toggle("text-dark-mode-grey");
+			var palmexdarklink = document.getElementById("palmex-link-dark-mode");
+			palmexdarklink.classList.toggle("text-dark-mode");
+			var palmexdarkbehance = document.getElementById("palmex-behance-dark-mode");
+			palmexdarkbehance.classList.toggle("text-dark-mode");
 		}
 		if ($('body').is('.privacy-page')) {
 			$('.policies-content h1').toggleClass("text-dark-mode");
