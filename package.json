@@ -1,7 +1,7 @@
 {
   "name": "geraldzandisko-portfolio",
   "version": "2.2.0",
-  "description": "Gerald Zandisko's personal website features his artwork, favorite quotes, portfolio, and other creative works, along with a display of his web development and design expertise.",
+  "description": "Gerald Zandisko's personal website showcases a collection of his creative works while also highlighting his skills in web development and design, offering visitors a glimpse into his expertise and passion.",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

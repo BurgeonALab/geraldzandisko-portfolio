@@ -35,8 +35,8 @@ $(function () {
         itemH6.appendChild(itemH6Text);
         eachWisdom.appendChild(itemH6);
         // Song Name
-        let itemH2 = document.createElement('H2');
-        itemH2.classList.add('fw-bold');
+        let itemH2 = document.createElement('P');
+        itemH2.classList.add('fw-bold', 'h2');
         let itemH2Text = document.createTextNode(doc.data().song_name);
         itemH2.appendChild(itemH2Text);
         eachWisdom.appendChild(itemH2);
