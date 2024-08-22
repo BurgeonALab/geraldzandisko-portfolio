@@ -1,19 +1,51 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path')
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
 	mode: 'production',
-  experiments: {
+	experiments: {
 		topLevelAwait: true
-  },
-  plugins: [
+	},
+	plugins: [
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery'
 		}),
+		new CopyPlugin({
+			patterns: [
+				{ from: "./public/favicon", to: "favicon" },
+				{ from: "./public/robots.txt", to: "robots.txt" },
+				{ from: "./public/sitemap.xml", to: "sitemap.xml" },
+				{ from: "./public/ads.txt", to: "ads.txt" },
+				{ from: "./public/images", to: "images" },
+			],
+		}),
 		new MiniCssExtractPlugin({
 			filename: "gerraour.css",
+		}),
+		new HtmlWebpackPlugin({
+			template: './public/index.html',
+			filename: './index.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: './public/404.html',
+			filename: './404.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: './public/cookie-policy.html',
+			filename: './cookie-policy.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: './public/privacy-policy.html',
+			filename: './privacy-policy.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: './public/terms-and-conditions.html',
+			filename: './terms-and-conditions.html',
 		}),
 	],
 	entry: {
@@ -21,7 +53,7 @@ module.exports = {
 	},
 	output: {
 		filename: 'gerraour.bundle.js',
-		path: path.resolve(__dirname, './public/dist'),
+		path: path.resolve(__dirname, './dist'),
 	},
 	performance: {
 		hints: false,
@@ -55,7 +87,9 @@ module.exports = {
 		]
 	},
 	optimization: {
+		minimize: true,
 		minimizer: [
+			new TerserPlugin(),
 			new CssMinimizerPlugin(),
 		],
 	},
