@@ -25,35 +25,40 @@ module.exports = {
 			],
 		}),
 		new MiniCssExtractPlugin({
-			filename: "gerraour.css",
+			filename: "style/gerraour.css",
 		}),
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
 			filename: './index.html',
+			minify: true,
 		}),
 		new HtmlWebpackPlugin({
 			template: './public/404.html',
 			filename: './404.html',
+			minify: true,
 		}),
 		new HtmlWebpackPlugin({
 			template: './public/cookie-policy.html',
 			filename: './cookie-policy.html',
+			minify: true,
 		}),
 		new HtmlWebpackPlugin({
 			template: './public/privacy-policy.html',
 			filename: './privacy-policy.html',
+			minify: true,
 		}),
 		new HtmlWebpackPlugin({
 			template: './public/terms-and-conditions.html',
 			filename: './terms-and-conditions.html',
+			minify: true,
 		}),
 	],
 	entry: {
 		index: './src/js/index.js',
 	},
 	output: {
-		filename: 'gerraour.bundle.js',
-		path: path.resolve(__dirname, './dist'),
+		filename: 'scripts/gerraour.bundle.js',
+		path: path.resolve(__dirname, './dist/'),
 	},
 	performance: {
 		hints: false,

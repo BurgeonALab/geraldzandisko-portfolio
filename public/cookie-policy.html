@@ -41,7 +41,11 @@
 	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
 	<meta name="msapplication-TileColor" content="#da532c" />
 	<meta name="theme-color" content="#ffffff" />
-	<link rel="stylesheet" href="./gerraour.css" />
+
+	<% for (var css in htmlWebpackPlugin.files.css) { %>
+		<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>" />
+		<% } %>
+
 </head>
 
 <body class="privacy-page">
@@ -230,7 +234,10 @@
 		</div>
 	</div>
 
-	<script src="./gerraour.bundle.js"></script>
+	<% for (var js in htmlWebpackPlugin.files.js) { %>
+		<script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+		<% } %>
+
 </body>
 
 </html>
