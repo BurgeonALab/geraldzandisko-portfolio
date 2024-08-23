@@ -181,6 +181,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
 
 .work-card-overlay {
@@ -553,6 +554,7 @@ body {
 .refined-notable-box {
     background-color: #FFFFFF;
     border-radius: var(--bs-border-radius) !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
 
 .quotes-carousel {
