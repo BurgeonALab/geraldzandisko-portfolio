@@ -5,6 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
+
 module.exports = {
 	mode: 'production',
 	experiments: {
@@ -51,6 +53,11 @@ module.exports = {
 			template: './public/terms-and-conditions.html',
 			filename: './terms-and-conditions.html',
 			minify: true,
+		}),
+		new CompressionPlugin({
+			test: /\.(js|css)$/,
+			algorithm: "gzip",
+			compressionOptions: { level: 9 },
 		}),
 	],
 	entry: {
