@@ -1,3 +1,13 @@
+@media (max-width: 1399.98px) {
+    .gerraour-avatar {
+        height: 100%;
+        width: 100%;
+    }
+    .portfolio-desc-box {
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 1199.98px) {
     .image-owl-align {
         margin-top: 50px;
