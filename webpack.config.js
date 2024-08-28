@@ -58,8 +58,9 @@ module.exports = {
 		index: './src/js/index.js',
 	},
 	output: {
-		filename: 'scripts/gerraour.bundle.js',
+		filename: 'scripts/[name].gerraour.js',
 		path: path.resolve(__dirname, './dist/'),
+		clean: true,
 	},
 	performance: {
 		hints: false,
@@ -93,11 +94,20 @@ module.exports = {
 		]
 	},
 	optimization: {
+		splitChunks: {
+      chunks: 'all',
+    },
 		minimize: true,
 		minimizer: [
-			new TerserPlugin(),
+			new TerserPlugin({
+				terserOptions: {
+					format: {
+						comments: false,
+					},
+				},
+				extractComments: false,
+			}),
 			new CssMinimizerPlugin(),
 		],
 	},
-	devtool: 'eval-source-map',
 }
