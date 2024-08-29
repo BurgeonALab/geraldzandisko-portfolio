@@ -22,7 +22,6 @@ module.exports = {
 				{ from: "./public/robots.txt", to: "robots.txt" },
 				{ from: "./public/sitemap.xml", to: "sitemap.xml" },
 				{ from: "./public/ads.txt", to: "ads.txt" },
-				{ from: "./public/images", to: "images" },
 			],
 		}),
 		new MiniCssExtractPlugin({

@@ -48,10 +48,10 @@ $(function () {
 		// Dark Mode - Logo
 		var elm = $('.logo');
 		var src = elm.attr('src');
-		if (src === "./images/Logo.webp")
-			elm.attr('src', './images/LogoWhite.webp')
+		if (src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FLogo.webp?alt=media&token=5f7e5280-a9da-4d59-a7ba-f69dd7a1754a")
+			elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FLogoWhite.webp?alt=media&token=d8c0a9ea-d413-4b03-a1a8-e39fb9dd69ed')
 		else
-			elm.attr('src', './images/Logo.webp')
+			elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FLogo.webp?alt=media&token=5f7e5280-a9da-4d59-a7ba-f69dd7a1754a')
 		// Dark Mode - Home Page & Privacy Page
 		if ($('body').is('.home-page, .privacy-page')) {
 			var navbehance = document.getElementById("navbehance");
@@ -71,10 +71,10 @@ $(function () {
 		if ($('body').is('.home-page')) {
 			var elm = $('.navbar-logo');
 			var src = elm.attr('src');
-			if (src === "./images/Smalllogo.webp")
-				elm.attr('src', './images/SmalllogoWhite.webp');
+			if (src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FSmalllogo.webp?alt=media&token=7d30d8b9-8802-432d-8231-92bf0a0aa833")
+				elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FSmalllogoWhite.webp?alt=media&token=228752fa-8763-423b-9745-2d5ad8f26264');
 			else
-				elm.attr('src', './images/Smalllogo.webp');
+				elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FSmalllogo.webp?alt=media&token=7d30d8b9-8802-432d-8231-92bf0a0aa833');
 			// Dark Mode - Tiger Image
 			// Text
 			var tiger = document.getElementById("tiger-text-dark");
@@ -93,10 +93,10 @@ $(function () {
 			// Image
 			var tigerdark_elm = $('#tiger-dark-mode');
 			var tigerdark_src = tigerdark_elm.attr('src');
-			if (tigerdark_src === "./images/characters/TheTiger.webp")
-				tigerdark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp')
+			if (tigerdark_src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FTheTiger.webp?alt=media&token=6c1f2ca8-c88c-48d3-8bab-104e8f95af01")
+				tigerdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FWhiteCharacterPlaceholder.webp?alt=media&token=38c18d68-dd1c-4d72-9c55-73f8f42caf70')
 			else
-				tigerdark_elm.attr('src', './images/characters/TheTiger.webp')
+				tigerdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FTheTiger.webp?alt=media&token=6c1f2ca8-c88c-48d3-8bab-104e8f95af01')
 			// Dark Mode - Owl Image
 			// Text
 			var owl = document.getElementById("owl-text-dark");
@@ -115,10 +115,10 @@ $(function () {
 			// Image
 			var owldark_elm = $('#owl-dark-mode');
 			var owldark_src = owldark_elm.attr('src');
-			if (owldark_src === "./images/characters/TheOwl.webp")
-				owldark_elm.attr('src', './images/characters/WhiteCharacterPlaceholder.webp');
+			if (owldark_src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FTheOwl.webp?alt=media&token=8b360ab6-2e50-4138-b09b-17528c34296f")
+				owldark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FWhiteCharacterPlaceholder.webp?alt=media&token=38c18d68-dd1c-4d72-9c55-73f8f42caf70');
 			else
-				owldark_elm.attr('src', './images/characters/TheOwl.webp');
+				owldark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FTheOwl.webp?alt=media&token=8b360ab6-2e50-4138-b09b-17528c34296f');
 			// Dark Mode - Horse Image
 			// Text
 			var horse = document.getElementById("horse-text-dark");
@@ -160,10 +160,10 @@ $(function () {
 			// Image
 			var dragondark_elm = $('#dragon-image-dark');
 			var dragondark_src = dragondark_elm.attr('src');
-			if (dragondark_src === "./images/characters/DragonJournal.webp")
-				dragondark_elm.attr('src', './images/characters/DragonHunt.webp')
+			if (dragondark_src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FDragonJournal.webp?alt=media&token=4c4d805a-e63a-42bd-8100-3ad3d6374d2b")
+				dragondark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FDragonHunt.webp?alt=media&token=f21e0cfa-ae6f-4553-93ba-249e849d8640')
 			else
-				dragondark_elm.attr('src', './images/characters/DragonJournal.webp')
+				dragondark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FDragonJournal.webp?alt=media&token=4c4d805a-e63a-42bd-8100-3ad3d6374d2b')
 			// Alt
 			var dragondark_alt = dragondark_elm.attr('alt');
 			if (dragondark_alt === "Dragon Journal")
@@ -188,11 +188,11 @@ $(function () {
 			// Image
 			var peacockdark_elm = $('#blue-peacock-dark-mode img');
 			var peacockdark_src = peacockdark_elm.attr('src');
-			if (peacockdark_src === "./images/characters/BluePeacock.webp") {
-				peacockdark_elm.attr('src', './images/characters/WhitePeacock.webp');
+			if (peacockdark_src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FBluePeacock.webp?alt=media&token=f9c52b78-c83e-4cdb-8cc9-69a1a6f0de3f") {
+				peacockdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FWhitePeacock.webp?alt=media&token=2aa4e3a9-c4e3-4eeb-b3ed-cf14a8b05939');
 				peacockdark_elm.addClass('white-peacock-image');
 			} else {
-				peacockdark_elm.attr('src', './images/characters/BluePeacock.webp');
+				peacockdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FBluePeacock.webp?alt=media&token=f9c52b78-c83e-4cdb-8cc9-69a1a6f0de3f');
 				peacockdark_elm.removeClass('white-peacock-image');
 			}
 			// Alt
@@ -226,10 +226,10 @@ $(function () {
 			// Image
 			var stagdark_elm = $('#stag-dark-mode');
 			var stagdark_src = stagdark_elm.attr('src');
-			if (stagdark_src === "./images/characters/MonarchGlenStag.webp")
-				stagdark_elm.attr('src', './images/characters/WhiteStagPlaceholder.webp')
+			if (stagdark_src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FMonarchGlenStag.webp?alt=media&token=2591104a-2b7e-4e92-b477-08167129e572")
+				stagdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FWhiteStagPlaceholder.webp?alt=media&token=7d873b11-87d1-44de-8e19-8c5298826411')
 			else
-				stagdark_elm.attr('src', './images/characters/MonarchGlenStag.webp')
+				stagdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FMonarchGlenStag.webp?alt=media&token=2591104a-2b7e-4e92-b477-08167129e572')
 			// Dark Mode - Links
 			var wisdom = document.getElementById("wisdomData");
 			wisdom.classList.toggle("text-dark-mode");
@@ -355,10 +355,10 @@ $(function () {
 			home404.classList.toggle("text-dark-mode");
 			var elm = $('.err404-logo')
 			var src = elm.attr('src');
-			if (src === "./images/404.webp")
-				elm.attr('src', './images/404White.webp');
+			if (src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2F404.webp?alt=media&token=ba6e4d63-a6d5-4b7d-9780-556ca31feaf1")
+				elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2F404White.webp?alt=media&token=314716cb-9d20-414e-8551-60144b2d6d46');
 			else
-				elm.attr('src', './images/404.webp');
+				elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2F404.webp?alt=media&token=ba6e4d63-a6d5-4b7d-9780-556ca31feaf1');
 		}
 	});
 	if ($('body').is('.privacy-page')) {
