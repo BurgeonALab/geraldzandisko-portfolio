@@ -8,7 +8,7 @@
 
 # About
 
-Gerald Zandisko's personal website features his artwork, favorite quotes, portfolio, and other creative works, along with a display of his web development and design expertise.
+Gerald Zandisko's personal website showcases a collection of his creative works while also highlighting his skills in web development and design, offering visitors a glimpse into his expertise and passion.
 
 ## Author
 
