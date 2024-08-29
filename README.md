@@ -16,11 +16,12 @@ Gerald Zandisko's personal website showcases a collection of his creative works 
 
 ## Solution Stack
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/logo-on-dark-bg.svg" width="150">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/logo-on-white-bg.svg" width="150">
-  <img alt="webpack logo" src="https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/logo-on-white-bg.svg">
-  <img alt="firebase logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/New_Firebase_logo.svg" width="150">
-<picture>
+<div>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/logo-on-dark-bg.svg" width="150">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/logo-on-white-bg.svg" width="150">
+    <img alt="webpack logo" src="https://raw.githubusercontent.com/webpack/media/90b54d02fa1cfc8aa864a8322202f74ac000f5d2/logo/logo-on-white-bg.svg">
+  <picture>
+</div>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
