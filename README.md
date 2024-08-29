@@ -14,4 +14,8 @@ Gerald Zandisko's personal website showcases a collection of his creative works 
 
 - Gerald Zandisko
 
+## Solution Stack
+
+<img alt="webpack logo" src="https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/github-readme-logo%2Fgithub-logo-light.png?alt=media&token=4bf9b104-97b4-49de-83bd-c92a468bcb39](https://en.wikipedia.org/wiki/Webpack#/media/File:Webpack.svg" width="50">
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
