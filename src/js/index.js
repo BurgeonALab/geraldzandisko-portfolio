@@ -50,7 +50,6 @@ import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/brands';
 import './news-calendar';
 import './schema';
-import './slider';
 // Bootstrap
 import * as bootstrap from 'bootstrap';
 import '../scss/styles.scss';
