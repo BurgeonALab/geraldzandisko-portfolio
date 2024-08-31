@@ -58,6 +58,7 @@ module.exports = {
 	},
 	output: {
 		filename: 'scripts/[name].gerraour.js',
+		chunkFilename: 'scripts/[name].gerraour.js',
 		path: path.resolve(__dirname, './dist/'),
 		clean: true,
 	},
