@@ -40,8 +40,7 @@ $(function () {
 			themeStatus = 'default'
 		}
 		// Dark Mode - Body
-		var element = document.body;
-		element.classList.toggle("dark-mode");
+		$('body').toggleClass("dark-mode");
 		// Dark Mode - Icon Switch
 		$('#icon-switch').toggleClass('fa-sun fa-moon');
 		$('#icon-switch').toggleClass('light-mode-button dark-mode-button');
@@ -54,18 +53,12 @@ $(function () {
 			elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FLogo.webp?alt=media&token=5f7e5280-a9da-4d59-a7ba-f69dd7a1754a')
 		// Dark Mode - Home Page & Privacy Page
 		if ($('body').is('.home-page, .privacy-page')) {
-			var navbehance = document.getElementById("navbehance");
-			navbehance.classList.toggle("text-dark-mode");
-			var navlinkedin = document.getElementById("navlinkedin");
-			navlinkedin.classList.toggle("text-dark-mode");
-			var navgithub = document.getElementById("navgithub");
-			navgithub.classList.toggle("text-dark-mode");
-			var navinstagram = document.getElementById("navinstagram");
-			navinstagram.classList.toggle("text-dark-mode");
-			var navtokopedia = document.getElementById("navtokopedia");
-			navtokopedia.classList.toggle("text-dark-mode");
-			var navxsocial = document.getElementById("navx-social");
-			navxsocial.classList.toggle("text-dark-mode");
+			$('#navbehance').toggleClass("text-dark-mode");
+			$('#navlinkedin').toggleClass("text-dark-mode");
+			$('#navgithub').toggleClass("text-dark-mode");
+			$('#navinstagram').toggleClass("text-dark-mode");
+			$('#navtokopedia').toggleClass("text-dark-mode");
+			$('#navx-social').toggleClass("text-dark-mode");
 		}
 		// Dark Mode - Navbar Logo
 		if ($('body').is('.home-page')) {
@@ -231,10 +224,8 @@ $(function () {
 			else
 				stagdark_elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2Fcharacters%2FMonarchGlenStag.webp?alt=media&token=2591104a-2b7e-4e92-b477-08167129e572')
 			// Dark Mode - Links
-			var wisdom = document.getElementById("wisdomData");
-			wisdom.classList.toggle("text-dark-mode");
-			var article = document.getElementById("article_section");
-			article.classList.toggle("text-dark-mode");
+			$('#wisdomData').toggleClass("text-dark-mode");
+			$('#article_section').toggleClass("text-dark-mode");
 			// Article
 			$('#article-list .article-item').toggleClass("article-item-dark-mode");
 			$('#article-list .read-more-link').toggleClass("read-more-link-dark-mode");
