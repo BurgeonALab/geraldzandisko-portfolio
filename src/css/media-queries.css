@@ -143,8 +143,8 @@
 @media (max-width: 767.98px) {
     .quote-mobile {
         padding-top: 50px;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 36px;
+        padding-right: 36px;
         padding-bottom: 3rem;
     }
 
@@ -209,8 +209,8 @@
     }
 
     .refined-notable-work-mobile {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 48px;
+        padding-right: 48px;
     }
 
     .spotify-embedded {
@@ -250,8 +250,8 @@
     }
 
     .article-section-mobile {
-        padding-left: 60px !important;
-        padding-right: 60px !important;
+        padding-left: 48px !important;
+        padding-right: 48px !important;
     }
 
     .dragon-image-box {
@@ -283,13 +283,13 @@
     }
 
     .avatar-margin-mobile {
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 48px;
+        padding-left: 48px;
     }
 
     .portfolio-margin {
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 48px;
+        padding-left: 48px;
     }
 
     .news-margin {
@@ -297,8 +297,8 @@
     }
 
     .horse-image-container {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
+        padding-left: 36px !important;
+        padding-right: 36px !important;
     }
 }
 
@@ -465,7 +465,7 @@
     }
 
     .quote-mobile {
-        padding: 1rem;
+        padding: 20px;
     }
 
     .image-padding-mobile {
@@ -478,19 +478,14 @@
         padding-right: 1rem;
     }
 
-    .galaxy-fold-pictures {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
     .work-margin {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
     .refined-notable-work-mobile {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .quotes-carousel {
@@ -555,7 +550,7 @@
     }
 
     .horse-image-container {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
