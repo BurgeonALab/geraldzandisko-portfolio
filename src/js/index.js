@@ -57,8 +57,8 @@ import './AdaireScripts';
 // Icon
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faBagShopping, faSun, faMoon, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon, faWhatsapp, faEnvelope);
+import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faWhatsapp, faBehanceSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon, faWhatsapp, faEnvelope, faBehanceSquare, faGithubSquare);
 
 // Calender
 import './AdaireNews';
