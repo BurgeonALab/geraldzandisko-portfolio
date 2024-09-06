@@ -1,6 +1,6 @@
-import './schema';
-// JS
+// jQuery
 import $ from 'jquery';
+
 // Tiny Slider
 import { tns } from "tiny-slider";
 
@@ -44,17 +44,33 @@ $(function () {
     });
   }
 });
+
+// Firebase
 import './firebase';
+
+// jQuerys
 import './scripts';
-import '@fortawesome/fontawesome-free/js/fontawesome';
-import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/brands';
+
+// Icon
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { faBagShopping, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance } from '@fortawesome/free-brands-svg-icons';
+library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon);
+
+// Calender
 import './news-calendar';
+
+// Schema
+import './schema';
+
 // Bootstrap
 import * as bootstrap from 'bootstrap';
 import '../scss/styles.scss';
 import '../css/tiny-slider.css';
+
 // CSS
 import '../css/styles.css';
 import '../css/animations.css';
 import '../css/media-queries.css';
+
+dom.i2svg();

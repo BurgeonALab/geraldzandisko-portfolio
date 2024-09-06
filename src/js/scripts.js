@@ -1,5 +1,6 @@
 var themeStatus = 'default'
-$(function () {
+FontAwesomeConfig = { autoReplaceSvg: 'nest' }
+document.addEventListener('DOMContentLoaded', function () {
 	// Scroll Effect
 	$(window).on("scroll", function () {
 		if ($(document).scrollTop() > 131) {
@@ -35,15 +36,18 @@ $(function () {
 	// Dark Mode
 	$('#lightdark-mode').on("click", function () {
 		if (themeStatus === 'default') {
-			themeStatus = 'darkTheme'
+			themeStatus = 'darkTheme';
+			$('#gerraour-sun').removeClass('show-whatever-class');
+			$('#gerraour-sun').addClass('hide-whatever-class');
+			$('#gerraour-moon').addClass('show-whatever-class');
 		} else if (themeStatus === 'darkTheme') {
-			themeStatus = 'default'
+			themeStatus = 'default';
+			$('#gerraour-moon').removeClass('show-whatever-class');
+			$('#gerraour-moon').addClass('hide-whatever-class');
+			$('#gerraour-sun').addClass('show-whatever-class');
 		}
 		// Dark Mode - Body
 		$('body').toggleClass("dark-mode");
-		// Dark Mode - Icon Switch
-		$('#icon-switch').toggleClass('fa-sun fa-moon');
-		$('#icon-switch').toggleClass('light-mode-button dark-mode-button');
 		// Dark Mode - Logo
 		var elm = $('.logo');
 		var src = elm.attr('src');
