@@ -1,3 +1,4 @@
+import './schema';
 // JS
 import $ from 'jquery';
 // Tiny Slider
@@ -49,7 +50,6 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/brands';
 import './news-calendar';
-import './schema';
 // Bootstrap
 import * as bootstrap from 'bootstrap';
 import '../scss/styles.scss';
