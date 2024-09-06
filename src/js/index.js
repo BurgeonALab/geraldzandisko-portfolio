@@ -1,3 +1,6 @@
+// Console Log Clear (Production)
+import './AdaireConfig';
+
 // jQuery
 import $ from 'jquery';
 
@@ -53,9 +56,9 @@ import './AdaireScripts';
 
 // Icon
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faBagShopping, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance } from '@fortawesome/free-brands-svg-icons';
-library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon);
+import { faBagShopping, faSun, faMoon, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon, faWhatsapp, faEnvelope);
 
 // Calender
 import './AdaireNews';
