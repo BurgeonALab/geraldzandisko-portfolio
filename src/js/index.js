@@ -46,10 +46,10 @@ $(function () {
 });
 
 // Firebase
-import './firebase';
+import './AdaireFirebase';
 
 // jQuerys
-import './scripts';
+import './AdaireScripts';
 
 // Icon
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
@@ -58,19 +58,22 @@ import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance } from '@for
 library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon);
 
 // Calender
-import './news-calendar';
+import './AdaireNews';
 
 // Schema
-import './schema';
+import './AdaireSchemes';
 
 // Bootstrap
 import * as bootstrap from 'bootstrap';
-import '../scss/styles.scss';
-import '../css/tiny-slider.css';
+import '../scss/AdaireStyles.scss';
+import '../css/AdaireSlider.css';
 
 // CSS
-import '../css/styles.css';
-import '../css/animations.css';
-import '../css/media-queries.css';
+import '../css/AdaireStyles.css';
+import '../css/AdaireAnimations.css';
+import '../css/AdaireResponsive.css';
+
+// Images
+import './images';
 
 dom.i2svg();

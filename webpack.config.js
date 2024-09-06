@@ -18,10 +18,12 @@ module.exports = {
 		}),
 		new CopyPlugin({
 			patterns: [
-				{ from: "./public/favicon", to: "favicon" },
+				{ from: "./public/favicon/safari-pinned-tab.svg", to: "favicon" },
 				{ from: "./public/robots.txt", to: "robots.txt" },
 				{ from: "./public/sitemap.xml", to: "sitemap.xml" },
 				{ from: "./public/ads.txt", to: "ads.txt" },
+				{ from: "./public/browserconfig.xml", to: "./" },
+        { from: "./public/site.webmanifest", to: "./" },
 			],
 		}),
 		new MiniCssExtractPlugin({
@@ -90,8 +92,20 @@ module.exports = {
 						loader: 'sass-loader'
 					}
 				]
-			}
-		]
+			},
+			{
+        test: /\.(png|webp|jpe?g|gif|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'favicon',
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+		],
 	},
 	optimization: {
 		splitChunks: {
