@@ -13,6 +13,7 @@ Gerald Zandisko's personal website showcases a collection of his creative works 
 ## Author
 
 • Gerald Zandisko
+
 • The Adaire Solutions
 
 ## Solution Stack
