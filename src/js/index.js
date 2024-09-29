@@ -1,12 +1,9 @@
 // Console Log Clear (Production)
 import './AdaireConfig';
-
 // jQuery
 import $ from 'jquery';
-
 // Tiny Slider
 import { tns } from "tiny-slider";
-
 $(function () {
   if ($('body').is('.home-page')) {
     const tnslider1 = tns({
@@ -47,36 +44,25 @@ $(function () {
     });
   }
 });
-
 // Firebase
 import './AdaireFirebase';
-
 // jQuerys
 import './AdaireScripts';
-
 // Icon
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faBagShopping, faSun, faMoon, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faWhatsapp, faBehanceSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon, faWhatsapp, faEnvelope, faBehanceSquare, faGithubSquare);
-
 // Calender
 import './AdaireNews';
-
-// Schema
-import './AdaireSchemes';
-
 // Bootstrap
 import * as bootstrap from 'bootstrap';
 import '../scss/AdaireStyles.scss';
 import '../css/AdaireSlider.css';
-
 // CSS
 import '../css/AdaireStyles.css';
 import '../css/AdaireAnimations.css';
 import '../css/AdaireResponsive.css';
-
 // Images
 import './images';
-
 dom.i2svg();
