@@ -1,5 +1,7 @@
 // Console Log Clear (Production)
 import './AdaireConfig';
+// Schema
+import './AdaireSchema';
 // jQuery
 import $ from 'jquery';
 // Tiny Slider
