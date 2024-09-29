@@ -238,103 +238,29 @@ document.addEventListener('DOMContentLoaded', function () {
 			$('.portfolio-desc-box').toggleClass("description-dark-mode");
 			$('.box-title-container p').toggleClass("text-dark-mode");
 			$('.gerraour-avatar').toggleClass("dark-mode-avatar-shadow");
-			var work = document.getElementById("work_section");
-			work.classList.toggle("text-dark-mode");
-			var contact = document.getElementById("contact_section");
-			contact.classList.toggle("text-dark-mode");
-			var navigation = document.getElementById("navigation-bar");
-			navigation.classList.toggle("navigation-dark-mode");
-			var aboutnav = document.getElementById("about-nav");
-			aboutnav.classList.toggle("text-dark-mode");
-			var readnav = document.getElementById("read-nav");
-			readnav.classList.toggle("text-dark-mode");
-			var worknav = document.getElementById("work-nav");
-			worknav.classList.toggle("text-dark-mode");
-			var contactnav = document.getElementById("contact-nav");
-			contactnav.classList.toggle("text-dark-mode");
-			var footerwhatsapp = document.getElementById("footer-whatsapp");
-			footerwhatsapp.classList.toggle("text-dark-mode");
-			var footeremail = document.getElementById("footer-email");
-			footeremail.classList.toggle("text-dark-mode");
-			var aboutsection = document.getElementById("about-section");
-			aboutsection.classList.toggle("text-dark-mode");
-			var readsection = document.getElementById("read-section");
-			readsection.classList.toggle("text-dark-mode");
-			var worksection = document.getElementById("work-section");
-			worksection.classList.toggle("text-dark-mode");
-			var contactsection = document.getElementById("contact-section");
-			contactsection.classList.toggle("text-dark-mode");
+
+			$('#work_section #contact_section #about-nav #read-nav #work-nav #contact-nav #footer-whatsapp #footer-email #about-section #read-section #work-section #contact-section').toggleClass("text-dark-mode");
+
+			$('#navigation-bar').toggleClass("navigation-dark-mode");
+
 			// Footer
-			var footerbehance = document.getElementById("footer-behance");
-			footerbehance.classList.toggle("text-dark-mode");
-			var footerlinkedin = document.getElementById("footer-linkedin");
-			footerlinkedin.classList.toggle("text-dark-mode");
-			var footergithub = document.getElementById("footer-github");
-			footergithub.classList.toggle("text-dark-mode");
-			var footerinstagram = document.getElementById("footer-instagram");
-			footerinstagram.classList.toggle("text-dark-mode");
-			var footerxsocial = document.getElementById("footer-x-social");
-			footerxsocial.classList.toggle("text-dark-mode");
+			$("#footer-behance #footer-linkedin #footer-github #footer-instagram #footer-x-social").toggleClass("text-dark-mode");
 			// End Footer
-			var privacyfooter = document.getElementById("privacy-dark-mode");
-			privacyfooter.classList.toggle("text-dark-mode");
-			var cookiefooter = document.getElementById("cookie-dark-mode");
-			cookiefooter.classList.toggle("text-dark-mode");
-			var termsfooter = document.getElementById("terms-dark-mode");
-			termsfooter.classList.toggle("text-dark-mode");
-			var footerbackground = document.getElementById("contact_section");
-			footerbackground.classList.toggle("footer-dark-mode");
-			var owlbox = document.getElementById("owl-dark-mode");
-			owlbox.classList.toggle("shadow-dark-mode");
-			var tigerbox = document.getElementById("tiger-dark-mode");
-			tigerbox.classList.toggle("shadow-dark-mode");
-			var dragonbox = document.getElementById("dragon-image-dark-mode");
-			dragonbox.classList.toggle("dragon-image-box-dark-mode");
-			var horsebox = document.getElementById("horse-image-dark-mode");
-			horsebox.classList.toggle("horse-image-box-dark-mode");
-			var peacockbox = document.getElementById("blue-peacock-dark-mode");
-			peacockbox.classList.toggle("refined-character-image-box-dark");
-			var stagbox = document.getElementById("stag-dark-mode");
-			stagbox.classList.toggle("shadow-dark-mode");
-			var graphic = document.getElementById("graphic-dark-mode");
-			graphic.classList.toggle("work-card-dark-mode");
-			var web = document.getElementById("web-dark-mode");
-			web.classList.toggle("work-card-dark-mode");
-			var uiux = document.getElementById("uiux-dark-mode");
-			uiux.classList.toggle("work-card-dark-mode");
-			var quotes = document.getElementById("quotes-section");
-			quotes.classList.toggle("text-dark-mode");
-			var refinednotable = document.getElementById("refined-notable-work");
-			refinednotable.classList.toggle("text-dark-mode");
-			var tropicanaticdarkmode = document.getElementById("tropicanatic-dark-mode");
-			tropicanaticdarkmode.classList.toggle("text-dark-mode");
-			tropicanaticdarkmode.classList.toggle("refined-notable-box-dark");
-			var tropicanaticdarklink = document.getElementById("tropicanatic-link-dark-mode");
-			tropicanaticdarklink.classList.toggle("text-dark-mode");
-			var tropicanaticdarkbehance = document.getElementById("tropicanatic-behance-dark-mode");
-			tropicanaticdarkbehance.classList.toggle("text-dark-mode");
-			var blawhidarkmode = document.getElementById("blawhi-dark-mode");
-			blawhidarkmode.classList.toggle("text-dark-mode");
-			blawhidarkmode.classList.toggle("refined-notable-box-dark");
-			var blawhidarklink = document.getElementById("blawhi-link-dark-mode");
-			blawhidarklink.classList.toggle("text-dark-mode");
-			var blawhidarkbehance = document.getElementById("blawhi-behance-dark-mode");
-			blawhidarkbehance.classList.toggle("text-dark-mode");
-			var blawhidarkgithub = document.getElementById("blawhi-github-dark-mode");
-			blawhidarkgithub.classList.toggle("text-dark-mode");
-			var tropicanaticheaderdark = document.getElementById("tropicanatic-header-dark");
-			tropicanaticheaderdark.classList.toggle("text-dark-mode-grey");
-			var blawhiheaderdark = document.getElementById("blawhi-header-dark");
-			blawhiheaderdark.classList.toggle("text-dark-mode-grey");
-			var palmexdarkmode = document.getElementById("palmex-dark-mode");
-			palmexdarkmode.classList.toggle("text-dark-mode");
-			palmexdarkmode.classList.toggle("refined-notable-box-dark");
-			var palmexheaderdark = document.getElementById("palmex-header-dark");
-			palmexheaderdark.classList.toggle("text-dark-mode-grey");
-			var palmexdarklink = document.getElementById("palmex-link-dark-mode");
-			palmexdarklink.classList.toggle("text-dark-mode");
-			var palmexdarkbehance = document.getElementById("palmex-behance-dark-mode");
-			palmexdarkbehance.classList.toggle("text-dark-mode");
+			$("#privacy-dark-mode #cookie-dark-mode #terms-dark-mode #quotes-section #refined-notable-work #tropicanatic-link-dark-mode #tropicanatic-behance-dark-mode #blawhi-link-dark-mode #blawhi-behance-dark-mode #blawhi-github-dark-mode #palmex-link-dark-mode #palmex-behance-dark-mode").toggleClass("text-dark-mode");
+
+			$('#contact_section').toggleClass("footer-dark-mode");
+
+			$("#owl-dark-mode #tiger-dark-mode #stag-dark-mode").toggleClass("shadow-dark-mode");
+
+			$("#dragon-image-dark-mode").toggleClass("dragon-image-box-dark-mode");
+			$("#horse-image-dark-mode").toggleClass("horse-image-box-dark-mode");
+			$("#blue-peacock-dark-mode").toggleClass("refined-character-image-box-dark");
+
+			$("#graphic-darkmode #web-dark-mode #uiux-dark-mode").toggleClass("work-card-dark-mode");
+
+			$("#tropicanatic-dark-mode #blawhi-dark-mode #palmex-dark-mode").toggleClass("text-dark-mode refined-notable-box-dark");
+
+			$("#palmex-header-dark #tropicanatic-header-dark #blawhi-header-dark").toggleClass("text-dark-mode-grey");
 		}
 		if ($('body').is('.privacy-page')) {
 			$('.policies-content h1').toggleClass("text-dark-mode");
@@ -344,10 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			$('.policies-content hr').toggleClass("hr-dark-mode");
 		}
 		if ($('body').is('.404-page')) {
-			var page404 = document.getElementById("404-dark-mode");
-			page404.classList.toggle("text-dark-mode");
-			var home404 = document.getElementById("err404-link-dark-mode");
-			home404.classList.toggle("text-dark-mode");
+			$("#404-dark-mode #err404-link-dark-mode").toggleClass("text-dark-mode");
 			var elm = $('.err404-logo')
 			var src = elm.attr('src');
 			if (src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2F404.webp?alt=media&token=ba6e4d63-a6d5-4b7d-9780-556ca31feaf1")
