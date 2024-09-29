@@ -23,7 +23,7 @@ module.exports = {
 				{ from: "./public/sitemap.xml", to: "sitemap.xml" },
 				{ from: "./public/ads.txt", to: "ads.txt" },
 				{ from: "./public/browserconfig.xml", to: "./" },
-        { from: "./public/site.webmanifest", to: "./" },
+				{ from: "./public/site.webmanifest", to: "./" },
 			],
 		}),
 		new MiniCssExtractPlugin({
@@ -94,23 +94,23 @@ module.exports = {
 				]
 			},
 			{
-        test: /\.(png|webp|jpe?g|gif|ico)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'favicon',
-              name: '[name].[ext]',
-            },
-          },
-        ],
-      },
+				test: /\.(png|webp|jpe?g|gif|ico)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							outputPath: 'favicon',
+							name: '[name].[ext]',
+						},
+					},
+				],
+			},
 		],
 	},
 	optimization: {
 		splitChunks: {
-      chunks: 'all',
-    },
+			chunks: 'all',
+		},
 		minimize: true,
 		minimizer: [
 			new TerserPlugin({
@@ -118,6 +118,9 @@ module.exports = {
 					format: {
 						comments: false,
 					},
+					compress: {
+						drop_console: true,
+					}
 				},
 				extractComments: false,
 			}),
