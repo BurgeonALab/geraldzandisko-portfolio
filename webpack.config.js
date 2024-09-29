@@ -27,7 +27,7 @@ module.exports = {
 			],
 		}),
 		new MiniCssExtractPlugin({
-			filename: "style/gerraour.css",
+			filename: "style/[name].gerraour.css",
 		}),
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
@@ -70,7 +70,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(sass|css|scss)$/,
+				test: /\.(css)$/,
 				use: [
 					{
 						loader: MiniCssExtractPlugin.loader,
@@ -88,9 +88,6 @@ module.exports = {
 							}
 						}
 					},
-					{
-						loader: 'sass-loader'
-					}
 				]
 			},
 			{

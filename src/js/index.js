@@ -54,8 +54,9 @@ import { faBagShopping, faSun, faMoon, faEnvelope } from '@fortawesome/free-soli
 import { faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faWhatsapp, faBehanceSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 library.add(faBagShopping, faXTwitter, faInstagram, faGithub, faLinkedinIn, faBehance, faSun, faMoon, faWhatsapp, faEnvelope, faBehanceSquare, faGithubSquare);
 // Bootstrap
-import * as bootstrap from 'bootstrap';
-import '../scss/AdaireStyles.scss';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+// Style
 import '../css/AdaireSlider.css';
 // CSS
 import '../css/AdaireStyles.css';
