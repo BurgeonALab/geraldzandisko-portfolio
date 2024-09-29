@@ -57,12 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			elm.attr('src', 'https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2FLogo.webp?alt=media&token=5f7e5280-a9da-4d59-a7ba-f69dd7a1754a')
 		// Dark Mode - Home Page & Privacy Page
 		if ($('body').is('.home-page, .privacy-page')) {
-			$('#navbehance').toggleClass("text-dark-mode");
-			$('#navlinkedin').toggleClass("text-dark-mode");
-			$('#navgithub').toggleClass("text-dark-mode");
-			$('#navinstagram').toggleClass("text-dark-mode");
-			$('#navtokopedia').toggleClass("text-dark-mode");
-			$('#navx-social').toggleClass("text-dark-mode");
+			$('#navbehance, #navlinkedin, #navgithub, #navinstagram, #navtokopedia, #navx-social').toggleClass("text-dark-mode");
 		}
 		// Dark Mode - Navbar Logo
 		if ($('body').is('.home-page')) {
@@ -239,28 +234,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			$('.box-title-container p').toggleClass("text-dark-mode");
 			$('.gerraour-avatar').toggleClass("dark-mode-avatar-shadow");
 
-			$('#work_section #contact_section #about-nav #read-nav #work-nav #contact-nav #footer-whatsapp #footer-email #about-section #read-section #work-section #contact-section').toggleClass("text-dark-mode");
+			$('#work_section, #contact_section, #about-nav, #read-nav, #work-nav, #contact-nav, #footer-whatsapp, #footer-email, #about-section, #read-section, #work-section, #contact-section').toggleClass("text-dark-mode");
 
 			$('#navigation-bar').toggleClass("navigation-dark-mode");
 
 			// Footer
-			$("#footer-behance #footer-linkedin #footer-github #footer-instagram #footer-x-social").toggleClass("text-dark-mode");
+			$("#footer-behance, #footer-linkedin, #footer-github, #footer-instagram, #footer-x-social").toggleClass("text-dark-mode");
 			// End Footer
-			$("#privacy-dark-mode #cookie-dark-mode #terms-dark-mode #quotes-section #refined-notable-work #tropicanatic-link-dark-mode #tropicanatic-behance-dark-mode #blawhi-link-dark-mode #blawhi-behance-dark-mode #blawhi-github-dark-mode #palmex-link-dark-mode #palmex-behance-dark-mode").toggleClass("text-dark-mode");
+			$("#privacy-dark-mode, #cookie-dark-mode, #terms-dark-mode, #quotes-section, #refined-notable-work, #tropicanatic-link-dark-mode, #tropicanatic-behance-dark-mode, #blawhi-link-dark-mode, #blawhi-behance-dark-mode, #blawhi-github-dark-mode, #palmex-link-dark-mode, #palmex-behance-dark-mode").toggleClass("text-dark-mode");
 
 			$('#contact_section').toggleClass("footer-dark-mode");
 
-			$("#owl-dark-mode #tiger-dark-mode #stag-dark-mode").toggleClass("shadow-dark-mode");
+			$("#owl-dark-mode, #tiger-dark-mode, #stag-dark-mode").toggleClass("shadow-dark-mode");
 
 			$("#dragon-image-dark-mode").toggleClass("dragon-image-box-dark-mode");
 			$("#horse-image-dark-mode").toggleClass("horse-image-box-dark-mode");
 			$("#blue-peacock-dark-mode").toggleClass("refined-character-image-box-dark");
 
-			$("#graphic-darkmode #web-dark-mode #uiux-dark-mode").toggleClass("work-card-dark-mode");
+			$("#graphic-darkmode, #web-dark-mode, #uiux-dark-mode").toggleClass("work-card-dark-mode");
 
-			$("#tropicanatic-dark-mode #blawhi-dark-mode #palmex-dark-mode").toggleClass("text-dark-mode refined-notable-box-dark");
+			$("#tropicanatic-dark-mode, #blawhi-dark-mode, #palmex-dark-mode").toggleClass("text-dark-mode refined-notable-box-dark");
 
-			$("#palmex-header-dark #tropicanatic-header-dark #blawhi-header-dark").toggleClass("text-dark-mode-grey");
+			$("#palmex-header-dark, #tropicanatic-header-dark, #blawhi-header-dark").toggleClass("text-dark-mode-grey");
 		}
 		if ($('body').is('.privacy-page')) {
 			$('.policies-content h1').toggleClass("text-dark-mode");
@@ -270,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			$('.policies-content hr').toggleClass("hr-dark-mode");
 		}
 		if ($('body').is('.404-page')) {
-			$("#404-dark-mode #err404-link-dark-mode").toggleClass("text-dark-mode");
+			$("#404-dark-mode, #err404-link-dark-mode").toggleClass("text-dark-mode");
 			var elm = $('.err404-logo')
 			var src = elm.attr('src');
 			if (src === "https://firebasestorage.googleapis.com/v0/b/gerraour-bee69.appspot.com/o/images%2F404.webp?alt=media&token=ba6e4d63-a6d5-4b7d-9780-556ca31feaf1")
