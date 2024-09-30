@@ -70,28 +70,12 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(css)$/,
+				test: /\.css$/i,
 				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-					},
-					{
-						loader: 'css-loader'
-					},
-					{
-						loader: 'postcss-loader',
-						options: {
-							postcssOptions: {
-								plugins: () => [
-									require('autoprefixer')
-								]
-							}
-						}
-					},
-				]
+					MiniCssExtractPlugin.loader, "css-loader"],
 			},
 			{
-				test: /\.(png|webp|jpe?g|gif|ico)$/i,
+				test: /\.(png|ico)$/i,
 				use: [
 					{
 						loader: 'file-loader',
