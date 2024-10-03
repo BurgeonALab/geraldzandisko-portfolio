@@ -1,6 +1,5 @@
 var themeStatus = 'default'
-FontAwesomeConfig = { autoReplaceSvg: 'nest' }
-document.addEventListener('DOMContentLoaded', function () {
+$(function () {
 	// Scroll Effect
 	$(window).on("scroll", function () {
 		if ($(document).scrollTop() > 131) {
